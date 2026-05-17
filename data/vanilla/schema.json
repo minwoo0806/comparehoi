@@ -1,0 +1,29 @@
+{
+  "equipmentItem": {
+    "id": "string",
+    "domain": "tank | aircraft | ship",
+    "type": "string",
+    "category": "string",
+    "year": "number",
+    "nameKo": "string",
+    "nameEn": "string",
+    "stats": "Record<string, number>",
+    "resources": "Record<string, number>"
+  },
+  "moduleItem": {
+    "id": "string",
+    "nameKo": "string",
+    "nameEn": "string",
+    "slots": "string[]",
+    "allowedTypes": "string[]",
+    "stats": "Record<string, number>",
+    "resources": "Record<string, number>"
+  },
+  "modifierItem": {
+    "id": "string",
+    "nameKo": "string",
+    "nameEn": "string",
+    "domain": "tank | aircraft | ship | null",
+    "modifiers": [{ "stat": "string", "mode": "add | multiply", "value": "number" }]
+  }
+}

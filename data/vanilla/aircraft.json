@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "small_plane_airframe_0",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "airframe",
+      "year": 1936,
+      "nameKo": "기본 소형 항공기 프레임",
+      "nameEn": "Basic Small Airframe",
+      "stats": {
+        "air_attack": 4,
+        "air_defence": 6,
+        "agility": 35,
+        "maximum_speed": 500,
+        "range": 700,
+        "soft_attack": 0,
+        "naval_attack": 0,
+        "strategic_attack": 0,
+        "reliability": 0.8,
+        "build_cost_ic": 18
+      },
+      "resources": { "aluminium": 2 }
+    },
+    {
+      "id": "medium_plane_airframe_0",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "airframe",
+      "year": 1936,
+      "nameKo": "기본 중형 항공기 프레임",
+      "nameEn": "Basic Medium Airframe",
+      "stats": {
+        "air_attack": 2,
+        "air_defence": 12,
+        "agility": 20,
+        "maximum_speed": 430,
+        "range": 1200,
+        "soft_attack": 2,
+        "naval_attack": 0,
+        "strategic_attack": 6,
+        "reliability": 0.8,
+        "build_cost_ic": 28
+      },
+      "resources": { "aluminium": 3, "rubber": 1 }
+    }
+  ]
+}

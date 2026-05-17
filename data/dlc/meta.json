@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-05-17T00:30:00+09:00",
+  "source": "hoi4-wiki-seed",
+  "designerMode": "module",
+  "sourceUrls": [
+    "https://hoi4.paradoxwikis.com/Aircraft",
+    "https://hoi4.paradoxwikis.com/Tanks",
+    "https://hoi4.paradoxwikis.com/Ships"
+  ],
+  "warning": "Full DLC 데이터셋은 위키 공개 표와 설계 시스템 설명을 바탕으로 만든 시드 데이터입니다. 실제 게임 파일 파서 결과가 있으면 그 데이터가 더 정확합니다."
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoI4 설계 도감</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="hero">
+            <div>
+                <p class="eyebrow">Hearts of Iron IV Catalog & Designer</p>
+                <h1>HoI4 전차 · 항공기 · 함선 설계 도감</h1>
+                <p class="muted">게임 파일 기반 바닐라 데이터, 모듈 설계 계산, 커스텀 설계 비교를 한 화면에서 확인합니다.</p>
+            </div>
+            <div class="dataset-card">
+                <label for="dataset">데이터셋</label>
+                <select id="dataset">
+                    <option value="vanilla">Vanilla 최신 버전</option>
+                    <option value="dlc">Full DLC / Wiki seed</option>
+                </select>
+                <button id="toggle-dataset" class="secondary" type="button">C: 데이터셋 전환</button>
+                <small id="data-status">데이터 로딩 전</small>
+            </div>
+        </header>
+
+        <nav class="tabs" aria-label="장비 분류">
+            <button class="tab active" data-domain="tank">전차 / Tank</button>
+            <button class="tab" data-domain="aircraft">항공기 / Aircraft</button>
+            <button class="tab" data-domain="ship">함선 / Ship</button>
+        </nav>
+
+        <main>
+            <section class="toolbar panel">
+                <div class="control">
+                    <label for="search">검색</label>
+                    <input id="search" type="search" placeholder="이름, 종류, 연도 검색">
+                </div>
+                <div class="control">
+                    <label for="sort-field">정렬 기준</label>
+                    <select id="sort-field"></select>
+                </div>
+                <div class="control">
+                    <label for="sort-dir">정렬 방향</label>
+                    <select id="sort-dir">
+                        <option value="desc">높은 순</option>
+                        <option value="asc">낮은 순</option>
+                    </select>
+                </div>
+                <div class="control">
+                    <label for="year-filter">연도</label>
+                    <select id="year-filter"></select>
+                </div>
+                <div class="control">
+                    <label for="type-filter">차체/분류</label>
+                    <select id="type-filter"></select>
+                </div>
+                <div class="control">
+                    <label for="country">국가</label>
+                    <select id="country"></select>
+                </div>
+                <div class="control">
+                    <label for="designer-bonus">국가별 설계사</label>
+                    <select id="designer-bonus"></select>
+                </div>
+                <div class="control">
+                    <label for="doctrine">교리</label>
+                    <select id="doctrine"></select>
+                </div>
+            </section>
+
+            <section class="layout">
+                <div class="panel catalog-panel">
+                    <div class="section-title">
+                        <div>
+                            <h2 id="catalog-title">도감</h2>
+                            <p class="muted" id="catalog-subtitle">기본 장비와 차체/프레임/선체 목록</p>
+                        </div>
+                        <button id="refresh-data" class="secondary">데이터 새로고침</button>
+                    </div>
+                    <div id="catalog-table" class="table-wrap"></div>
+                </div>
+
+                <aside class="panel designer-panel">
+                    <div class="section-title">
+                        <div>
+                            <h2>설계 계산기</h2>
+                            <p class="muted">모듈, 교리, 국가 보너스를 반영한 최종 스펙</p>
+                        </div>
+                    </div>
+                    <div id="designer"></div>
+                </aside>
+            </section>
+
+            <section class="panel compare-panel">
+                <div class="section-title">
+                    <div>
+                        <h2>커스텀 비교</h2>
+                        <p class="muted">저장한 설계들을 같은 표에서 비교합니다.</p>
+                    </div>
+                    <button id="clear-compare" class="danger">비교 목록 비우기</button>
+                </div>
+                <div id="compare-table" class="table-wrap"></div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>

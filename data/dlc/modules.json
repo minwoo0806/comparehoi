@@ -1,0 +1,29 @@
+{
+  "tank": [
+    { "id": "wiki_tank_medium_cannon", "nameKo": "중형포", "nameEn": "Medium Cannon", "slots": ["main_armament"], "allowedTypes": [], "stats": { "soft_attack": 20, "hard_attack": 22, "piercing": 45, "build_cost_ic": 2 }, "resources": { "tungsten": 1 } },
+    { "id": "wiki_tank_high_velocity_cannon", "nameKo": "고속포", "nameEn": "High Velocity Cannon", "slots": ["main_armament"], "allowedTypes": [], "stats": { "soft_attack": 8, "hard_attack": 34, "piercing": 75, "build_cost_ic": 2.5 }, "resources": { "tungsten": 2 } },
+    { "id": "wiki_tank_close_support_gun", "nameKo": "근접지원포", "nameEn": "Close Support Gun", "slots": ["main_armament"], "allowedTypes": [], "stats": { "soft_attack": 32, "hard_attack": 6, "piercing": 15, "build_cost_ic": 1.5 } },
+    { "id": "wiki_three_man_turret", "nameKo": "3인 포탑", "nameEn": "Three Man Turret", "slots": ["turret"], "allowedTypes": [], "stats": { "breakthrough": 8, "build_cost_ic": 1 } },
+    { "id": "wiki_christie_suspension", "nameKo": "크리스티 현가장치", "nameEn": "Christie Suspension", "slots": ["suspension"], "allowedTypes": [], "stats": { "maximum_speed": 1, "reliability": -0.02 } },
+    { "id": "wiki_welded_armor", "nameKo": "용접 장갑", "nameEn": "Welded Armor", "slots": ["armor_type"], "allowedTypes": [], "stats": { "armor_value": 10, "reliability": -0.02, "build_cost_ic": 1.5 } },
+    { "id": "wiki_gasoline_engine", "nameKo": "가솔린 엔진", "nameEn": "Gasoline Engine", "slots": ["engine_type"], "allowedTypes": [], "stats": { "maximum_speed": 0.5, "reliability": -0.01 } },
+    { "id": "wiki_radio", "nameKo": "무전기", "nameEn": "Radio", "slots": ["special_1", "special_2", "special_3", "special_4"], "allowedTypes": [], "stats": { "breakthrough": 6, "defense": 2, "build_cost_ic": 0.5 } }
+  ],
+  "aircraft": [
+    { "id": "wiki_air_cannon_1", "nameKo": "기관포 I", "nameEn": "Cannon I", "slots": ["fixed_main_weapon_slot", "fixed_auxiliary_weapon_slot_1", "fixed_auxiliary_weapon_slot_2"], "allowedTypes": [], "stats": { "air_attack": 10, "agility": -4, "build_cost_ic": 2 } },
+    { "id": "wiki_air_hmg_4x", "nameKo": "4연장 중기관총", "nameEn": "4x Heavy Machine Guns", "slots": ["fixed_main_weapon_slot", "fixed_auxiliary_weapon_slot_1", "fixed_auxiliary_weapon_slot_2"], "allowedTypes": [], "stats": { "air_attack": 8, "agility": -2, "build_cost_ic": 1.5 } },
+    { "id": "wiki_air_engine_3", "nameKo": "엔진 III", "nameEn": "Engine III", "slots": ["engine_type_slot"], "allowedTypes": [], "stats": { "maximum_speed": 60, "agility": 6, "build_cost_ic": 4 } },
+    { "id": "wiki_drop_tanks", "nameKo": "드롭 탱크", "nameEn": "Drop Tanks", "slots": ["special_type_slot_1", "special_type_slot_2", "special_type_slot_3"], "allowedTypes": [], "stats": { "range": 300, "agility": -2, "build_cost_ic": 1 } },
+    { "id": "wiki_bomb_locks", "nameKo": "폭탄 고정대", "nameEn": "Bomb Locks", "slots": ["special_type_slot_1", "special_type_slot_2", "special_type_slot_3"], "allowedTypes": [], "stats": { "soft_attack": 8, "naval_attack": 2, "agility": -3, "build_cost_ic": 1.5 } },
+    { "id": "wiki_torpedo_mounting", "nameKo": "어뢰 장착대", "nameEn": "Torpedo Mounting", "slots": ["special_type_slot_1", "special_type_slot_2", "special_type_slot_3"], "allowedTypes": [], "stats": { "naval_attack": 12, "agility": -5, "build_cost_ic": 2 } }
+  ],
+  "ship": [
+    { "id": "wiki_ship_light_battery_2", "nameKo": "경함포 II", "nameEn": "Light Battery II", "slots": ["fixed_ship_battery_slot", "mid_1_custom_slot", "mid_2_custom_slot", "rear_1_custom_slot"], "allowedTypes": [], "stats": { "light_attack": 6, "build_cost_ic": 120 } },
+    { "id": "wiki_ship_heavy_battery_2", "nameKo": "중함포 II", "nameEn": "Heavy Battery II", "slots": ["fixed_ship_battery_slot", "mid_1_custom_slot", "mid_2_custom_slot"], "allowedTypes": [], "stats": { "heavy_attack": 18, "build_cost_ic": 450 } },
+    { "id": "wiki_ship_torpedo_2", "nameKo": "어뢰 발사관 II", "nameEn": "Torpedo Launcher II", "slots": ["mid_1_custom_slot", "mid_2_custom_slot", "rear_1_custom_slot"], "allowedTypes": [], "stats": { "torpedo_attack": 12, "build_cost_ic": 90 } },
+    { "id": "wiki_ship_anti_air_2", "nameKo": "대공포 II", "nameEn": "Anti-Air II", "slots": ["fixed_ship_anti_air_slot", "mid_1_custom_slot", "mid_2_custom_slot"], "allowedTypes": [], "stats": { "anti_air_attack": 5, "build_cost_ic": 80 } },
+    { "id": "wiki_ship_engine_2", "nameKo": "엔진 II", "nameEn": "Engine II", "slots": ["fixed_ship_engine_slot"], "allowedTypes": [], "stats": { "maximum_speed": 2, "build_cost_ic": 150 } },
+    { "id": "wiki_ship_radar_1", "nameKo": "레이더 I", "nameEn": "Radar I", "slots": ["fixed_ship_radar_slot"], "allowedTypes": [], "stats": { "surface_detection": 4, "sub_detection": 2, "build_cost_ic": 100 } },
+    { "id": "wiki_ship_fire_control_1", "nameKo": "화기관제 I", "nameEn": "Fire Control I", "slots": ["fixed_ship_fire_control_system_slot"], "allowedTypes": [], "stats": { "light_attack": 2, "heavy_attack": 2, "build_cost_ic": 120 } }
+  ]
+}

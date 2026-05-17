@@ -1,0 +1,102 @@
+{
+  "items": [
+    {
+      "id": "wiki_fighter_1936",
+      "domain": "aircraft",
+      "type": "fighter",
+      "category": "fighter",
+      "year": 1936,
+      "nameKo": "전투기 I",
+      "nameEn": "Fighter I",
+      "image": "https://hoi4.paradoxwikis.com/Special:FilePath/Fighter.png",
+      "sourceUrl": "https://hoi4.paradoxwikis.com/Aircraft#Fighter",
+      "stats": { "air_attack": 18, "air_defence": 10, "agility": 50, "maximum_speed": 500, "range": 700, "fuel_consumption": 0.21, "surface_detection": 13, "sub_detection": 3, "naval_attack": 2, "reliability": 0.8, "build_cost_ic": 24 },
+      "resources": { "aluminium": 3, "rubber": 1 }
+    },
+    {
+      "id": "wiki_fighter_1940",
+      "domain": "aircraft",
+      "type": "fighter",
+      "category": "fighter",
+      "year": 1940,
+      "nameKo": "전투기 II",
+      "nameEn": "Fighter II",
+      "image": "https://hoi4.paradoxwikis.com/Special:FilePath/Fighter.png",
+      "sourceUrl": "https://hoi4.paradoxwikis.com/Aircraft#Fighter",
+      "stats": { "air_attack": 27, "air_defence": 12, "agility": 65, "maximum_speed": 650, "range": 1000, "fuel_consumption": 0.21, "surface_detection": 16, "sub_detection": 4, "naval_attack": 4, "reliability": 0.8, "build_cost_ic": 26 },
+      "resources": { "aluminium": 3, "rubber": 1 }
+    },
+    {
+      "id": "wiki_heavy_fighter_1940",
+      "domain": "aircraft",
+      "type": "heavy_fighter",
+      "category": "heavy_fighter",
+      "year": 1940,
+      "nameKo": "중전투기 II",
+      "nameEn": "Heavy Fighter II",
+      "sourceUrl": "https://hoi4.paradoxwikis.com/Aircraft#Fighter",
+      "stats": { "air_attack": 46, "air_defence": 15, "agility": 30, "maximum_speed": 550, "range": 1700, "fuel_consumption": 0.26, "surface_detection": 18, "sub_detection": 3.5, "naval_attack": 6, "reliability": 0.8, "build_cost_ic": 30 },
+      "resources": { "aluminium": 3, "rubber": 1 }
+    },
+    {
+      "id": "wiki_cas_1940",
+      "domain": "aircraft",
+      "type": "cas",
+      "category": "close_air_support",
+      "year": 1940,
+      "nameKo": "근접항공지원기 II",
+      "nameEn": "CAS II",
+      "sourceUrl": "https://hoi4.paradoxwikis.com/Aircraft#Close_air_support",
+      "stats": { "soft_attack": 13, "air_attack": 10, "air_defence": 16, "agility": 39, "maximum_speed": 450, "range": 1000, "fuel_consumption": 0.26, "surface_detection": 23, "sub_detection": 5.5, "naval_attack": 5, "reliability": 0.8, "build_cost_ic": 24 },
+      "resources": { "aluminium": 3, "rubber": 1 }
+    },
+    {
+      "id": "wiki_naval_bomber_1940",
+      "domain": "aircraft",
+      "type": "naval_bomber",
+      "category": "naval_bomber",
+      "year": 1940,
+      "nameKo": "뇌격기 II",
+      "nameEn": "NAV II",
+      "sourceUrl": "https://hoi4.paradoxwikis.com/Aircraft#Naval_bomber",
+      "stats": { "air_attack": 10, "air_defence": 14, "agility": 35, "maximum_speed": 300, "range": 930, "fuel_consumption": 0.28, "surface_detection": 25, "sub_detection": 15, "naval_attack": 20, "reliability": 0.8, "build_cost_ic": 28 },
+      "resources": { "aluminium": 3, "rubber": 1 }
+    },
+    {
+      "id": "wiki_tac_bomber_1940",
+      "domain": "aircraft",
+      "type": "tactical_bomber",
+      "category": "tactical_bomber",
+      "year": 1940,
+      "nameKo": "전술폭격기 II",
+      "nameEn": "Tac Bomber II",
+      "sourceUrl": "https://hoi4.paradoxwikis.com/Aircraft#Tactical_bomber",
+      "stats": { "soft_attack": 10, "strategic_attack": 14, "air_attack": 13, "air_defence": 21, "agility": 25, "maximum_speed": 440, "range": 2500, "fuel_consumption": 0.36, "surface_detection": 40, "sub_detection": 10, "naval_attack": 12, "reliability": 0.8, "build_cost_ic": 39 },
+      "resources": { "aluminium": 4, "rubber": 1 }
+    },
+    {
+      "id": "wiki_strat_bomber_1940",
+      "domain": "aircraft",
+      "type": "strategic_bomber",
+      "category": "strategic_bomber",
+      "year": 1940,
+      "nameKo": "전략폭격기 II",
+      "nameEn": "Strat Bomber II",
+      "sourceUrl": "https://hoi4.paradoxwikis.com/Aircraft#Strategic_bomber",
+      "stats": { "strategic_attack": 45, "air_attack": 100, "air_defence": 35, "agility": 7, "maximum_speed": 450, "range": 3500, "fuel_consumption": 0.8, "surface_detection": 10, "sub_detection": 2.5, "naval_attack": 1.5, "reliability": 0.8, "build_cost_ic": 62 },
+      "resources": { "aluminium": 4, "rubber": 2 }
+    },
+    {
+      "id": "wiki_scout_plane_1940",
+      "domain": "aircraft",
+      "type": "scout_plane",
+      "category": "scout_plane",
+      "year": 1940,
+      "nameKo": "정찰기 II",
+      "nameEn": "Scout Plane II",
+      "sourceUrl": "https://hoi4.paradoxwikis.com/Aircraft#Scout_plane",
+      "stats": { "air_defence": 15, "agility": 30, "maximum_speed": 550, "range": 1700, "fuel_consumption": 0.26, "surface_detection": 60, "sub_detection": 15, "reliability": 0.8, "build_cost_ic": 20 },
+      "resources": { "aluminium": 3, "rubber": 1 }
+    }
+  ]
+}
