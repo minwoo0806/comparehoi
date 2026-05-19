@@ -1,0 +1,7083 @@
+{
+  "tank": [
+    {
+      "id": "tank_gasoline_engine",
+      "nameKo": "가솔린 엔진",
+      "nameEn": "Gasoline Engine",
+      "slots": [
+        "engine_type"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1,
+        "fuel_consumption": 2,
+        "maximum_speed": 0.5
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_diesel_engine",
+      "nameKo": "디젤 엔진",
+      "nameEn": "Diesel Engine",
+      "slots": [
+        "engine_type"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1,
+        "fuel_consumption": 2,
+        "reliability": 0.25
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_petrol_electric_engine",
+      "nameKo": "가솔린-전기 엔진",
+      "nameEn": "Petrol-Electric Engine",
+      "slots": [
+        "engine_type"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 2,
+        "build_cost_ic": 2,
+        "reliability": -0.5,
+        "breakthrough": 2
+      },
+      "modifiers": [
+        {
+          "stat": "breakthrough",
+          "mode": "multiply",
+          "value": 0.15
+        },
+        {
+          "stat": "defense",
+          "mode": "multiply",
+          "value": 0.15
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_gas_turbine_engine",
+      "nameKo": "가스 터빈",
+      "nameEn": "Gas Turbine",
+      "slots": [
+        "engine_type"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 3,
+        "fuel_consumption": 4,
+        "reliability": -0.1,
+        "maximum_speed": 0.5
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.25
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_riveted_armor",
+      "nameKo": "리벳장갑",
+      "nameEn": "Riveted Armor",
+      "slots": [
+        "armor_type"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "breakthrough": 2
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_welded_armor",
+      "nameKo": "용접장갑",
+      "nameEn": "Welded Armor",
+      "slots": [
+        "armor_type"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "breakthrough": 4
+      },
+      "modifiers": [
+        {
+          "stat": "armor_value",
+          "mode": "multiply",
+          "value": 0.3
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "NOR_tank_rikstanken_armor",
+      "nameKo": "급조 장갑",
+      "nameEn": "Makeshift Armor",
+      "slots": [
+        "armor_type"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "breakthrough": 0
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.3
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_torsion_bar_suspension",
+      "nameKo": "토션 바",
+      "nameEn": "Torsion Bar",
+      "slots": [
+        "suspension"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1,
+        "reliability": 0.15
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_christie_suspension",
+      "nameKo": "크리스티 현가장치",
+      "nameEn": "Christie Suspension",
+      "slots": [
+        "suspension"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_bogie_suspension",
+      "nameKo": "보기 현가장치",
+      "nameEn": "Bogie Suspension",
+      "slots": [
+        "suspension"
+      ],
+      "allowedTypes": [],
+      "stats": {},
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_interleaved_suspension",
+      "nameKo": "교차 삽입식 주행륜",
+      "nameEn": "Interleaved Roadwheels",
+      "slots": [
+        "suspension"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2,
+        "breakthrough": 4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_wheeled_suspension",
+      "nameKo": "차륜형 현가장치",
+      "nameEn": "Wheeled Suspension",
+      "slots": [
+        "suspension"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "reliability": -0.2
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.1
+        },
+        {
+          "stat": "hardness",
+          "mode": "multiply",
+          "value": -0.4
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_half_track_suspension",
+      "nameKo": "하프트랙 현가장치",
+      "nameEn": "Half-track Suspension",
+      "slots": [
+        "suspension"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "reliability": -0.1
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.05
+        },
+        {
+          "stat": "hardness",
+          "mode": "multiply",
+          "value": -0.3
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_light_one_man_tank_turret",
+      "nameKo": "1인용 포탑",
+      "nameEn": "One Man Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "light_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 1,
+        "breakthrough": 7
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_light_two_man_tank_turret",
+      "nameKo": "2인용 포탑",
+      "nameEn": "Two Man Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "light_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 1.25,
+        "breakthrough": 10
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_light_three_man_tank_turret",
+      "nameKo": "3인용 포탑",
+      "nameEn": "Three Man Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "light_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 1.5,
+        "maximum_speed": -0.1,
+        "breakthrough": 14
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_light_fixed_superstructure_turret",
+      "nameKo": "경형 고정 상부구조",
+      "nameEn": "Light Fixed Superstructure",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "light_tank",
+        "medium_tank",
+        "heavy_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 1,
+        "reliability": 0.2
+      },
+      "modifiers": [
+        {
+          "stat": "breakthrough",
+          "mode": "multiply",
+          "value": -0.25
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_medium_one_man_tank_turret",
+      "nameKo": "1인용 포탑",
+      "nameEn": "One Man Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "medium_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 1.25,
+        "breakthrough": 8
+      },
+      "modifiers": [
+        {
+          "stat": "hard_attack",
+          "mode": "multiply",
+          "value": -0.05
+        },
+        {
+          "stat": "soft_attack",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_medium_two_man_tank_turret",
+      "nameKo": "2인용 포탑",
+      "nameEn": "Two Man Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "medium_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 1.75,
+        "breakthrough": 16
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_medium_three_man_tank_turret",
+      "nameKo": "3인용 포탑",
+      "nameEn": "Three Man Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "medium_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 2.25,
+        "maximum_speed": -0.25,
+        "breakthrough": 24
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_medium_fixed_superstructure_turret",
+      "nameKo": "중형 고정 상부구조",
+      "nameEn": "Medium Fixed Superstructure",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "medium_tank",
+        "heavy_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 1.5,
+        "reliability": 0.2
+      },
+      "modifiers": [
+        {
+          "stat": "breakthrough",
+          "mode": "multiply",
+          "value": -0.25
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_heavy_two_man_tank_turret",
+      "nameKo": "2인용 포탑",
+      "nameEn": "Two Man Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "medium_tank",
+        "heavy_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 5,
+        "breakthrough": 18
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_heavy_three_man_tank_turret",
+      "nameKo": "3인용 포탑",
+      "nameEn": "Three Man Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "medium_tank",
+        "heavy_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 5.5,
+        "maximum_speed": -0.25,
+        "breakthrough": 22
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_heavy_fixed_superstructure_turret",
+      "nameKo": "대형 고정 상부구조",
+      "nameEn": "Heavy Fixed Superstructure",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "medium_tank",
+        "heavy_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 5,
+        "reliability": 0.2
+      },
+      "modifiers": [
+        {
+          "stat": "breakthrough",
+          "mode": "multiply",
+          "value": -0.25
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_super_heavy_three_man_tank_turret",
+      "nameKo": "3인용 포탑",
+      "nameEn": "Three Man Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "medium_tank",
+        "heavy_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 10,
+        "reliability": -0.1,
+        "maximum_speed": -0.2,
+        "breakthrough": 24
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_super_heavy_four_man_tank_turret",
+      "nameKo": "4인용 포탑",
+      "nameEn": "Four Man Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "medium_tank",
+        "heavy_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 12,
+        "reliability": -0.25,
+        "maximum_speed": -0.5,
+        "breakthrough": 35
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_modern_tank_turret",
+      "nameKo": "현대식 포탑",
+      "nameEn": "Modern Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "medium_tank",
+        "heavy_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 8,
+        "breakthrough": 24
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_heavy_machine_gun",
+      "nameKo": "중기관총",
+      "nameEn": "Heavy Machine Gun",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "heavy_tank"
+      ],
+      "stats": {
+        "soft_attack": 8,
+        "hard_attack": 2,
+        "piercing": 6,
+        "build_cost_ic": 0.5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "flamethrower",
+      "nameKo": "화염방사기",
+      "nameEn": "Flamethrower",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 5,
+        "build_cost_ic": 0.5,
+        "reliability": -0.05
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "advanced_flamethrower",
+      "nameKo": "발전된 화염방사기",
+      "nameEn": "Advanced Flamethrower",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 12,
+        "breakthrough": 6,
+        "build_cost_ic": 1.2,
+        "reliability": -0.05
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_auto_cannon",
+      "nameKo": "기관포",
+      "nameEn": "Automatic Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 15,
+        "hard_attack": 5,
+        "piercing": 20,
+        "build_cost_ic": 1.5,
+        "maximum_speed": -0.1,
+        "reliability": -0.1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_auto_cannon_2",
+      "nameKo": "개선된 기관포",
+      "nameEn": "Improved Automatic Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 20,
+        "hard_attack": 7,
+        "piercing": 35,
+        "build_cost_ic": 2,
+        "maximum_speed": -0.1,
+        "reliability": -0.1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_small_cannon",
+      "nameKo": "소형포",
+      "nameEn": "Small Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 10,
+        "hard_attack": 6,
+        "piercing": 25,
+        "build_cost_ic": 1.5,
+        "maximum_speed": -0.1,
+        "reliability": -0.1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_small_cannon_2",
+      "nameKo": "개선된 소형 포",
+      "nameEn": "Improved Small Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 15,
+        "hard_attack": 15,
+        "piercing": 50,
+        "build_cost_ic": 3,
+        "maximum_speed": -0.1,
+        "reliability": -0.1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_close_support_gun",
+      "nameKo": "근접지원포",
+      "nameEn": "Close Support Gun",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 22,
+        "hard_attack": 5,
+        "piercing": 10,
+        "build_cost_ic": 4,
+        "maximum_speed": -0.2,
+        "reliability": -0.1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_medium_cannon",
+      "nameKo": "중형포",
+      "nameEn": "Medium Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "medium_tank"
+      ],
+      "stats": {
+        "soft_attack": 20,
+        "hard_attack": 15,
+        "piercing": 60,
+        "build_cost_ic": 3,
+        "maximum_speed": -0.2,
+        "reliability": -0.15,
+        "breakthrough": 2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_medium_cannon_2",
+      "nameKo": "개선된 중형포",
+      "nameEn": "Improved Medium Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "medium_tank"
+      ],
+      "stats": {
+        "soft_attack": 32,
+        "hard_attack": 20,
+        "piercing": 90,
+        "build_cost_ic": 4,
+        "maximum_speed": -0.3,
+        "reliability": -0.15,
+        "breakthrough": 4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_medium_howitzer",
+      "nameKo": "중형 곡사포",
+      "nameEn": "Medium Howitzer",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "medium_tank"
+      ],
+      "stats": {
+        "soft_attack": 35,
+        "hard_attack": 1,
+        "piercing": 20,
+        "build_cost_ic": 4,
+        "maximum_speed": -0.3,
+        "reliability": -0.2,
+        "breakthrough": -2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_medium_howitzer_2",
+      "nameKo": "개선된 중형곡사포",
+      "nameEn": "Improved Medium Howitzer",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "medium_tank"
+      ],
+      "stats": {
+        "soft_attack": 45,
+        "hard_attack": 2,
+        "piercing": 30,
+        "build_cost_ic": 5.5,
+        "maximum_speed": -0.4,
+        "reliability": -0.2,
+        "breakthrough": -2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_rocket_launcher",
+      "nameKo": "로켓 발사기",
+      "nameEn": "Rocket Launcher",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [
+        "medium_tank"
+      ],
+      "stats": {
+        "soft_attack": 25,
+        "hard_attack": 1,
+        "piercing": 2,
+        "build_cost_ic": 4,
+        "maximum_speed": -0.1,
+        "reliability": -0.1,
+        "breakthrough": -4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_rocket_launcher_2",
+      "nameKo": "개선된 로켓 발사기",
+      "nameEn": "Improved Rocket Launcher",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [
+        "medium_tank"
+      ],
+      "stats": {
+        "soft_attack": 35,
+        "hard_attack": 1,
+        "piercing": 2,
+        "build_cost_ic": 5,
+        "maximum_speed": -0.2,
+        "reliability": -0.1,
+        "breakthrough": -4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_high_velocity_cannon",
+      "nameKo": "기초 고속포",
+      "nameEn": "Basic High-Velocity Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 10,
+        "hard_attack": 26,
+        "piercing": 68,
+        "build_cost_ic": 3,
+        "maximum_speed": -0.1,
+        "reliability": -0.05
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_high_velocity_cannon_2",
+      "nameKo": "개선된 고속포",
+      "nameEn": "Improved High-Velocity Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "medium_tank"
+      ],
+      "stats": {
+        "soft_attack": 20,
+        "hard_attack": 35,
+        "piercing": 125,
+        "build_cost_ic": 5,
+        "maximum_speed": -0.3,
+        "reliability": -0.175
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_high_velocity_cannon_3",
+      "nameKo": "발전된 고속포",
+      "nameEn": "Advanced High-Velocity Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "heavy_tank"
+      ],
+      "stats": {
+        "soft_attack": 25,
+        "hard_attack": 45,
+        "piercing": 200,
+        "build_cost_ic": 7,
+        "maximum_speed": -0.4,
+        "reliability": -0.2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_heavy_cannon",
+      "nameKo": "기초 중포",
+      "nameEn": "Basic Heavy Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "heavy_tank"
+      ],
+      "stats": {
+        "soft_attack": 20,
+        "hard_attack": 20,
+        "piercing": 90,
+        "build_cost_ic": 6,
+        "maximum_speed": -0.3,
+        "reliability": -0.25
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_heavy_cannon_2",
+      "nameKo": "개선된 중포",
+      "nameEn": "Improved Heavy Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "heavy_tank"
+      ],
+      "stats": {
+        "soft_attack": 25,
+        "hard_attack": 35,
+        "piercing": 125,
+        "build_cost_ic": 7,
+        "maximum_speed": -0.4,
+        "reliability": -0.25
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_heavy_cannon_3",
+      "nameKo": "발전된 중포",
+      "nameEn": "Advanced Heavy Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "heavy_tank"
+      ],
+      "stats": {
+        "soft_attack": 30,
+        "hard_attack": 40,
+        "piercing": 170,
+        "build_cost_ic": 8,
+        "maximum_speed": -0.5,
+        "reliability": -0.3
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_heavy_howitzer",
+      "nameKo": "중곡사포",
+      "nameEn": "Heavy Howitzer",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "heavy_tank"
+      ],
+      "stats": {
+        "soft_attack": 55,
+        "hard_attack": 2,
+        "piercing": 60,
+        "build_cost_ic": 7,
+        "maximum_speed": -0.5,
+        "reliability": -0.3,
+        "breakthrough": -4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_super_heavy_cannon",
+      "nameKo": "초중포",
+      "nameEn": "Super-Heavy Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [
+        "heavy_tank"
+      ],
+      "stats": {
+        "soft_attack": 35,
+        "hard_attack": 45,
+        "piercing": 225,
+        "build_cost_ic": 12.5,
+        "maximum_speed": -0.6,
+        "reliability": -0.35
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "NOR_rikstanken_turret",
+      "nameKo": "급조 포탑",
+      "nameEn": "Improvised Turret",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [
+        "light_tank"
+      ],
+      "stats": {
+        "build_cost_ic": 0.1,
+        "breakthrough": 1,
+        "reliability": -0.25
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_radio_1",
+      "nameKo": "기초 무전기",
+      "nameEn": "Basic Radio",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 0.5
+      },
+      "modifiers": [
+        {
+          "stat": "defense",
+          "mode": "multiply",
+          "value": 0.2
+        },
+        {
+          "stat": "breakthrough",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_radio_2",
+      "nameKo": "향상된 무전기",
+      "nameEn": "Improved Radio",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1.5
+      },
+      "modifiers": [
+        {
+          "stat": "defense",
+          "mode": "multiply",
+          "value": 0.4
+        },
+        {
+          "stat": "breakthrough",
+          "mode": "multiply",
+          "value": 0.25
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_radio_3",
+      "nameKo": "발전된 무전기",
+      "nameEn": "Advanced Radio",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2.5
+      },
+      "modifiers": [
+        {
+          "stat": "defense",
+          "mode": "multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "breakthrough",
+          "mode": "multiply",
+          "value": 0.4
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "amphibious_drive",
+      "nameKo": "수륙양용 장치",
+      "nameEn": "Amphibious Drive",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2,
+        "reliability": -0.15
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "secondary_turret_hmg",
+      "nameKo": "중기관총",
+      "nameEn": "Heavy Machine Gun",
+      "slots": [
+        "turret"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1.5,
+        "soft_attack": 4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "secondary_turret_small_cannon",
+      "nameKo": "소형포",
+      "nameEn": "Small Cannon",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 5,
+        "hard_attack": 3,
+        "build_cost_ic": 3,
+        "reliability": -0.1,
+        "breakthrough": 2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "sloped_armor",
+      "nameKo": "경사장갑",
+      "nameEn": "Sloped Armor",
+      "slots": [
+        "armor_type"
+      ],
+      "allowedTypes": [],
+      "stats": {},
+      "modifiers": [
+        {
+          "stat": "armor_value",
+          "mode": "multiply",
+          "value": 0.25
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "stabilizer",
+      "nameKo": "주포안정기",
+      "nameEn": "Stabilizer",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2,
+        "breakthrough": 5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "smoke_launchers",
+      "nameKo": "연막 발사기",
+      "nameEn": "Smoke Launchers",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 0.5,
+        "breakthrough": 1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "extra_ammo_storage",
+      "nameKo": "추가 탄약고",
+      "nameEn": "Extra Ammunition Storage",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "reliability": -0.1,
+        "breakthrough": 2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "wet_ammo_storage",
+      "nameKo": "습식 탄약고",
+      "nameEn": "Wet Ammunition Storage",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "reliability": 0.15,
+        "build_cost_ic": 1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "squeezebore_adaptor",
+      "nameKo": "원추형 어댑터",
+      "nameEn": "Squeeze-bore Adaptor",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {},
+      "modifiers": [
+        {
+          "stat": "piercing",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "armor_skirts",
+      "nameKo": "장갑 스커트",
+      "nameEn": "Armor Skirts",
+      "slots": [
+        "armor_type"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 3,
+        "breakthrough": 3,
+        "build_cost_ic": 0.5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "dozer_blade",
+      "nameKo": "도저 블레이드",
+      "nameEn": "Dozer Blade",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "auto_loader",
+      "nameKo": "자동 장전기",
+      "nameEn": "Auto Loader",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1.5,
+        "breakthrough": 4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "easy_maintenance",
+      "nameKo": "쉬운 정비",
+      "nameEn": "Easy Maintenance",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "reliability": 0.1
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.075
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "additional_machine_guns",
+      "nameKo": "기관총 추가 탑재",
+      "nameEn": "Additional Machineguns",
+      "slots": [
+        "main_armament"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 1,
+        "build_cost_ic": 0.5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "expanded_fuel_tank",
+      "nameKo": "연료 드럼",
+      "nameEn": "Fuel Drum",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1,
+        "maximum_speed": -0.25
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "lc_internal_fuel_tanks",
+      "nameKo": "내부 연료 탱크",
+      "nameEn": "Internal Fuel Tanks",
+      "slots": [
+        "special_1",
+        "special_2",
+        "special_3",
+        "special_4"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2,
+        "maximum_speed": -0.15
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    }
+  ],
+  "aircraft": [
+    {
+      "id": "engine_1_1x",
+      "nameKo": "1x 엔진 I",
+      "nameEn": "1x Engine I",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 12,
+        "fuel_consumption": 0.16
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_1_2x",
+      "nameKo": "2x 엔진 I",
+      "nameEn": "2x Engine I",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 24,
+        "fuel_consumption": 0.32
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_1_3x",
+      "nameKo": "3x 엔진 I",
+      "nameEn": "3x Engine I",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 36,
+        "fuel_consumption": 0.48
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_1_4x",
+      "nameKo": "4x 엔진 I",
+      "nameEn": "4x Engine I",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 48,
+        "fuel_consumption": 0.64
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_1_6x",
+      "nameKo": "6x 엔진 I",
+      "nameEn": "6x Engine I",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 68,
+        "fuel_consumption": 0.8
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_2_1x",
+      "nameKo": "1x 엔진 II",
+      "nameEn": "1x Engine II",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 14,
+        "fuel_consumption": 0.16
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_2_2x",
+      "nameKo": "2x 엔진 II",
+      "nameEn": "2x Engine II",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 28,
+        "fuel_consumption": 0.32
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_2_3x",
+      "nameKo": "3x 엔진 II",
+      "nameEn": "3x Engine II",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 42,
+        "fuel_consumption": 0.48
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_2_4x",
+      "nameKo": "4x 엔진 II",
+      "nameEn": "4x Engine II",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 56,
+        "fuel_consumption": 0.64
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_2_6x",
+      "nameKo": "6x 엔진 II",
+      "nameEn": "6x Engine II",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 80,
+        "fuel_consumption": 0.8
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_3_1x",
+      "nameKo": "1x 엔진 III",
+      "nameEn": "1x Engine III",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 16,
+        "fuel_consumption": 0.16
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.3
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_3_2x",
+      "nameKo": "2x 엔진 III",
+      "nameEn": "2x Engine III",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 32,
+        "fuel_consumption": 0.32
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.3
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_3_3x",
+      "nameKo": "3x 엔진 III",
+      "nameEn": "3x Engine III",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 48,
+        "fuel_consumption": 0.48
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.3
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_3_4x",
+      "nameKo": "4x 엔진 III",
+      "nameEn": "4x Engine III",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 64,
+        "fuel_consumption": 0.64
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.3
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_3_6x",
+      "nameKo": "6x 엔진 III",
+      "nameEn": "6x Engine III",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 92,
+        "fuel_consumption": 0.8
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.3
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_4_1x",
+      "nameKo": "1x 엔진 IV",
+      "nameEn": "1x Engine IV",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 18,
+        "fuel_consumption": 0.16
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.45
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_4_2x",
+      "nameKo": "2x 엔진 IV",
+      "nameEn": "2x Engine IV",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 36,
+        "fuel_consumption": 0.32
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.45
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_4_3x",
+      "nameKo": "3x 엔진 IV",
+      "nameEn": "3x Engine IV",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 54,
+        "fuel_consumption": 0.48
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.45
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_4_4x",
+      "nameKo": "4x 엔진 IV",
+      "nameEn": "4x Engine IV",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 72,
+        "fuel_consumption": 0.64
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.45
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "engine_4_6x",
+      "nameKo": "6x 엔진 IV",
+      "nameEn": "6x Engine IV",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 108,
+        "fuel_consumption": 0.8
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.45
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "jet_engine_1x",
+      "nameKo": "1x 제트 엔진",
+      "nameEn": "1x Jet Engine",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 14,
+        "fuel_consumption": 0.3
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.35
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "jet_engine_2x",
+      "nameKo": "2x 제트 엔진",
+      "nameEn": "2x Jet Engine",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 28,
+        "fuel_consumption": 0.6
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.35
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "jet_engine_3x",
+      "nameKo": "3x 제트 엔진",
+      "nameEn": "3x Jet Engine",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 42,
+        "fuel_consumption": 0.9
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.35
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "jet_engine_4x",
+      "nameKo": "4x 제트 엔진",
+      "nameEn": "4x Jet Engine",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 56,
+        "fuel_consumption": 1.2
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.35
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "jet_engine_6x",
+      "nameKo": "6x 제트 엔진",
+      "nameEn": "6x Jet Engine",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 100,
+        "fuel_consumption": 1.8
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.35
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "jet_engine_axial_1x",
+      "nameKo": "1x 축류식 제트 엔진",
+      "nameEn": "1x Axial Jet Engine",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 20,
+        "fuel_consumption": 0.4
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.3
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.7
+        },
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "jet_engine_axial_2x",
+      "nameKo": "2x 축류식 제트 엔진",
+      "nameEn": "2x Axial Jet Engine",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 40,
+        "fuel_consumption": 0.8
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.3
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.7
+        },
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "jet_engine_axial_3x",
+      "nameKo": "3x 축류식 제트 엔진",
+      "nameEn": "3x Axial Jet Engine",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 60,
+        "fuel_consumption": 1.2
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.3
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.7
+        },
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "jet_engine_axial_4x",
+      "nameKo": "4x 축류식 제트 엔진",
+      "nameEn": "4x Axial Jet Engine",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 80,
+        "fuel_consumption": 1.6
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.3
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.7
+        },
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "jet_engine_axial_6x",
+      "nameKo": "6x 축류식 제트 엔진",
+      "nameEn": "6x Axial Jet Engine",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 120,
+        "fuel_consumption": 2.4
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.3
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.7
+        },
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "rocket_engine_1",
+      "nameKo": "로켓 엔진 I",
+      "nameEn": "Rocket Engine I",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 12
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.7
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.55
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "rocket_engine_2",
+      "nameKo": "로켓 엔진 II",
+      "nameEn": "Rocket Engine II",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 13
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.65
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.6
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "rocket_engine_3",
+      "nameKo": "로켓 엔진 III",
+      "nameEn": "Rocket Engine III",
+      "slots": [
+        "engine_type_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 14
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.6
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.65
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "light_mg_2x",
+      "nameKo": "2x 경기관총",
+      "nameEn": "2x Light Machine Gun",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_attack": 5,
+        "build_cost_ic": 1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "light_mg_4x",
+      "nameKo": "4x 경기관총",
+      "nameEn": "4x Light Machine Gun",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_attack": 10,
+        "build_cost_ic": 2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "heavy_mg_2x",
+      "nameKo": "2x 중기관총",
+      "nameEn": "2x Heavy Machine Gun",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_attack": 9,
+        "build_cost_ic": 1.5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "heavy_mg_4x",
+      "nameKo": "4x 중기관총",
+      "nameEn": "4x Heavy Machine Gun",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_attack": 18,
+        "build_cost_ic": 3
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "aircraft_cannon_1_1x",
+      "nameKo": "1x 포 I",
+      "nameEn": "1x Cannon I",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_attack": 10,
+        "build_cost_ic": 2.5,
+        "agility": -1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "aircraft_cannon_1_2x",
+      "nameKo": "2x 포 I",
+      "nameEn": "2x Cannon I",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_attack": 20,
+        "build_cost_ic": 5,
+        "agility": -2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "aircraft_cannon_2_1x",
+      "nameKo": "1x 포 II",
+      "nameEn": "1x Cannon II",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_attack": 12,
+        "build_cost_ic": 3,
+        "agility": -0.5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "aircraft_cannon_2_2x",
+      "nameKo": "2x 포 II",
+      "nameEn": "2x Cannon II",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_attack": 24,
+        "build_cost_ic": 6,
+        "agility": -1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "large_aircraft_cannon_1x",
+      "nameKo": "1x 대구경 포",
+      "nameEn": "1x Large Cannon",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "air_attack": 12,
+        "build_cost_ic": 3,
+        "agility": -2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "large_aircraft_cannon_2x",
+      "nameKo": "2x 대구경 포",
+      "nameEn": "2x Large Cannon",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "air_attack": 24,
+        "build_cost_ic": 6,
+        "agility": -4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "bomb_locks",
+      "nameKo": "폭탄 장착",
+      "nameEn": "Bomb Locks",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "heavy_bomb_locks",
+      "nameKo": "대형 폭탄 장착",
+      "nameEn": "Heavy Bomb Locks",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "armor_piercing_bomb_locks",
+      "nameKo": "철갑폭탄 장착",
+      "nameEn": "Armor Piercing Bomb Locks",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "rocket_rails",
+      "nameKo": "로켓 레일",
+      "nameEn": "Rocket Rails",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "small_bomb_bay",
+      "nameKo": "소형 폭탄 적재실",
+      "nameEn": "Small Bomb Bay",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 3
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "tank_buster_1",
+      "nameKo": "대전차포 I",
+      "nameEn": "Anti-Tank Cannon I",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 8,
+        "build_cost_ic": 5,
+        "agility": -15
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "tank_buster_2",
+      "nameKo": "대전차포 II",
+      "nameEn": "Anti-Tank Cannon II",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 15,
+        "build_cost_ic": 8,
+        "agility": -20
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "torpedo_mounting",
+      "nameKo": "경어뢰 장착",
+      "nameEn": "Light Torpedo Mountings",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "torpedo_mounting_2",
+      "nameKo": "중형어뢰 장착",
+      "nameEn": "Medium Torpedo Mountings",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "torpedo_mounting_3",
+      "nameKo": "중어뢰 장착",
+      "nameEn": "Heavy Torpedo Mountings",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "airdropped_mines",
+      "nameKo": "공중투하 기뢰",
+      "nameEn": "Airdropped Mines",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "guided_anti_ship_missile",
+      "nameKo": "대함 유도 미사일",
+      "nameEn": "Guided Anti-Ship Missile",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 15
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "fixed_explosive_charge",
+      "nameKo": "고정 폭발물",
+      "nameEn": "Fixed Explosive Charge",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 4,
+        "agility": -10,
+        "air_defence": -5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "armor_plate_small",
+      "nameKo": "장갑판",
+      "nameEn": "Armor Plates",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_defence": 4,
+        "build_cost_ic": 1
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "fuel_tanks_small",
+      "nameKo": "추가 연료 탱크",
+      "nameEn": "Extra Fuel Tanks",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_defence": -2,
+        "build_cost_ic": 1
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": 0.5
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "self_sealing_fuel_tanks_small",
+      "nameKo": "자동 방루 연료 탱크",
+      "nameEn": "Self-Sealing Fuel Tanks",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_defence": 6,
+        "build_cost_ic": 1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "non_strategic_materials_small",
+      "nameKo": "비전략 원료 사용",
+      "nameEn": "Non-Strategic Materials Usage",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_defence": -6,
+        "build_cost_ic": 0
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.075
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "drop_tanks",
+      "nameKo": "외부 연료 탱크",
+      "nameEn": "Drop Tanks",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": 0.25
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "dive_brakes_small",
+      "nameKo": "다이브 브레이크",
+      "nameEn": "Dive Brakes",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "floats",
+      "nameKo": "플로트",
+      "nameEn": "Floats",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1,
+        "agility": -5,
+        "surface_detection": 5,
+        "sub_detection": 3
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.3
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "armor_plate_medium",
+      "nameKo": "$armor_plate_small$",
+      "nameEn": "$armor_plate_small$",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "air_defence": 6,
+        "build_cost_ic": 3
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "fuel_tanks_medium",
+      "nameKo": "$fuel_tanks_small$",
+      "nameEn": "$fuel_tanks_small$",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "air_defence": -6,
+        "build_cost_ic": 2
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": 0.5
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "self_sealing_fuel_tanks_medium",
+      "nameKo": "$self_sealing_fuel_tanks_small$",
+      "nameEn": "$self_sealing_fuel_tanks_small$",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "air_defence": 8,
+        "build_cost_ic": 1.5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "non_strategic_materials_medium",
+      "nameKo": "$non_strategic_materials_small$",
+      "nameEn": "$non_strategic_materials_small$",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "air_defence": -8,
+        "build_cost_ic": 0
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.075
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "flying_boat_medium",
+      "nameKo": "비행정",
+      "nameEn": "Flying Boat",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 4,
+        "surface_detection": 8,
+        "sub_detection": 3
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.4
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "armor_plate_large",
+      "nameKo": "$armor_plate_small$",
+      "nameEn": "$armor_plate_small$",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "air_defence": 8,
+        "build_cost_ic": 5
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": -0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "fuel_tanks_large",
+      "nameKo": "$fuel_tanks_small$",
+      "nameEn": "$fuel_tanks_small$",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "air_defence": -8,
+        "build_cost_ic": 4
+      },
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": 0.5
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "self_sealing_fuel_tanks_large",
+      "nameKo": "$self_sealing_fuel_tanks_small$",
+      "nameEn": "$self_sealing_fuel_tanks_small$",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "air_defence": 10,
+        "build_cost_ic": 2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "non_strategic_materials_large",
+      "nameKo": "$non_strategic_materials_small$",
+      "nameEn": "$non_strategic_materials_small$",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "air_defence": -10,
+        "build_cost_ic": 0
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.075
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "flying_boat_large",
+      "nameKo": "$flying_boat_medium$",
+      "nameEn": "$flying_boat_medium$",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [
+        "large_airframe"
+      ],
+      "stats": {
+        "build_cost_ic": 4,
+        "surface_detection": 12,
+        "sub_detection": 5
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.4
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "bomb_sights_1",
+      "nameKo": "폭격 조준기 I",
+      "nameEn": "Bomb Sights I",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "strategic_attack": 4,
+        "build_cost_ic": 1.5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "bomb_sights_2",
+      "nameKo": "폭격 조준기 II",
+      "nameEn": "Bomb Sights II",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "strategic_attack": 6,
+        "build_cost_ic": 2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "radio_navigation_1",
+      "nameKo": "라디오 내비게이션 I",
+      "nameEn": "Radio Navigation I",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "strategic_attack": 4,
+        "build_cost_ic": 1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "radio_navigation_2",
+      "nameKo": "라디오 내비게이션 II",
+      "nameEn": "Radio Navigation II",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "strategic_attack": 6,
+        "build_cost_ic": 1.5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "air_ground_radar_1",
+      "nameKo": "공대지 레이더 I",
+      "nameEn": "Air-Ground Radar I",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "air_ground_radar_2",
+      "nameKo": "공대지 레이더 II",
+      "nameEn": "Air-Ground Radar II",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 3.5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "air_air_radar_1",
+      "nameKo": "공대공 레이더 I",
+      "nameEn": "Air-Air Radar I",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "air_air_radar_2",
+      "nameKo": "공대공 레이더 II",
+      "nameEn": "Air-Air Radar II",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 6
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "lmg_defense_turret",
+      "nameKo": "경기관총 방어 포탑",
+      "nameEn": "Light MG Defense Turret",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1,
+        "air_attack": 1,
+        "air_defence": 1
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "lmg_defense_turret_2x",
+      "nameKo": "경기관총 방어 포탑 2x",
+      "nameEn": "Light MG Defense Turret 2x",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2,
+        "air_attack": 1.5,
+        "air_defence": 2
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.06
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "hmg_defense_turret",
+      "nameKo": "중기관총 방어 포탑",
+      "nameEn": "Heavy MG Defense Turret",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2,
+        "air_attack": 1.5,
+        "air_defence": 2
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.035
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "hmg_defense_turret_2x",
+      "nameKo": "중기관총 방어 포탑 2x",
+      "nameEn": "Heavy MG Defense Turret 2x",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 4,
+        "air_attack": 3,
+        "air_defence": 4
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.07
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "cannon_defense_turret",
+      "nameKo": "기관포 방어 포탑",
+      "nameEn": "Cannon Defense Turret",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 4,
+        "air_attack": 3,
+        "air_defence": 4
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.037
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "cannon_defense_turret_2x",
+      "nameKo": "기관포 방어 포탑 2x",
+      "nameEn": "Cannon Defense Turret 2x",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 8,
+        "air_attack": 6,
+        "air_defence": 8
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.075
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_plane_modules.txt"
+    },
+    {
+      "id": "ship_anti_air_1",
+      "nameKo": ".50구경 기관총",
+      "nameEn": ".50 cal. MG",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "anti_air_attack": 2.5,
+        "build_cost_ic": 80
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.005
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_anti_air_2",
+      "nameKo": "20mm 대공포",
+      "nameEn": "20mm AA",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "anti_air_attack": 3.5,
+        "build_cost_ic": 110
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.005
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_anti_air_3",
+      "nameKo": "37mm 대공포",
+      "nameEn": "37mm AA",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "anti_air_attack": 4.5,
+        "build_cost_ic": 140
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.005
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_anti_air_4",
+      "nameKo": "40mm 4연장 대공포",
+      "nameEn": "40mm Quad AA",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "anti_air_attack": 5.5,
+        "build_cost_ic": 170
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.005
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_airplane_launcher_1",
+      "nameKo": "수상기 캐터펄트",
+      "nameEn": "Floatplane Catapult",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "surface_detection": 7,
+        "sub_detection": 2.5,
+        "build_cost_ic": 150
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.01
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_airplane_launcher_2",
+      "nameKo": "개선된 수상기 캐터펄트",
+      "nameEn": "Improved Floatplane Catapult",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "surface_detection": 10,
+        "sub_detection": 3.5,
+        "build_cost_ic": 170
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.01
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_seaplane_tender_1",
+      "nameKo": "수상기모함",
+      "nameEn": "Seaplane Tender",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "surface_detection": 2,
+        "sub_detection": 5,
+        "build_cost_ic": 60
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_seaplane_tender_2",
+      "nameKo": "개선된 수상기모함",
+      "nameEn": "Improved Seaplane Tender",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "surface_detection": 3,
+        "sub_detection": 7,
+        "build_cost_ic": 75
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "tank_cast_armor",
+      "nameKo": "주조장갑",
+      "nameEn": "Cast Armor",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "breakthrough": 3
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.2
+        },
+        {
+          "stat": "armor_value",
+          "mode": "multiply",
+          "value": 0.3
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_anti_air_cannon",
+      "nameKo": "기초 대공포",
+      "nameEn": "Basic Anti-Air Gun",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 6,
+        "hard_attack": 2,
+        "piercing": 10,
+        "air_attack": 18,
+        "build_cost_ic": 2,
+        "reliability": -0.1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_anti_air_cannon_2",
+      "nameKo": "개선된 대공포",
+      "nameEn": "Improved Anti-Air Gun",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 8,
+        "hard_attack": 5,
+        "piercing": 18,
+        "air_attack": 32,
+        "build_cost_ic": 3,
+        "reliability": -0.1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "tank_anti_air_cannon_3",
+      "nameKo": "발전된 대공포",
+      "nameEn": "Advanced Anti-Air Gun",
+      "slots": [
+        "fixed_main_weapon_slot",
+        "fixed_auxiliary_weapon_slot_1",
+        "fixed_auxiliary_weapon_slot_2",
+        "fixed_auxiliary_weapon_slot_3",
+        "fixed_auxiliary_weapon_slot_4",
+        "fixed_auxiliary_weapon_slot_5"
+      ],
+      "allowedTypes": [
+        "medium_airframe"
+      ],
+      "stats": {
+        "soft_attack": 10,
+        "hard_attack": 5,
+        "piercing": 24,
+        "air_attack": 46,
+        "build_cost_ic": 4,
+        "reliability": -0.1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "lc_heavy_anti_air_platform",
+      "nameKo": "중대공 플랫폼",
+      "nameEn": "Heavy Anti-Air Platform",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "breakthrough": 20,
+        "soft_attack": 20,
+        "hard_attack": 10,
+        "piercing": 50,
+        "air_attack": 80,
+        "build_cost_ic": 10,
+        "reliability": -0.05
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "lc_heavy_anti_air_battery",
+      "nameKo": "중대공포대",
+      "nameEn": "Heavy Anti-Air Battery",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "breakthrough": 10,
+        "soft_attack": 14,
+        "hard_attack": 7,
+        "piercing": 40,
+        "air_attack": 60,
+        "build_cost_ic": 7
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "lc_light_anti_air_battery",
+      "nameKo": "경대공포대",
+      "nameEn": "Light Anti-Air Battery",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "soft_attack": 10,
+        "hard_attack": 5,
+        "piercing": 30,
+        "air_attack": 46,
+        "build_cost_ic": 4
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "lc_aircraft_catapult",
+      "nameKo": "항공기 캐터펄트",
+      "nameEn": "Aircraft Catapult",
+      "slots": [
+        "special_type_slot_1",
+        "special_type_slot_2",
+        "special_type_slot_3",
+        "special_type_slot_4",
+        "special_type_slot_5"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "air_attack": 2,
+        "build_cost_ic": 6,
+        "fuel_consumption": 2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    }
+  ],
+  "ship": [
+    {
+      "id": "ship_light_battery_1",
+      "nameKo": "85mm 속사포",
+      "nameEn": "85 mm RF. Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 1,
+        "build_cost_ic": 90
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.01
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_light_battery_2",
+      "nameKo": "105mm 속사포",
+      "nameEn": "105 mm RF. Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 1.5,
+        "build_cost_ic": 120
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.02
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_light_battery_3",
+      "nameKo": "127mm 속사포",
+      "nameEn": "127 mm RF. Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 2,
+        "build_cost_ic": 150
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_light_battery_4",
+      "nameKo": "130mm 속사포",
+      "nameEn": "130 mm RF. Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 3,
+        "build_cost_ic": 175
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.04
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "dp_light_battery_1",
+      "nameKo": "100mm 양용포",
+      "nameEn": "100mm Dual-Purpose Battery",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 1,
+        "anti_air_attack": 1,
+        "build_cost_ic": 100
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.01
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "dp_light_battery_2",
+      "nameKo": "113mm 양용포",
+      "nameEn": "113mm Dual-Purpose Battery",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 1.5,
+        "anti_air_attack": 2,
+        "build_cost_ic": 130
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.02
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "dp_light_battery_3",
+      "nameKo": "127mm 양용포",
+      "nameEn": "127mm Dual-Purpose Battery",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 2,
+        "anti_air_attack": 3,
+        "build_cost_ic": 160
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "dp_light_battery_4",
+      "nameKo": "127mm 속사양용포",
+      "nameEn": "127mm RF. Dual-Purpose Battery",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 2.5,
+        "anti_air_attack": 4,
+        "build_cost_ic": 185
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.04
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_heavy_battery_1",
+      "nameKo": "28cm 함포",
+      "nameEn": "28 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "heavy_attack": 14,
+        "build_cost_ic": 1550
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_heavy_battery_2",
+      "nameKo": "30.5cm 함포",
+      "nameEn": "30.5 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "heavy_attack": 18,
+        "build_cost_ic": 1650
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.06
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_heavy_battery_3",
+      "nameKo": "38cm 함포",
+      "nameEn": "38 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "heavy_attack": 22,
+        "build_cost_ic": 1750
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.07
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_heavy_battery_4",
+      "nameKo": "40.6cm 함포",
+      "nameEn": "40.6 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "heavy_attack": 26,
+        "build_cost_ic": 1850
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.08
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_super_heavy_battery_1",
+      "nameKo": "46cm 함포",
+      "nameEn": "46 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "heavy_attack": 27,
+        "build_cost_ic": 2000
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.08
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_medium_battery_1",
+      "nameKo": "17cm 함포",
+      "nameEn": "17 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "heavy_attack": 6,
+        "build_cost_ic": 650
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.04
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.4
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_medium_battery_2",
+      "nameKo": "19cm 함포",
+      "nameEn": "19 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "heavy_attack": 8,
+        "build_cost_ic": 700
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.06
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.4
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_medium_battery_3",
+      "nameKo": "20.3cm 함포",
+      "nameEn": "20.3 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "heavy_attack": 10,
+        "build_cost_ic": 725
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.07
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.4
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_medium_battery_4",
+      "nameKo": "20.3cm 자동 장전식 함포",
+      "nameEn": "20.3 cm Auto-Loading Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "heavy_attack": 12,
+        "build_cost_ic": 800
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.08
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.4
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_light_medium_battery_1",
+      "nameKo": "14.5cm 함포",
+      "nameEn": "14.5 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 4,
+        "build_cost_ic": 300
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_light_medium_battery_2",
+      "nameKo": "15cm 함포",
+      "nameEn": "15 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 5,
+        "build_cost_ic": 350
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.04
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_light_medium_battery_3",
+      "nameKo": "15.5cm 함포",
+      "nameEn": "15.5 cm Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 6,
+        "build_cost_ic": 375
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_light_medium_battery_4",
+      "nameKo": "15.5cm 자동 장전식 함포",
+      "nameEn": "15.5 cm Auto-Loading Cannon",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 7.5,
+        "build_cost_ic": 425
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.06
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "dp_ship_medium_1",
+      "nameKo": "152mm 속사양용포",
+      "nameEn": "152mm RF. Dual-Purpose Battery",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 7.5,
+        "anti_air_attack": 4.5,
+        "build_cost_ic": 450
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.06
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_secondaries_1",
+      "nameKo": "75mm 속사포",
+      "nameEn": "75mm RF. Cannon",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 3,
+        "build_cost_ic": 180
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.02
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_secondaries_2",
+      "nameKo": "120mm 속사포",
+      "nameEn": "120mm RF. Cannon",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 4,
+        "build_cost_ic": 240
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "dp_ship_secondaries_1",
+      "nameKo": "100mm 공지양용 부포",
+      "nameEn": "100mm Dual-Purpose Secondary Battery",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 2,
+        "anti_air_attack": 1,
+        "build_cost_ic": 180
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.01
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "dp_ship_secondaries_2",
+      "nameKo": "113mm 공지양용 부포",
+      "nameEn": "113mm Dual-Purpose Secondary Battery",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 3,
+        "anti_air_attack": 2,
+        "build_cost_ic": 240
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.01
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "dp_ship_secondaries_3",
+      "nameKo": "127mm 공지양용 부포",
+      "nameEn": "127mm Dual-Purpose Secondary Battery",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 4,
+        "anti_air_attack": 2.5,
+        "build_cost_ic": 300
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "dp_ship_secondaries_4",
+      "nameKo": "127mm 속사 공지양용 부포",
+      "nameEn": "127mm RF. Dual-Purpose Secondary Battery",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "light_attack": 4.5,
+        "anti_air_attack": 3,
+        "build_cost_ic": 360
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_fire_control_system_0",
+      "nameKo": "중앙 거리측정기",
+      "nameEn": "Central Rangefinding",
+      "slots": [
+        "fixed_ship_fire_control_system_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 60
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_fire_control_system_1",
+      "nameKo": "지휘 사격",
+      "nameEn": "Director Fire",
+      "slots": [
+        "fixed_ship_fire_control_system_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 135
+      },
+      "modifiers": [
+        {
+          "stat": "anti_air_attack",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_fire_control_system_2",
+      "nameKo": "기계식 탄도 계산기",
+      "nameEn": "Mechanical Rangekeeper",
+      "slots": [
+        "fixed_ship_fire_control_system_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 165
+      },
+      "modifiers": [
+        {
+          "stat": "anti_air_attack",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_fire_control_system_3",
+      "nameKo": "탄도 계산기",
+      "nameEn": "Ballistic Computer",
+      "slots": [
+        "fixed_ship_fire_control_system_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 225
+      },
+      "modifiers": [
+        {
+          "stat": "anti_air_attack",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_radar_1",
+      "nameKo": "데시미터파 해군 수색 레이더",
+      "nameEn": "Decimetric Naval Search Radar",
+      "slots": [
+        "fixed_ship_radar_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 100,
+        "surface_detection": 5
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_radar_2",
+      "nameKo": "개선된 데시미터파 해군 수색 레이더",
+      "nameEn": "Improved Decimetric Naval Search Radar",
+      "slots": [
+        "fixed_ship_radar_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 130,
+        "surface_detection": 7,
+        "sub_detection": 2
+      },
+      "modifiers": [
+        {
+          "stat": "anti_air_attack",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_radar_3",
+      "nameKo": "센티미터파 포격 레이더",
+      "nameEn": "Centrimetric Gunnery Radar",
+      "slots": [
+        "fixed_ship_radar_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "surface_detection": 12,
+        "sub_detection": 6,
+        "build_cost_ic": 160
+      },
+      "modifiers": [
+        {
+          "stat": "anti_air_attack",
+          "mode": "multiply",
+          "value": 0.075
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_radar_4",
+      "nameKo": "통합형 사격 통제 레이더",
+      "nameEn": "Integrated Fire Control Radar",
+      "slots": [
+        "fixed_ship_radar_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 190,
+        "surface_detection": 18,
+        "sub_detection": 14
+      },
+      "modifiers": [
+        {
+          "stat": "anti_air_attack",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "light_ship_engine_1",
+      "nameKo": "35,000축마력 엔진",
+      "nameEn": "35,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 7
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.1
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.125
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "light_ship_engine_2",
+      "nameKo": "40,000축마력 엔진",
+      "nameEn": "40,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 8
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.15
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "light_ship_engine_3",
+      "nameKo": "45,000축마력 엔진",
+      "nameEn": "45,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 10
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.2
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.175
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "light_ship_engine_4",
+      "nameKo": "50,000축마력 엔진",
+      "nameEn": "50,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 10
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.25
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "sub_ship_engine_1",
+      "nameKo": "1,000축마력 엔진",
+      "nameEn": "1,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 7
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.05
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "sub_ship_engine_2",
+      "nameKo": "2,000축마력 엔진",
+      "nameEn": "2,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 8
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.1
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.125
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "sub_ship_engine_3",
+      "nameKo": "3,000축마력 엔진",
+      "nameEn": "3,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 10
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.15
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.15
+        },
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "sub_ship_engine_4",
+      "nameKo": "4,000축마력 엔진",
+      "nameEn": "4,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 10
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.2
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.2
+        },
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_engine_sub_aip_1",
+      "nameKo": "공기 불요 추진",
+      "nameEn": "Air-Independent Propulsion",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 60
+      },
+      "modifiers": [
+        {
+          "stat": "naval_range",
+          "mode": "multiply",
+          "value": -0.66
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.25
+        },
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.15
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_engine_sub_aip_2",
+      "nameKo": "공기 불요 추진 디젤 결합 엔진",
+      "nameEn": "AIP-Diesel Combination Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 45
+      },
+      "modifiers": [
+        {
+          "stat": "naval_range",
+          "mode": "multiply",
+          "value": -0.33
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.3
+        },
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.17
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_engine_sub_aip_3",
+      "nameKo": "고속 발터 엔진",
+      "nameEn": "High Speed Walter Engines",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 30
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.35
+        },
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.2
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.35
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "sub_ship_nuclear_engine_1",
+      "nameKo": "원자력 잠수함 원자로",
+      "nameEn": "Nuclear Submarine Reactor",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {},
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.1
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.25
+        },
+        {
+          "stat": "fuel_consumption",
+          "mode": "multiply",
+          "value": -1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "cruiser_ship_engine_1",
+      "nameKo": "60,000축마력 엔진",
+      "nameEn": "60,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 12
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.2
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "cruiser_ship_engine_2",
+      "nameKo": "70,000축마력 엔진",
+      "nameEn": "70,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 16
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.3
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.175
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "cruiser_ship_engine_3",
+      "nameKo": "80,000축마력 엔진",
+      "nameEn": "80,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 20
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.35
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "cruiser_ship_engine_4",
+      "nameKo": "90,000축마력 엔진",
+      "nameEn": "90,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 24
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.4
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.225
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "heavy_ship_engine_1",
+      "nameKo": "30,000축마력 엔진",
+      "nameEn": "30,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 20
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.2
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.175
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "heavy_ship_engine_2",
+      "nameKo": "90,000축마력 엔진",
+      "nameEn": "90,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 25
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.35
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "heavy_ship_engine_3",
+      "nameKo": "150,000축마력 엔진",
+      "nameEn": "150,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 30
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.45
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.225
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "heavy_ship_engine_4",
+      "nameKo": "210,000축마력 엔진",
+      "nameEn": "210,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "fuel_consumption": 35
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.55
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.25
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "heavy_ship_nuclear_engine_1",
+      "nameKo": "원자력 중형 함선 원자로",
+      "nameEn": "Nuclear Heavy Ship Reactor",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {},
+      "modifiers": [
+        {
+          "stat": "naval_range",
+          "mode": "multiply",
+          "value": 1
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.25
+        },
+        {
+          "stat": "fuel_consumption",
+          "mode": "multiply",
+          "value": -1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "carrier_ship_engine_1",
+      "nameKo": "50,000축마력 엔진",
+      "nameEn": "50,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "fuel_consumption": 12
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.3
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "carrier_ship_engine_2",
+      "nameKo": "120,000축마력 엔진",
+      "nameEn": "120,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "fuel_consumption": 16
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.4
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.125
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "carrier_ship_engine_3",
+      "nameKo": "150,000축마력 엔진",
+      "nameEn": "150,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "fuel_consumption": 20
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.5
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "carrier_ship_engine_4",
+      "nameKo": "210,000축마력 엔진",
+      "nameEn": "210,000 Shp Engine",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "fuel_consumption": 24
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.175
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "carrier_ship_nuclear_engine_1",
+      "nameKo": "원자력 항공모함 원자로",
+      "nameEn": "Nuclear Carrier Reactor",
+      "slots": [
+        "fixed_ship_engine_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {},
+      "modifiers": [
+        {
+          "stat": "naval_range",
+          "mode": "multiply",
+          "value": 1
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.6
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.25
+        },
+        {
+          "stat": "fuel_consumption",
+          "mode": "multiply",
+          "value": -1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_torpedo_1",
+      "nameKo": "3x450mm 어뢰 발사대",
+      "nameEn": "3x 450mm Torpedo Launcher",
+      "slots": [
+        "fixed_ship_torpedo_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "torpedo_attack": 18,
+        "build_cost_ic": 90
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.01
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_torpedo_2",
+      "nameKo": "4x450mm 어뢰 발사대",
+      "nameEn": "4x 450mm Torpedo Launcher",
+      "slots": [
+        "fixed_ship_torpedo_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "torpedo_attack": 24,
+        "build_cost_ic": 120
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.02
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_torpedo_3",
+      "nameKo": "3x533mm 어뢰 발사대",
+      "nameEn": "3x 533mm Torpedo Launcher",
+      "slots": [
+        "fixed_ship_torpedo_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "torpedo_attack": 30,
+        "build_cost_ic": 150
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_torpedo_4",
+      "nameKo": "4x533mm 어뢰 발사대",
+      "nameEn": "4x 533mm Torpedo Launcher",
+      "slots": [
+        "fixed_ship_torpedo_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "torpedo_attack": 36,
+        "build_cost_ic": 180
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.04
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_torpedo_sub_1",
+      "nameKo": "4x450mm 어뢰 발사관",
+      "nameEn": "4x 450mm Torpedo Tubes",
+      "slots": [
+        "fixed_ship_torpedo_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "torpedo_attack": 13,
+        "build_cost_ic": 80
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.01
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_torpedo_sub_2",
+      "nameKo": "6x450mm 어뢰 발사관",
+      "nameEn": "6x 450mm Torpedo Tubes",
+      "slots": [
+        "fixed_ship_torpedo_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "torpedo_attack": 17,
+        "build_cost_ic": 100
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.02
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_torpedo_sub_3",
+      "nameKo": "4x533mm 어뢰 발사관",
+      "nameEn": "4x 533mm Torpedo Tubes",
+      "slots": [
+        "fixed_ship_torpedo_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "torpedo_attack": 20,
+        "build_cost_ic": 120
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_torpedo_sub_4",
+      "nameKo": "6x533mm 어뢰 발사관",
+      "nameEn": "6x 533mm Torpedo Tubes",
+      "slots": [
+        "fixed_ship_torpedo_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "torpedo_attack": 25,
+        "build_cost_ic": 140
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.04
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_torpedo_sub_nuclear",
+      "nameKo": "핵어뢰",
+      "nameEn": "Nuclear Torpedo",
+      "slots": [
+        "fixed_ship_torpedo_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "torpedo_attack": 44,
+        "build_cost_ic": 520,
+        "reliability": -0.15
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_mine_layer_1",
+      "nameKo": "기뢰 부설 레일",
+      "nameEn": "Minelaying Rails",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 90
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.02
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_mine_layer_sub",
+      "nameKo": "기뢰 부설관",
+      "nameEn": "Minelaying Tubes",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 90,
+        "maximum_speed": -0.02
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_mine_sweeper_1",
+      "nameKo": "기뢰 소해 장비",
+      "nameEn": "Minesweeping Gear",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 30
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.02
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_depth_charge_1",
+      "nameKo": "폭뢰 레일",
+      "nameEn": "Depth Charge Rails",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "sub_attack": 8,
+        "build_cost_ic": 90
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.01
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_depth_charge_2",
+      "nameKo": "폭뢰 투하대",
+      "nameEn": "Depth Charge Thrower",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "sub_attack": 13,
+        "build_cost_ic": 120
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.01
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_depth_charge_3",
+      "nameKo": "대잠 박격포",
+      "nameEn": "Anti-submarine Mortar",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "sub_attack": 17,
+        "build_cost_ic": 150
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.02
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_depth_charge_4",
+      "nameKo": "발전형 대잠 박격포",
+      "nameEn": "Advanced Anti-submarine Mortar",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "sub_attack": 22,
+        "build_cost_ic": 180
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.02
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_sub_snorkel_1",
+      "nameKo": "기초 스노클",
+      "nameEn": "Basic Schnorkel",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 50
+      },
+      "modifiers": [
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.07
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_sub_snorkel_2",
+      "nameKo": "개선된 스노클",
+      "nameEn": "Improved Schnorkel",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 70
+      },
+      "modifiers": [
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.13
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_anechoic_tile",
+      "nameKo": "음향 흡수 타일",
+      "nameEn": "Anechoic Tiles",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {},
+      "modifiers": [
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.2
+        },
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.25
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_light_battery_sub",
+      "nameKo": "200mm 함포",
+      "nameEn": "200mm Battery",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 110
+      },
+      "modifiers": [
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_deck_space",
+      "nameKo": "격납고 공간",
+      "nameEn": "Hangar Space",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "carrier_size": 2,
+        "build_cost_ic": 1500
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "big_ship_deck_space",
+      "nameKo": "부유식 비행장 활주로",
+      "nameEn": "Floating Airfield Runway",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "carrier_size": 3,
+        "build_cost_ic": 2000
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_escort_deck_space",
+      "nameKo": "호위 항공모함 격납고",
+      "nameEn": "Escort Carrier Hangar",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "carrier_size": 1,
+        "build_cost_ic": 700
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_submarine_deck_space",
+      "nameKo": "잠수함 항공모함 격납고",
+      "nameEn": "Submarine Carrier Hangar",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [
+        "carrier",
+        "submarine"
+      ],
+      "stats": {
+        "build_cost_ic": 350
+      },
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.05
+        },
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "sub_missile_launcher",
+      "nameKo": "잠수함 미사일 발사대",
+      "nameEn": "Submarine Missile Launcher",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 1500,
+        "reliability": -0.1
+      },
+      "modifiers": [
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "slbm_launcher",
+      "nameKo": "잠수함 핵미사일 발사대",
+      "nameEn": "Submarine Nuclear Missile Launcher",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "build_cost_ic": 2000,
+        "reliability": -0.15
+      },
+      "modifiers": [
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": 0.2
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_extra_fuel_tank",
+      "nameKo": "추가 연료 탱크",
+      "nameEn": "Extra Fuel Tanks",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {},
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_sonar_1",
+      "nameKo": "수중 청음기",
+      "nameEn": "Hydrophones",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "sub_detection": 8,
+        "build_cost_ic": 40
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_sonar_2",
+      "nameKo": "능동 음파탐지기",
+      "nameEn": "Active Sonar",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "sub_detection": 12,
+        "build_cost_ic": 60
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_sonar_3",
+      "nameKo": "발전된 음파탐지기",
+      "nameEn": "Advanced Sonar",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "sub_detection": 16,
+        "build_cost_ic": 80
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_sonar_4",
+      "nameKo": "현대식 음파탐지기",
+      "nameEn": "Modern Sonar",
+      "slots": [
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "sub_detection": 20,
+        "build_cost_ic": 100
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_bb_1",
+      "nameKo": "200mm 수선장갑대/40mm 갑판 장갑",
+      "nameEn": "200mm Belt/40mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 30
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.125
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_bc_1",
+      "nameKo": "150mm 수선장갑대/25mm 갑판 장갑",
+      "nameEn": "150mm Belt/25mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 22
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.1
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.05
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_bb_2",
+      "nameKo": "350mm 수선장갑대/150mm 갑판 장갑",
+      "nameEn": "350mm Belt/150mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 36
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.15
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.05
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_bc_2",
+      "nameKo": "305mm 수선장갑대/100mm 갑판 장갑",
+      "nameEn": "305mm Belt/100mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 28
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.125
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_bb_3",
+      "nameKo": "380mm 수선장갑대/155mm 갑판 장갑",
+      "nameEn": "380mm Belt/155mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 40
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.175
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.1
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_bc_3",
+      "nameKo": "330mm 수선장갑대/130mm 갑판 장갑",
+      "nameEn": "330mm Belt/130mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 34
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.125
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.1
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_shbb",
+      "nameKo": "450mm 수선장갑대/210mm 갑판 장갑",
+      "nameEn": "450mm Belt/210mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 55
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.25
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.12
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_cruiser_1",
+      "nameKo": "50mm 수선장갑대/40mm 갑판 장갑",
+      "nameEn": "50mm Belt/40mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 6
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.1
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_cruiser_2",
+      "nameKo": "100mm 수선장갑대/30mm 갑판 장갑",
+      "nameEn": "100mm Belt/30mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 8
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.15
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.075
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_cruiser_3",
+      "nameKo": "120mm 수선장갑대/50mm 갑판 장갑",
+      "nameEn": "120mm Belt/50mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 10
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.2
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.1
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_cruiser_4",
+      "nameKo": "150mm 수선장갑대/60mm 갑판 장갑",
+      "nameEn": "150mm Belt/60mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "armor_value": 12
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.25
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.125
+        },
+        {
+          "stat": "max_strength",
+          "mode": "multiply",
+          "value": 0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_carrier_deck",
+      "nameKo": "90mm 갑판",
+      "nameEn": "90mm Deck",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "armor_value": 5,
+        "max_strength": 25
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_ice_carrier_deck_1",
+      "nameKo": "파이크리트 활주로 강화",
+      "nameEn": "Pykrete Runway Reinforcements",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "max_strength": 30,
+        "armor_value": 2
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.1
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.1
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_ice_carrier_deck_2",
+      "nameKo": "강철 보강 파이크리트 활주로",
+      "nameEn": "Steel-Reinforced Pykrete Runway",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "max_strength": 35,
+        "armor_value": 4
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.15
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "ship_armor_ice_carrier_deck_3",
+      "nameKo": "얼음 합성물 활주로",
+      "nameEn": "Ice-Composite Runway",
+      "slots": [
+        "fixed_ship_armor_slot"
+      ],
+      "allowedTypes": [
+        "carrier"
+      ],
+      "stats": {
+        "max_strength": 40,
+        "armor_value": 6
+      },
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": 0.2
+        },
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": -0.15
+        }
+      ],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_ship_modules.txt"
+    },
+    {
+      "id": "lc_heavy_naval_guns",
+      "nameKo": "중함포",
+      "nameEn": "Heavy Naval Guns",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "breakthrough": 40,
+        "soft_attack": 60,
+        "hard_attack": 55,
+        "piercing": 240,
+        "build_cost_ic": 20,
+        "maximum_speed": -0.6,
+        "reliability": -0.2
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    },
+    {
+      "id": "lc_medium_naval_guns",
+      "nameKo": "중형함포",
+      "nameEn": "Medium Naval Guns",
+      "slots": [
+        "fixed_ship_battery_slot",
+        "front_1_custom_slot",
+        "front_2_custom_slot",
+        "mid_1_custom_slot",
+        "mid_2_custom_slot",
+        "mid_3_custom_slot",
+        "rear_1_custom_slot",
+        "rear_2_custom_slot"
+      ],
+      "allowedTypes": [],
+      "stats": {
+        "breakthrough": 25,
+        "soft_attack": 42,
+        "hard_attack": 52,
+        "piercing": 230,
+        "build_cost_ic": 16,
+        "maximum_speed": -0.4,
+        "reliability": -0.1
+      },
+      "modifiers": [],
+      "resources": {},
+      "source": "common\\units\\equipment\\modules\\00_tank_modules.txt"
+    }
+  ]
+}

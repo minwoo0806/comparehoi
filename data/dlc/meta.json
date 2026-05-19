@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-18T12:21:23.823Z",
+  "source": "hoi4-game-files-full-dlc",
+  "gamePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV",
+  "designerMode": "module",
+  "counts": {
+    "tanks": 80,
+    "aircraft": 71,
+    "ships": 89,
+    "tankModules": 69,
+    "aircraftModules": 103,
+    "shipModules": 110
+  },
+  "notes": [
+    "설치 폴더와 폴더형 DLC의 common/localisation 파일 기준입니다.",
+    "게임 내부 전용 수식과 hidden modifier는 완전 재현이 어려워 추출 가능한 숫자 스탯을 우선 정규화합니다."
+  ]
+}

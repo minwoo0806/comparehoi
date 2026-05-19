@@ -1,0 +1,2316 @@
+{
+  "items": [
+    {
+      "id": "cv_fighter_equipment_0",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_airframe",
+      "parentId": "cv_small_plane_airframe",
+      "defaultModules": [],
+      "year": 1933,
+      "nameKo": "전간기 함재 전투기",
+      "nameEn": "Inter-War Carrier Fighter",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 2,
+        "naval_targeting": 10,
+        "fuel_consumption": 0.21,
+        "build_cost_ic": 26.4,
+        "range": 456,
+        "maximum_speed": 297,
+        "agility": 45,
+        "air_attack": 9,
+        "air_defence": 8,
+        "surface_detection": 15,
+        "sub_detection": 3.5
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_small_plane_airframe",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "fighter",
+      "parentId": null,
+      "defaultModules": [
+        "engine_1_1x"
+      ],
+      "year": 1933,
+      "nameKo": "$cv_fighter_equipment$",
+      "nameEn": "$cv_fighter_equipment$",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.21000000000000002,
+        "build_cost_ic": 18
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "cv_small_plane_airframe_0",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_airframe",
+      "parentId": "cv_small_plane_airframe",
+      "defaultModules": [],
+      "year": 1933,
+      "nameKo": "전간기 함재기 기체",
+      "nameEn": "Inter-War Carrier Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.05,
+        "build_cost_ic": 6,
+        "range": 400,
+        "maximum_speed": 400,
+        "agility": 30,
+        "air_defence": 7
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "fighter_equipment_0",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_airframe",
+      "parentId": "small_plane_airframe",
+      "defaultModules": [],
+      "year": 1933,
+      "nameKo": "전간기 전투기",
+      "nameEn": "Inter-War Fighter",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.21,
+        "build_cost_ic": 22,
+        "range": 570,
+        "maximum_speed": 330,
+        "agility": 45,
+        "air_attack": 9,
+        "air_defence": 8,
+        "surface_detection": 10,
+        "sub_detection": 2.5
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "large_plane_airframe",
+      "domain": "aircraft",
+      "type": "large_airframe",
+      "category": "strategic_bomber",
+      "parentId": null,
+      "defaultModules": [
+        "engine_1_4x"
+      ],
+      "year": 1933,
+      "nameKo": "$strat_bomber_equipment$",
+      "nameEn": "$strat_bomber_equipment$",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.8,
+        "build_cost_ic": 64
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "large_plane_airframe_0",
+      "domain": "aircraft",
+      "type": "large_airframe",
+      "category": "large_plane_airframe",
+      "parentId": "large_plane_airframe",
+      "defaultModules": [],
+      "year": 1933,
+      "nameKo": "전간기 대형 기체",
+      "nameEn": "Inter-War Large Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.16,
+        "build_cost_ic": 16,
+        "range": 1000,
+        "maximum_speed": 200,
+        "agility": 20,
+        "air_defence": 20
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "medium_plane_airframe",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "tactical_bomber",
+      "parentId": null,
+      "defaultModules": [
+        "engine_1_2x"
+      ],
+      "year": 1933,
+      "nameKo": "$tac_bomber_equipment$",
+      "nameEn": "$tac_bomber_equipment$",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.32,
+        "build_cost_ic": 30
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "medium_plane_airframe_0",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_airframe",
+      "parentId": "medium_plane_airframe",
+      "defaultModules": [],
+      "year": 1933,
+      "nameKo": "전간기 중형 기체",
+      "nameEn": "Inter-War Medium Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0,
+        "build_cost_ic": 6,
+        "range": 750,
+        "maximum_speed": 200,
+        "agility": 25,
+        "air_defence": 15
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "small_plane_airframe",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "fighter",
+      "parentId": null,
+      "defaultModules": [
+        "engine_1_1x"
+      ],
+      "year": 1933,
+      "nameKo": "$fighter_equipment$",
+      "nameEn": "$fighter_equipment$",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.21000000000000002,
+        "build_cost_ic": 16
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "small_plane_airframe_0",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_airframe",
+      "parentId": "small_plane_airframe",
+      "defaultModules": [],
+      "year": 1933,
+      "nameKo": "전간기 소형 기체",
+      "nameEn": "Inter-War Small Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.05,
+        "build_cost_ic": 4,
+        "range": 400,
+        "maximum_speed": 400,
+        "agility": 35,
+        "air_defence": 7
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "tac_bomber_equipment_0",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_airframe",
+      "parentId": "medium_plane_airframe",
+      "defaultModules": [],
+      "year": 1933,
+      "nameKo": "전간기 폭격기",
+      "nameEn": "Inter-War Bomber",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 4,
+        "naval_targeting": 6,
+        "fuel_consumption": 0.36,
+        "build_cost_ic": 35,
+        "range": 1400,
+        "maximum_speed": 250,
+        "agility": 16,
+        "air_attack": 5,
+        "air_defence": 15,
+        "strategic_attack": 10,
+        "soft_attack": 3,
+        "surface_detection": 20,
+        "sub_detection": 5
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "transport_plane_equipment",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "air_transport",
+      "parentId": null,
+      "defaultModules": [],
+      "year": 1933,
+      "nameKo": "수송기",
+      "nameEn": "Transport Plane",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 0,
+        "naval_targeting": 0,
+        "build_cost_ic": 38,
+        "fuel_consumption": 1
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\quad_engine_airframe.txt"
+    },
+    {
+      "id": "transport_plane_equipment_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "transport_plane_equipment",
+      "parentId": "transport_plane_equipment",
+      "defaultModules": [],
+      "year": 1933,
+      "nameKo": "전간기 수송기",
+      "nameEn": "Inter-War Transport Plane",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 0,
+        "naval_targeting": 0,
+        "build_cost_ic": 38,
+        "fuel_consumption": 1,
+        "range": 1000,
+        "maximum_speed": 400,
+        "agility": 10,
+        "air_defence": 20
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\quad_engine_airframe.txt"
+    },
+    {
+      "id": "CAS_equipment_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_cas_airframe",
+      "parentId": "small_plane_cas_airframe",
+      "defaultModules": [],
+      "year": 1936,
+      "nameKo": "근접항공지원기 I",
+      "nameEn": "Close Air Support I",
+      "stats": {
+        "range": 700,
+        "maximum_speed": 390,
+        "agility": 35,
+        "air_attack": 6,
+        "air_defence": 14,
+        "soft_attack": 8,
+        "naval_attack": 3,
+        "naval_targeting": 10,
+        "surface_detection": 5,
+        "sub_detection": 5,
+        "build_cost_ic": 22,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_CAS_equipment_1",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_cas_airframe",
+      "parentId": "cv_small_plane_cas_airframe",
+      "defaultModules": [],
+      "year": 1936,
+      "nameKo": "함재 근접항공지원기 I",
+      "nameEn": "Carrier Close Air Support I",
+      "stats": {
+        "range": 400,
+        "maximum_speed": 351,
+        "agility": 35,
+        "air_attack": 6,
+        "air_defence": 14,
+        "soft_attack": 8,
+        "naval_attack": 4,
+        "naval_targeting": 10,
+        "build_cost_ic": 26.4,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26,
+        "surface_detection": 10,
+        "sub_detection": 7.5
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_fighter_equipment_1",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_airframe",
+      "parentId": "cv_fighter_equipment_0",
+      "defaultModules": [],
+      "year": 1936,
+      "nameKo": "함재 전투기 I",
+      "nameEn": "Carrier Fighter I",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 3,
+        "naval_targeting": 10,
+        "fuel_consumption": 0.21,
+        "build_cost_ic": 28.4,
+        "range": 560,
+        "maximum_speed": 450,
+        "agility": 50,
+        "air_attack": 18,
+        "air_defence": 11,
+        "surface_detection": 18,
+        "sub_detection": 4
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_nav_bomber_equipment_1",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_naval_bomber_airframe",
+      "parentId": "cv_small_plane_naval_bomber_airframe",
+      "defaultModules": [],
+      "year": 1936,
+      "nameKo": "함재 뇌격기 I",
+      "nameEn": "Carrier Naval Bomber I",
+      "stats": {
+        "range": 680,
+        "maximum_speed": 207,
+        "agility": 30,
+        "air_attack": 6,
+        "air_defence": 13,
+        "build_cost_ic": 31.2,
+        "naval_attack": 15,
+        "naval_targeting": 7.5,
+        "surface_detection": 20,
+        "sub_detection": 10,
+        "reliability": 0.8,
+        "fuel_consumption": 0.28
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_small_plane_airframe_1",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_airframe",
+      "parentId": "cv_small_plane_airframe_0",
+      "defaultModules": [
+        "fighter_weapon",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "kamikaze_bomber_weapon",
+        "recon_camera",
+        "plane_engine_type",
+        "twin_plane_engine_type",
+        "plane_special_module_small",
+        "plane_special_module_defense_turret",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar"
+      ],
+      "year": 1936,
+      "nameKo": "기초 함재기 기체",
+      "nameEn": "Basic Carrier Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.05,
+        "build_cost_ic": 8.5,
+        "range": 550,
+        "maximum_speed": 425,
+        "agility": 35,
+        "air_defence": 9
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "fighter_equipment_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_airframe",
+      "parentId": "fighter_equipment_0",
+      "defaultModules": [],
+      "year": 1936,
+      "nameKo": "전투기 I",
+      "nameEn": "Fighter I",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 2,
+        "naval_targeting": 10,
+        "fuel_consumption": 0.21,
+        "build_cost_ic": 24,
+        "range": 700,
+        "maximum_speed": 500,
+        "agility": 50,
+        "air_attack": 18,
+        "air_defence": 10,
+        "surface_detection": 13,
+        "sub_detection": 3
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "heavy_fighter_equipment_1",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_fighter_airframe",
+      "parentId": "medium_plane_fighter_airframe",
+      "defaultModules": [],
+      "year": 1936,
+      "nameKo": "중전투기 I",
+      "nameEn": "Heavy Fighter I",
+      "stats": {
+        "range": 1300,
+        "maximum_speed": 500,
+        "agility": 25,
+        "air_attack": 36,
+        "air_defence": 13,
+        "naval_attack": 3,
+        "naval_targeting": 6,
+        "surface_detection": 5,
+        "sub_detection": 5,
+        "build_cost_ic": 28,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "large_plane_airframe_1",
+      "domain": "aircraft",
+      "type": "large_airframe",
+      "category": "large_plane_airframe",
+      "parentId": "large_plane_airframe_0",
+      "defaultModules": [
+        "strat_weapon",
+        "nav_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "quad_large_plane_engine_type",
+        "large_plane_engine_type",
+        "plane_special_module_large",
+        "plane_special_module_defense_turret",
+        "plane_special_module_defense_turret_x2",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "mine_warfare_defense"
+      ],
+      "year": 1936,
+      "nameKo": "기초 대형 기체",
+      "nameEn": "Basic Large Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.16,
+        "build_cost_ic": 18,
+        "range": 1500,
+        "maximum_speed": 225,
+        "agility": 25,
+        "air_defence": 25
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "medium_plane_airframe_1",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_airframe",
+      "parentId": "medium_plane_airframe_0",
+      "defaultModules": [
+        "tac_weapon",
+        "fighter_weapon",
+        "recon_camera",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "mine_warfare_offense",
+        "twin_plane_engine_type",
+        "medium_plane_engine_type",
+        "quad_large_plane_engine_type",
+        "plane_special_module_medium",
+        "plane_special_module_defense_turret",
+        "plane_special_module_defense_turret_x2",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "mine_warfare_defense"
+      ],
+      "year": 1936,
+      "nameKo": "기초 중형 기체",
+      "nameEn": "Basic Medium Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0,
+        "build_cost_ic": 8,
+        "range": 900,
+        "maximum_speed": 325,
+        "agility": 30,
+        "air_defence": 18
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "nav_bomber_equipment_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_naval_bomber_airframe",
+      "parentId": "small_plane_naval_bomber_airframe",
+      "defaultModules": [],
+      "year": 1936,
+      "nameKo": "뇌격기 I",
+      "nameEn": "Naval Bomber I",
+      "stats": {
+        "range": 850,
+        "maximum_speed": 230,
+        "agility": 30,
+        "air_attack": 6,
+        "air_defence": 12,
+        "naval_attack": 15,
+        "naval_targeting": 7.5,
+        "surface_detection": 15,
+        "sub_detection": 10,
+        "build_cost_ic": 26,
+        "reliability": 0.8,
+        "fuel_consumption": 0.28
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "scout_plane_equipment_1",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_scout_plane_airframe",
+      "parentId": "medium_plane_scout_plane_airframe",
+      "defaultModules": [],
+      "year": 1936,
+      "nameKo": "정찰기 I",
+      "nameEn": "Scout Plane I",
+      "stats": {
+        "range": 1300,
+        "maximum_speed": 500,
+        "agility": 25,
+        "air_attack": 0,
+        "air_defence": 13,
+        "build_cost_ic": 20,
+        "naval_attack": 0,
+        "naval_targeting": 0,
+        "surface_detection": 40,
+        "sub_detection": 10,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26
+      },
+      "resources": {
+        "aluminium": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "small_plane_airframe_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_airframe",
+      "parentId": "small_plane_airframe_0",
+      "defaultModules": [
+        "fighter_weapon",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "kamikaze_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "plane_engine_type",
+        "twin_plane_engine_type",
+        "plane_special_module_small",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "plane_special_module_defense_turret"
+      ],
+      "year": 1936,
+      "nameKo": "기초 소형 기체",
+      "nameEn": "Basic Small Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.05,
+        "build_cost_ic": 5,
+        "range": 550,
+        "maximum_speed": 425,
+        "agility": 40,
+        "air_defence": 9
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "strat_bomber_equipment_1",
+      "domain": "aircraft",
+      "type": "large_airframe",
+      "category": "large_plane_airframe",
+      "parentId": "large_plane_airframe",
+      "defaultModules": [],
+      "year": 1936,
+      "nameKo": "전략폭격기 I",
+      "nameEn": "Strategic Bomber I",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1.5,
+        "naval_targeting": 0.6,
+        "fuel_consumption": 0.8,
+        "build_cost_ic": 60,
+        "range": 2500,
+        "maximum_speed": 400,
+        "agility": 5,
+        "air_attack": 50,
+        "air_defence": 25,
+        "strategic_attack": 30,
+        "surface_detection": 10,
+        "sub_detection": 2.5
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "tac_bomber_equipment_1",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_airframe",
+      "parentId": "tac_bomber_equipment_0",
+      "defaultModules": [],
+      "year": 1936,
+      "nameKo": "전술폭격기 I",
+      "nameEn": "Tactical Bomber I",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 8,
+        "naval_targeting": 6,
+        "fuel_consumption": 0.36,
+        "build_cost_ic": 37,
+        "range": 2400,
+        "maximum_speed": 430,
+        "agility": 20,
+        "air_attack": 8,
+        "air_defence": 18,
+        "strategic_attack": 12,
+        "soft_attack": 6,
+        "surface_detection": 30,
+        "sub_detection": 7.5
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_small_plane_airframe_2",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_airframe",
+      "parentId": "cv_small_plane_airframe_1",
+      "defaultModules": [
+        "fighter_weapon",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "kamikaze_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "plane_engine_type",
+        "twin_plane_engine_type",
+        "plane_jet_engine_type",
+        "twin_plane_jet_engine_type",
+        "plane_special_module_small",
+        "plane_special_module_defense_turret",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar"
+      ],
+      "year": 1939,
+      "nameKo": "개선된 함재기 기체",
+      "nameEn": "Improved Carrier Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.05,
+        "build_cost_ic": 9.5,
+        "range": 650,
+        "maximum_speed": 450,
+        "agility": 40,
+        "air_defence": 11
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "large_plane_airframe_2",
+      "domain": "aircraft",
+      "type": "large_airframe",
+      "category": "large_plane_airframe",
+      "parentId": "large_plane_airframe_1",
+      "defaultModules": [
+        "strat_weapon",
+        "nav_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "quad_large_plane_engine_type",
+        "large_plane_engine_type",
+        "quad_large_plane_jet_engine_type",
+        "large_plane_jet_engine_type",
+        "plane_special_module_large",
+        "plane_special_module_defense_turret",
+        "plane_special_module_defense_turret_x2",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "mine_warfare_defense"
+      ],
+      "year": 1939,
+      "nameKo": "개선된 대형 기체",
+      "nameEn": "Improved Large Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.16,
+        "build_cost_ic": 20,
+        "range": 2000,
+        "maximum_speed": 300,
+        "agility": 30,
+        "air_defence": 35
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "medium_plane_airframe_2",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_airframe",
+      "parentId": "medium_plane_airframe_1",
+      "defaultModules": [
+        "tac_weapon",
+        "fighter_weapon",
+        "recon_camera",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "mine_warfare_offense",
+        "twin_plane_engine_type",
+        "medium_plane_engine_type",
+        "quad_large_plane_engine_type",
+        "twin_plane_jet_engine_type",
+        "medium_plane_jet_engine_type",
+        "quad_large_plane_jet_engine_type",
+        "plane_special_module_defense_turret",
+        "plane_special_module_defense_turret_x2",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "plane_special_module_medium",
+        "mine_warfare_defense"
+      ],
+      "year": 1939,
+      "nameKo": "개선된 중형 기체",
+      "nameEn": "Improved Medium Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0,
+        "build_cost_ic": 10,
+        "range": 1100,
+        "maximum_speed": 375,
+        "agility": 35,
+        "air_defence": 20
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "small_plane_airframe_2",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_airframe",
+      "parentId": "small_plane_airframe_1",
+      "defaultModules": [
+        "fighter_weapon",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "kamikaze_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "plane_engine_type",
+        "twin_plane_engine_type",
+        "plane_jet_engine_type",
+        "twin_plane_jet_engine_type",
+        "plane_rocket_engine_type",
+        "plane_special_module_small",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "plane_special_module_defense_turret"
+      ],
+      "year": 1939,
+      "nameKo": "개선된 소형 기체",
+      "nameEn": "Improved Small Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.05,
+        "build_cost_ic": 6,
+        "range": 650,
+        "maximum_speed": 450,
+        "agility": 45,
+        "air_defence": 11
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "CAS_equipment_2",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_cas_airframe",
+      "parentId": "CAS_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "근접항공지원기 II",
+      "nameEn": "Close Air Support II",
+      "stats": {
+        "range": 1000,
+        "maximum_speed": 450,
+        "agility": 39,
+        "air_attack": 10,
+        "air_defence": 16,
+        "soft_attack": 13,
+        "naval_attack": 5,
+        "naval_targeting": 10,
+        "surface_detection": 23,
+        "sub_detection": 5.5,
+        "build_cost_ic": 24,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_CAS_equipment_2",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_cas_airframe",
+      "parentId": "cv_CAS_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "함재 근접항공지원기 II",
+      "nameEn": "Carrier Close Air Support II",
+      "stats": {
+        "range": 640,
+        "maximum_speed": 405,
+        "agility": 39,
+        "air_attack": 10,
+        "air_defence": 16,
+        "soft_attack": 13,
+        "naval_attack": 7,
+        "naval_targeting": 10,
+        "build_cost_ic": 28.4,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26,
+        "surface_detection": 20,
+        "sub_detection": 10
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_fighter_equipment_2",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_airframe",
+      "parentId": "cv_fighter_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "함재 전투기 II",
+      "nameEn": "Carrier Fighter II",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 6,
+        "naval_targeting": 10,
+        "fuel_consumption": 0.21,
+        "build_cost_ic": 30.4,
+        "range": 800,
+        "maximum_speed": 585,
+        "agility": 65,
+        "air_attack": 27,
+        "air_defence": 13,
+        "surface_detection": 22,
+        "sub_detection": 4.5
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_nav_bomber_equipment_2",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_naval_bomber_airframe",
+      "parentId": "cv_nav_bomber_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "함재 뇌격기 II",
+      "nameEn": "Carrier Naval Bomber II",
+      "stats": {
+        "range": 744,
+        "maximum_speed": 270,
+        "agility": 35,
+        "air_attack": 10,
+        "air_defence": 15,
+        "build_cost_ic": 33.2,
+        "naval_attack": 20,
+        "naval_targeting": 10,
+        "surface_detection": 25,
+        "sub_detection": 15,
+        "reliability": 0.8,
+        "fuel_consumption": 0.28
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "fighter_equipment_2",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_airframe",
+      "parentId": "fighter_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "전투기 II",
+      "nameEn": "Fighter II",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 4,
+        "naval_targeting": 10,
+        "fuel_consumption": 0.21,
+        "build_cost_ic": 26,
+        "range": 1000,
+        "maximum_speed": 650,
+        "agility": 65,
+        "air_attack": 27,
+        "air_defence": 12,
+        "surface_detection": 16,
+        "sub_detection": 4
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "heavy_fighter_equipment_2",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_fighter_airframe",
+      "parentId": "heavy_fighter_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "중전투기 II",
+      "nameEn": "Heavy Fighter II",
+      "stats": {
+        "range": 1700,
+        "maximum_speed": 550,
+        "agility": 30,
+        "air_attack": 46,
+        "air_defence": 15,
+        "naval_attack": 6,
+        "naval_targeting": 10,
+        "surface_detection": 18,
+        "sub_detection": 3.5,
+        "build_cost_ic": 30,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "nav_bomber_equipment_2",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_naval_bomber_airframe",
+      "parentId": "nav_bomber_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "뇌격기 II",
+      "nameEn": "Naval Bomber II",
+      "stats": {
+        "range": 930,
+        "maximum_speed": 300,
+        "agility": 35,
+        "air_attack": 10,
+        "air_defence": 14,
+        "naval_attack": 20,
+        "naval_targeting": 10,
+        "surface_detection": 25,
+        "sub_detection": 15,
+        "build_cost_ic": 28,
+        "reliability": 0.8,
+        "fuel_consumption": 0.28
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "scout_plane_equipment_2",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_scout_plane_airframe",
+      "parentId": "scout_plane_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "정찰기 II",
+      "nameEn": "Scout Plane II",
+      "stats": {
+        "range": 1700,
+        "maximum_speed": 550,
+        "agility": 30,
+        "air_attack": 0,
+        "air_defence": 15,
+        "build_cost_ic": 20,
+        "naval_attack": 0,
+        "naval_targeting": 0,
+        "surface_detection": 60,
+        "sub_detection": 15,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "strat_bomber_equipment_2",
+      "domain": "aircraft",
+      "type": "large_airframe",
+      "category": "large_plane_airframe",
+      "parentId": "strat_bomber_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "전략폭격기 II",
+      "nameEn": "Strategic Bomber II",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1.5,
+        "naval_targeting": 0.6,
+        "fuel_consumption": 0.8,
+        "build_cost_ic": 62,
+        "range": 3500,
+        "maximum_speed": 450,
+        "agility": 7,
+        "air_attack": 100,
+        "air_defence": 35,
+        "strategic_attack": 45,
+        "surface_detection": 10,
+        "sub_detection": 2.5
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "tac_bomber_equipment_2",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_airframe",
+      "parentId": "tac_bomber_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "전술폭격기 II",
+      "nameEn": "Tactical Bomber II",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 12,
+        "naval_targeting": 6,
+        "fuel_consumption": 0.36,
+        "build_cost_ic": 39,
+        "range": 2500,
+        "maximum_speed": 440,
+        "agility": 25,
+        "air_attack": 13,
+        "air_defence": 21,
+        "strategic_attack": 14,
+        "soft_attack": 10,
+        "surface_detection": 40,
+        "sub_detection": 10
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "transport_plane_equipment_2",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "transport_plane_equipment",
+      "parentId": "transport_plane_equipment_1",
+      "defaultModules": [],
+      "year": 1940,
+      "nameKo": "개선된 수송기",
+      "nameEn": "Improved Transport Plane",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 0,
+        "naval_targeting": 0,
+        "build_cost_ic": 38,
+        "fuel_consumption": 1,
+        "range": 1300,
+        "maximum_speed": 450,
+        "agility": 10,
+        "air_defence": 20
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\quad_engine_airframe.txt"
+    },
+    {
+      "id": "cv_small_plane_airframe_3",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_airframe",
+      "parentId": "cv_small_plane_airframe_2",
+      "defaultModules": [
+        "fighter_weapon",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "kamikaze_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "plane_engine_type",
+        "twin_plane_engine_type",
+        "plane_jet_engine_type",
+        "twin_plane_jet_engine_type",
+        "plane_special_module_small",
+        "plane_special_module_defense_turret",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar"
+      ],
+      "year": 1942,
+      "nameKo": "발전된 함재기 기체",
+      "nameEn": "Advanced Carrier Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.05,
+        "build_cost_ic": 11,
+        "range": 750,
+        "maximum_speed": 475,
+        "agility": 45,
+        "air_defence": 12
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "large_plane_airframe_3",
+      "domain": "aircraft",
+      "type": "large_airframe",
+      "category": "large_plane_airframe",
+      "parentId": "large_plane_airframe_2",
+      "defaultModules": [
+        "strat_weapon",
+        "nav_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "quad_large_plane_engine_type",
+        "large_plane_engine_type",
+        "quad_large_plane_jet_engine_type",
+        "large_plane_jet_engine_type",
+        "plane_special_module_defense_turret",
+        "plane_special_module_defense_turret_x2",
+        "plane_special_module_large",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "mine_warfare_defense"
+      ],
+      "year": 1942,
+      "nameKo": "발전된 대형 기체",
+      "nameEn": "Advanced Large Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.16,
+        "build_cost_ic": 22,
+        "range": 3000,
+        "maximum_speed": 350,
+        "agility": 35,
+        "air_defence": 50
+      },
+      "resources": {
+        "aluminium": 5,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "medium_plane_airframe_3",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_airframe",
+      "parentId": "medium_plane_airframe_2",
+      "defaultModules": [
+        "tac_weapon",
+        "fighter_weapon",
+        "recon_camera",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "mine_warfare_offense",
+        "twin_plane_engine_type",
+        "medium_plane_engine_type",
+        "quad_large_plane_engine_type",
+        "twin_plane_jet_engine_type",
+        "medium_plane_jet_engine_type",
+        "quad_large_plane_jet_engine_type",
+        "plane_special_module_defense_turret",
+        "plane_special_module_defense_turret_x2",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "plane_special_module_medium",
+        "mine_warfare_defense"
+      ],
+      "year": 1942,
+      "nameKo": "발전된 중형 기체",
+      "nameEn": "Advanced Medium Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0,
+        "build_cost_ic": 13,
+        "range": 1300,
+        "maximum_speed": 425,
+        "agility": 40,
+        "air_defence": 24
+      },
+      "resources": {
+        "aluminium": 5,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "mothership_equipment",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": [
+        "fighter"
+      ],
+      "parentId": null,
+      "defaultModules": [],
+      "year": 1942,
+      "nameKo": "공중항모",
+      "nameEn": "Mothership Aircraft",
+      "stats": {},
+      "resources": {},
+      "source": "common\\units\\equipment\\mothership.txt"
+    },
+    {
+      "id": "small_plane_airframe_3",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_airframe",
+      "parentId": "small_plane_airframe_2",
+      "defaultModules": [
+        "fighter_weapon",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "kamikaze_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "plane_engine_type",
+        "twin_plane_engine_type",
+        "plane_jet_engine_type",
+        "twin_plane_jet_engine_type",
+        "plane_rocket_engine_type",
+        "plane_special_module_small",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "plane_special_module_defense_turret"
+      ],
+      "year": 1942,
+      "nameKo": "발전된 소형 기체",
+      "nameEn": "Advanced Small Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.05,
+        "build_cost_ic": 7,
+        "range": 750,
+        "maximum_speed": 475,
+        "agility": 50,
+        "air_defence": 12
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "strat_bomber_intercontinental_equipment",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": [
+        "strategic_bomber"
+      ],
+      "parentId": null,
+      "defaultModules": [],
+      "year": 1942,
+      "nameKo": "대륙간 폭격기",
+      "nameEn": "Intercontinental Bomber",
+      "stats": {},
+      "resources": {},
+      "source": "common\\units\\equipment\\intercontinental_bomber.txt"
+    },
+    {
+      "id": "strat_bomber_intercontinental_equipment_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "strat_bomber_intercontinental_equipment",
+      "parentId": "strat_bomber_intercontinental_equipment",
+      "defaultModules": [],
+      "year": 1942,
+      "nameKo": "대륙간 폭격기",
+      "nameEn": "Intercontinental Bomber",
+      "stats": {
+        "range": 12000,
+        "maximum_speed": 450,
+        "agility": 12,
+        "air_attack": 60,
+        "air_defence": 55,
+        "strategic_attack": 36,
+        "reliability": 0.75,
+        "surface_detection": 1,
+        "build_cost_ic": 140,
+        "fuel_consumption": 1.25
+      },
+      "resources": {
+        "aluminium": 8,
+        "rubber": 4
+      },
+      "source": "common\\units\\equipment\\intercontinental_bomber.txt"
+    },
+    {
+      "id": "CAS_equipment_3",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_cas_airframe",
+      "parentId": "CAS_equipment_2",
+      "defaultModules": [],
+      "year": 1944,
+      "nameKo": "근접항공지원기 III",
+      "nameEn": "Close Air Support III",
+      "stats": {
+        "range": 1200,
+        "maximum_speed": 550,
+        "agility": 44,
+        "air_attack": 14,
+        "air_defence": 20,
+        "soft_attack": 18,
+        "naval_attack": 10,
+        "naval_targeting": 10,
+        "surface_detection": 27,
+        "sub_detection": 6.5,
+        "build_cost_ic": 26,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_CAS_equipment_3",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_cas_airframe",
+      "parentId": "cv_CAS_equipment_2",
+      "defaultModules": [],
+      "year": 1944,
+      "nameKo": "함재 근접항공지원기 III",
+      "nameEn": "Carrier Close Air Support III",
+      "stats": {
+        "range": 800,
+        "maximum_speed": 495,
+        "agility": 44,
+        "air_attack": 14,
+        "air_defence": 20,
+        "soft_attack": 18,
+        "naval_attack": 13,
+        "naval_targeting": 10,
+        "build_cost_ic": 30.4,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26,
+        "surface_detection": 30,
+        "sub_detection": 15
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_fighter_equipment_3",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_airframe",
+      "parentId": "cv_fighter_equipment_2",
+      "defaultModules": [],
+      "year": 1944,
+      "nameKo": "함재 전투기 III",
+      "nameEn": "Carrier Fighter III",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 8,
+        "naval_targeting": 10,
+        "fuel_consumption": 0.21,
+        "build_cost_ic": 32.4,
+        "range": 960,
+        "maximum_speed": 648,
+        "agility": 80,
+        "air_attack": 32,
+        "air_defence": 15,
+        "surface_detection": 25,
+        "sub_detection": 5
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_nav_bomber_equipment_3",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_naval_bomber_airframe",
+      "parentId": "cv_nav_bomber_equipment_2",
+      "defaultModules": [],
+      "year": 1944,
+      "nameKo": "함재 뇌격기 III",
+      "nameEn": "Carrier Naval Bomber III",
+      "stats": {
+        "range": 880,
+        "maximum_speed": 360,
+        "agility": 40,
+        "air_attack": 14,
+        "air_defence": 17,
+        "build_cost_ic": 35.2,
+        "naval_attack": 25,
+        "naval_targeting": 12.5,
+        "surface_detection": 35,
+        "sub_detection": 18,
+        "reliability": 0.8,
+        "fuel_consumption": 0.28
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "fighter_equipment_3",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_airframe",
+      "parentId": "fighter_equipment_2",
+      "defaultModules": [],
+      "year": 1944,
+      "nameKo": "전투기 III",
+      "nameEn": "Fighter III",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 6,
+        "naval_targeting": 10,
+        "fuel_consumption": 0.21,
+        "build_cost_ic": 28,
+        "range": 1200,
+        "maximum_speed": 720,
+        "agility": 80,
+        "air_attack": 32,
+        "air_defence": 14,
+        "surface_detection": 20,
+        "sub_detection": 5
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "heavy_fighter_equipment_3",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_fighter_airframe",
+      "parentId": "heavy_fighter_equipment_2",
+      "defaultModules": [],
+      "year": 1944,
+      "nameKo": "중전투기 III",
+      "nameEn": "Heavy Fighter III",
+      "stats": {
+        "range": 2000,
+        "maximum_speed": 600,
+        "agility": 33,
+        "air_attack": 54,
+        "air_defence": 18,
+        "naval_attack": 9,
+        "naval_targeting": 10,
+        "surface_detection": 21,
+        "sub_detection": 4,
+        "build_cost_ic": 32,
+        "reliability": 0.8,
+        "fuel_consumption": 0.26
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "nav_bomber_equipment_3",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_naval_bomber_airframe",
+      "parentId": "nav_bomber_equipment_2",
+      "defaultModules": [],
+      "year": 1944,
+      "nameKo": "뇌격기 III",
+      "nameEn": "Naval Bomber III",
+      "stats": {
+        "range": 1100,
+        "maximum_speed": 400,
+        "agility": 40,
+        "air_attack": 14,
+        "air_defence": 16,
+        "naval_attack": 25,
+        "naval_targeting": 12.5,
+        "surface_detection": 35,
+        "sub_detection": 18,
+        "build_cost_ic": 30,
+        "reliability": 0.8,
+        "fuel_consumption": 0.28
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "rocket_suicide_equipment_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_suicide_airframe",
+      "parentId": "small_plane_suicide_airframe",
+      "defaultModules": [],
+      "year": 1944,
+      "nameKo": "자살특공기",
+      "nameEn": "Suicide Strike Craft",
+      "stats": {
+        "range": 1000,
+        "maximum_speed": 1150,
+        "agility": 50,
+        "air_attack": 0,
+        "air_defence": 12,
+        "reliability": 0.8,
+        "naval_attack": 20,
+        "naval_targeting": 10,
+        "build_cost_ic": 14
+      },
+      "resources": {
+        "aluminium": 2,
+        "tungsten": 2,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "strat_bomber_equipment_3",
+      "domain": "aircraft",
+      "type": "large_airframe",
+      "category": "large_plane_airframe",
+      "parentId": "strat_bomber_equipment_2",
+      "defaultModules": [],
+      "year": 1944,
+      "nameKo": "전략폭격기 III",
+      "nameEn": "Strategic Bomber III",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1.5,
+        "naval_targeting": 0.6,
+        "fuel_consumption": 0.8,
+        "build_cost_ic": 64,
+        "range": 5000,
+        "maximum_speed": 500,
+        "agility": 10,
+        "air_attack": 150,
+        "air_defence": 50,
+        "strategic_attack": 60,
+        "surface_detection": 10,
+        "sub_detection": 2.5
+      },
+      "resources": {
+        "aluminium": 5,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "tac_bomber_equipment_3",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_airframe",
+      "parentId": "tac_bomber_equipment_2",
+      "defaultModules": [],
+      "year": 1944,
+      "nameKo": "전술폭격기 III",
+      "nameEn": "Tactical Bomber III",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 15,
+        "naval_targeting": 6,
+        "fuel_consumption": 0.36,
+        "build_cost_ic": 41,
+        "range": 3000,
+        "maximum_speed": 480,
+        "agility": 30,
+        "air_attack": 20,
+        "air_defence": 24,
+        "strategic_attack": 16,
+        "soft_attack": 15,
+        "surface_detection": 50,
+        "sub_detection": 12.5
+      },
+      "resources": {
+        "aluminium": 5,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "cv_small_plane_airframe_4",
+      "domain": "aircraft",
+      "type": "carrier_airframe",
+      "category": "cv_small_plane_airframe",
+      "parentId": "cv_small_plane_airframe_3",
+      "defaultModules": [
+        "fighter_weapon",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "kamikaze_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "plane_engine_type",
+        "twin_plane_engine_type",
+        "plane_jet_engine_type",
+        "twin_plane_jet_engine_type",
+        "plane_special_module_small",
+        "plane_special_module_defense_turret",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar"
+      ],
+      "year": 1945,
+      "nameKo": "현대식 함재기 기체",
+      "nameEn": "Modern Carrier Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.05,
+        "build_cost_ic": 14.5,
+        "range": 900,
+        "maximum_speed": 500,
+        "agility": 50,
+        "air_defence": 18
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "jet_fighter_equipment_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "jet_fighter_equipment",
+      "parentId": "jet_fighter_equipment",
+      "defaultModules": [],
+      "year": 1945,
+      "nameKo": "제트 전투기 I",
+      "nameEn": "Jet Fighter I",
+      "stats": {
+        "range": 1200,
+        "maximum_speed": 950,
+        "agility": 72,
+        "air_attack": 36,
+        "air_defence": 15,
+        "naval_attack": 5,
+        "naval_targeting": 10,
+        "surface_detection": 12,
+        "sub_detection": 3,
+        "build_cost_ic": 30,
+        "fuel_consumption": 0.42,
+        "reliability": 0.8
+      },
+      "resources": {
+        "aluminium": 2,
+        "tungsten": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "jet_tac_bomber_equipment_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "jet_tac_bomber_equipment",
+      "parentId": "jet_tac_bomber_equipment",
+      "defaultModules": [],
+      "year": 1945,
+      "nameKo": "제트 전술폭격기 I",
+      "nameEn": "Jet Tactical Bomber I",
+      "stats": {
+        "range": 1800,
+        "maximum_speed": 1000,
+        "agility": 57,
+        "air_attack": 18,
+        "air_defence": 24,
+        "strategic_attack": 16,
+        "soft_attack": 15,
+        "naval_attack": 15,
+        "naval_targeting": 6,
+        "surface_detection": 25,
+        "sub_detection": 7.5,
+        "build_cost_ic": 45,
+        "reliability": 0.8,
+        "fuel_consumption": 0.72
+      },
+      "resources": {
+        "aluminium": 2,
+        "tungsten": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "large_plane_airframe_4",
+      "domain": "aircraft",
+      "type": "large_airframe",
+      "category": "large_plane_airframe",
+      "parentId": "large_plane_airframe_3",
+      "defaultModules": [
+        "strat_weapon",
+        "nav_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "quad_large_plane_engine_type",
+        "large_plane_engine_type",
+        "quad_large_plane_jet_engine_type",
+        "large_plane_jet_engine_type",
+        "plane_special_module_defense_turret",
+        "plane_special_module_defense_turret_x2",
+        "plane_special_module_large",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "mine_warfare_defense"
+      ],
+      "year": 1945,
+      "nameKo": "현대식 대형 기체",
+      "nameEn": "Modern Large Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.16,
+        "build_cost_ic": 23,
+        "range": 3600,
+        "maximum_speed": 400,
+        "agility": 40,
+        "air_defence": 54
+      },
+      "resources": {
+        "aluminium": 6,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "medium_plane_airframe_4",
+      "domain": "aircraft",
+      "type": "medium_airframe",
+      "category": "medium_plane_airframe",
+      "parentId": "medium_plane_airframe_3",
+      "defaultModules": [
+        "tac_weapon",
+        "fighter_weapon",
+        "recon_camera",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "mine_warfare_offense",
+        "twin_plane_engine_type",
+        "medium_plane_engine_type",
+        "quad_large_plane_engine_type",
+        "twin_plane_jet_engine_type",
+        "medium_plane_jet_engine_type",
+        "quad_large_plane_jet_engine_type",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "plane_special_module_defense_turret",
+        "plane_special_module_defense_turret_x2",
+        "plane_special_module_medium",
+        "mine_warfare_defense"
+      ],
+      "year": 1945,
+      "nameKo": "현대식 중형 기체",
+      "nameEn": "Modern Medium Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0,
+        "build_cost_ic": 14,
+        "range": 1500,
+        "maximum_speed": 500,
+        "agility": 45,
+        "air_defence": 24
+      },
+      "resources": {
+        "aluminium": 5,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "small_plane_airframe_4",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_airframe",
+      "parentId": "small_plane_airframe_3",
+      "defaultModules": [
+        "fighter_weapon",
+        "cas_weapon",
+        "nav_bomber_weapon",
+        "kamikaze_bomber_weapon",
+        "recon_camera",
+        "mine_warfare_offense",
+        "plane_engine_type",
+        "twin_plane_engine_type",
+        "plane_jet_engine_type",
+        "twin_plane_jet_engine_type",
+        "plane_rocket_engine_type",
+        "plane_special_module_small",
+        "plane_special_module_bomb_sights",
+        "plane_special_module_radio_navigation",
+        "plane_special_module_air_ground_radar",
+        "plane_special_module_air_air_radar",
+        "plane_special_module_defense_turret"
+      ],
+      "year": 1945,
+      "nameKo": "현대식 소형 기체",
+      "nameEn": "Modern Small Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1,
+        "naval_targeting": 1,
+        "fuel_consumption": 0.05,
+        "build_cost_ic": 10,
+        "range": 900,
+        "maximum_speed": 500,
+        "agility": 55,
+        "air_defence": 18
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "transport_plane_equipment_3",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "transport_plane_equipment",
+      "parentId": "transport_plane_equipment_2",
+      "defaultModules": [],
+      "year": 1948,
+      "nameKo": "현대식 수송기",
+      "nameEn": "Modern Transport Plane",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 0,
+        "naval_targeting": 0,
+        "build_cost_ic": 38,
+        "fuel_consumption": 1,
+        "range": 1800,
+        "maximum_speed": 480,
+        "agility": 10,
+        "air_defence": 20
+      },
+      "resources": {
+        "aluminium": 3,
+        "rubber": 2
+      },
+      "source": "common\\units\\equipment\\quad_engine_airframe.txt"
+    },
+    {
+      "id": "jet_fighter_equipment_2",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "jet_fighter_equipment",
+      "parentId": "jet_fighter_equipment_1",
+      "defaultModules": [],
+      "year": 1950,
+      "nameKo": "제트 전투기 II",
+      "nameEn": "Jet Fighter II",
+      "stats": {
+        "range": 2200,
+        "maximum_speed": 1100,
+        "agility": 72,
+        "air_attack": 40,
+        "air_defence": 18,
+        "naval_attack": 5,
+        "naval_targeting": 10,
+        "surface_detection": 15,
+        "sub_detection": 4,
+        "build_cost_ic": 32,
+        "fuel_consumption": 0.42,
+        "reliability": 0.8
+      },
+      "resources": {
+        "aluminium": 3,
+        "tungsten": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "jet_strat_bomber_equipment_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "jet_strat_bomber_equipment",
+      "parentId": "jet_strat_bomber_equipment",
+      "defaultModules": [],
+      "year": 1950,
+      "nameKo": "제트 전략폭격기 I",
+      "nameEn": "Jet Strategic Bomber I",
+      "stats": {
+        "range": 7000,
+        "maximum_speed": 920,
+        "agility": 14,
+        "air_attack": 100,
+        "air_defence": 54,
+        "strategic_attack": 64,
+        "reliability": 0.8,
+        "naval_attack": 1.5,
+        "naval_targeting": 0.6,
+        "surface_detection": 10,
+        "sub_detection": 2.5,
+        "build_cost_ic": 80,
+        "fuel_consumption": 1.6
+      },
+      "resources": {
+        "aluminium": 3,
+        "tungsten": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "jet_tac_bomber_equipment_2",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "jet_tac_bomber_equipment",
+      "parentId": "jet_tac_bomber_equipment_1",
+      "defaultModules": [],
+      "year": 1950,
+      "nameKo": "제트 전술폭격기 II",
+      "nameEn": "Jet Tactical Bomber II",
+      "stats": {
+        "range": 5000,
+        "maximum_speed": 1000,
+        "agility": 57,
+        "air_attack": 22,
+        "air_defence": 28,
+        "strategic_attack": 20,
+        "soft_attack": 20,
+        "naval_attack": 15,
+        "naval_targeting": 6,
+        "surface_detection": 30,
+        "sub_detection": 10,
+        "build_cost_ic": 48,
+        "reliability": 0.8,
+        "fuel_consumption": 0.72
+      },
+      "resources": {
+        "aluminium": 3,
+        "tungsten": 3,
+        "rubber": 1
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    },
+    {
+      "id": "small_plane_airframe_5",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "small_plane_airframe",
+      "parentId": "small_plane_airframe_4",
+      "defaultModules": [
+        "jet_engine_axial_1x"
+      ],
+      "year": 1950,
+      "nameKo": "초음속 소형 기체",
+      "nameEn": "Supersonic Small Airframe",
+      "stats": {
+        "reliability": 0.8,
+        "naval_attack": 1.5,
+        "naval_targeting": 1.3,
+        "fuel_consumption": 0.45,
+        "build_cost_ic": 34,
+        "range": 979.9999999999999,
+        "maximum_speed": 1530,
+        "agility": 68.25,
+        "air_defence": 25
+      },
+      "resources": {
+        "aluminium": 4,
+        "rubber": 1,
+        "chromium": 4
+      },
+      "source": "common\\units\\equipment\\plane_airframes.txt"
+    },
+    {
+      "id": "supersonic_fighter_equipment_1",
+      "domain": "aircraft",
+      "type": "small_airframe",
+      "category": "jet_fighter_equipment",
+      "parentId": "jet_fighter_equipment_2",
+      "defaultModules": [],
+      "year": 1950,
+      "nameKo": "$supersonic_fighter1$",
+      "nameEn": "$supersonic_fighter1$",
+      "stats": {
+        "range": 2400,
+        "maximum_speed": 1400,
+        "agility": 82,
+        "air_attack": 48,
+        "air_defence": 25,
+        "naval_attack": 5,
+        "naval_targeting": 10,
+        "surface_detection": 15,
+        "sub_detection": 4,
+        "build_cost_ic": 39,
+        "fuel_consumption": 0.52,
+        "reliability": 0.8
+      },
+      "resources": {
+        "aluminium": 4,
+        "tungsten": 3,
+        "rubber": 1,
+        "chromium": 4
+      },
+      "source": "common\\units\\equipment\\x_plane_airframes.txt"
+    }
+  ]
+}

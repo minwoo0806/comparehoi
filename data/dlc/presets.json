@@ -1,0 +1,66 @@
+{
+  "tank": [
+    {
+      "id": "tank_generated_balanced_preset",
+      "nameKo": "자동 추천 수륙양용전차",
+      "nameEn": "Generated Balanced Amphibious Tank",
+      "baseId": "amphibious_tank_chassis",
+      "modulesBySlot": {
+        "engine_type": "tank_gasoline_engine",
+        "armor_type": "tank_riveted_armor",
+        "suspension": "tank_torsion_bar_suspension",
+        "turret": "tank_light_one_man_tank_turret",
+        "main_armament": "tank_heavy_machine_gun",
+        "special_1": "tank_rocket_launcher",
+        "special_2": "tank_rocket_launcher",
+        "special_3": "tank_rocket_launcher",
+        "special_4": "tank_rocket_launcher"
+      }
+    }
+  ],
+  "aircraft": [
+    {
+      "id": "aircraft_generated_balanced_preset",
+      "nameKo": "자동 추천 근접항공지원기 I",
+      "nameEn": "Generated Balanced Close Air Support I",
+      "baseId": "CAS_equipment_1",
+      "modulesBySlot": {
+        "engine_type_slot": "engine_1_1x",
+        "fixed_main_weapon_slot": "light_mg_2x",
+        "fixed_auxiliary_weapon_slot_1": "light_mg_2x",
+        "fixed_auxiliary_weapon_slot_2": "light_mg_2x",
+        "fixed_auxiliary_weapon_slot_3": "light_mg_2x",
+        "fixed_auxiliary_weapon_slot_4": "light_mg_2x",
+        "fixed_auxiliary_weapon_slot_5": "light_mg_2x",
+        "special_type_slot_1": "airdropped_mines",
+        "special_type_slot_2": "airdropped_mines",
+        "special_type_slot_3": "airdropped_mines",
+        "special_type_slot_4": "airdropped_mines",
+        "special_type_slot_5": "airdropped_mines"
+      }
+    }
+  ],
+  "ship": [
+    {
+      "id": "ship_generated_balanced_preset",
+      "nameKo": "자동 추천 전함 II",
+      "nameEn": "Generated Balanced Battleship II",
+      "baseId": "battleship_2",
+      "modulesBySlot": {
+        "fixed_ship_battery_slot": "ship_light_battery_1",
+        "front_1_custom_slot": "ship_light_battery_1",
+        "front_2_custom_slot": "ship_light_battery_1",
+        "mid_1_custom_slot": "ship_light_battery_1",
+        "mid_2_custom_slot": "ship_light_battery_1",
+        "mid_3_custom_slot": "ship_light_battery_1",
+        "rear_1_custom_slot": "ship_light_battery_1",
+        "rear_2_custom_slot": "ship_light_battery_1",
+        "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+        "fixed_ship_radar_slot": "ship_radar_1",
+        "fixed_ship_engine_slot": "light_ship_engine_1",
+        "fixed_ship_torpedo_slot": "ship_torpedo_1",
+        "fixed_ship_armor_slot": "ship_armor_bb_1"
+      }
+    }
+  ]
+}

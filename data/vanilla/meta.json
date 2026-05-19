@@ -1,0 +1,18 @@
+{
+  "generatedAt": "2026-05-18T12:21:23.815Z",
+  "source": "hoi4-game-files-vanilla",
+  "gamePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV",
+  "designerMode": "variant",
+  "counts": {
+    "tanks": 52,
+    "aircraft": 43,
+    "ships": 28,
+    "tankModules": 0,
+    "aircraftModules": 0,
+    "shipModules": 0
+  },
+  "notes": [
+    "설치된 HoI4 파일에서 DLC 설계기 차체/모듈을 제외한 바닐라 장비만 추출했습니다.",
+    "무료 DLC 폴더형 common/localisation 파일은 함께 읽되, No Step Back/By Blood Alone/Man the Guns 설계 모듈은 Vanilla 데이터셋에서 제외합니다."
+  ]
+}
