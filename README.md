@@ -12,10 +12,23 @@ npm run serve
 
 ## 배포
 
-`main` 브랜치에 푸시하면 GitHub Actions가 정적 사이트를 배포합니다.
+공개 사이트: https://minwoo0806.github.io/comparehoi/
 
-- 사이트: https://minwoo0806.github.io/comparehoi/
-- 저장소에서 **Settings → Pages → Build and deployment → Source**가 **GitHub Actions**인지 확인하세요. (처음 한 번만)
+처음 한 번만 GitHub 저장소에서 **Settings → Pages**로 이동한 뒤:
+
+- **Build and deployment → Source**: `Deploy from a branch`
+- **Branch**: `gh-pages` / `/ (root)`
+
+`main`을 수정한 뒤 `gh-pages`에도 반영하려면:
+
+```powershell
+git push origin main
+git checkout gh-pages
+git checkout main -- index.html styles.css src data package.json README.md tools/serve.js
+git commit -am "Sync site from main"
+git push origin gh-pages
+git checkout main
+```
 
 배포 직후에는 브라우저에서 **강력 새로고침(Ctrl+F5)** 이 필요할 수 있습니다.
 
