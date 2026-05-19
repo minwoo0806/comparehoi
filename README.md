@@ -10,6 +10,15 @@ npm run serve
 
 브라우저에서 `http://localhost:4173`을 엽니다.
 
+## 배포
+
+`main` 브랜치에 푸시하면 GitHub Actions가 정적 사이트를 배포합니다.
+
+- 사이트: https://minwoo0806.github.io/comparehoi/
+- 저장소에서 **Settings → Pages → Build and deployment → Source**가 **GitHub Actions**인지 확인하세요. (처음 한 번만)
+
+배포 직후에는 브라우저에서 **강력 새로고침(Ctrl+F5)** 이 필요할 수 있습니다.
+
 ## 바닐라 데이터 추출
 
 기본 Steam 경로에 HoI4가 설치되어 있다면:
