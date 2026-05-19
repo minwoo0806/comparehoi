@@ -1,79 +1,1764 @@
 {
   "countries": [
-    { "id": "none", "nameKo": "국가 선택", "nameEn": "Select Country", "modifiers": [] },
-    { "id": "USA", "nameKo": "미합중국", "nameEn": "United States", "modifiers": [] },
-    { "id": "GER", "nameKo": "독일", "nameEn": "Germany", "modifiers": [] },
-    { "id": "SOV", "nameKo": "소련", "nameEn": "Soviet Union", "modifiers": [] },
-    { "id": "ENG", "nameKo": "영국", "nameEn": "United Kingdom", "modifiers": [] },
-    { "id": "FRA", "nameKo": "프랑스", "nameEn": "France", "modifiers": [] },
-    { "id": "ITA", "nameKo": "이탈리아", "nameEn": "Italy", "modifiers": [] },
-    { "id": "JAP", "nameKo": "일본", "nameEn": "Japan", "modifiers": [] }
+    {
+      "id": "none",
+      "nameKo": "국가 선택",
+      "nameEn": "Select Country",
+      "modifiers": []
+    },
+    {
+      "id": "USA",
+      "nameKo": "미합중국",
+      "nameEn": "United States",
+      "modifiers": []
+    },
+    {
+      "id": "GER",
+      "nameKo": "독일",
+      "nameEn": "Germany",
+      "modifiers": []
+    },
+    {
+      "id": "SOV",
+      "nameKo": "소련",
+      "nameEn": "Soviet Union",
+      "modifiers": []
+    },
+    {
+      "id": "ENG",
+      "nameKo": "영국",
+      "nameEn": "United Kingdom",
+      "modifiers": []
+    },
+    {
+      "id": "FRA",
+      "nameKo": "프랑스",
+      "nameEn": "France",
+      "modifiers": []
+    },
+    {
+      "id": "ITA",
+      "nameKo": "이탈리아",
+      "nameEn": "Italy",
+      "modifiers": []
+    },
+    {
+      "id": "JAP",
+      "nameKo": "일본",
+      "nameEn": "Japan",
+      "modifiers": []
+    }
   ],
   "designers": [
-    { "id": "none", "nameKo": "설계사 없음", "nameEn": "No Designer", "domain": null, "modifiers": [] },
-    { "id": "usa_chrysler", "country": "USA", "nameKo": "크라이슬러", "nameEn": "Chrysler", "domain": "tank", "modifiers": [{ "stat": "reliability", "mode": "add", "value": 0.05 }] },
-    { "id": "usa_north_american", "country": "USA", "nameKo": "노스 아메리칸", "nameEn": "North American Aviation", "domain": "aircraft", "modifiers": [{ "stat": "range", "mode": "multiply", "value": 0.1 }] },
-    { "id": "usa_norfolk", "country": "USA", "nameKo": "노퍽 해군 조선소", "nameEn": "Norfolk Naval Yard", "domain": "ship", "modifiers": [{ "stat": "reliability", "mode": "add", "value": 0.04 }] },
-    { "id": "ger_henschel", "country": "GER", "nameKo": "헨셸", "nameEn": "Henschel", "domain": "tank", "modifiers": [{ "stat": "breakthrough", "mode": "multiply", "value": 0.05 }] },
-    { "id": "ger_messerschmitt", "country": "GER", "nameKo": "메서슈미트", "nameEn": "Messerschmitt", "domain": "aircraft", "modifiers": [{ "stat": "air_attack", "mode": "multiply", "value": 0.05 }] },
-    { "id": "ger_blohm_voss", "country": "GER", "nameKo": "블롬 운트 포스", "nameEn": "Blohm & Voss", "domain": "ship", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.04 }] },
-    { "id": "sov_morozov", "country": "SOV", "nameKo": "모로조프 설계국", "nameEn": "Morozov Design Bureau", "domain": "tank", "modifiers": [{ "stat": "build_cost_ic", "mode": "multiply", "value": -0.04 }] },
-    { "id": "sov_ilyushin", "country": "SOV", "nameKo": "일류신", "nameEn": "Ilyushin", "domain": "aircraft", "modifiers": [{ "stat": "soft_attack", "mode": "multiply", "value": 0.05 }] },
-    { "id": "sov_rubin", "country": "SOV", "nameKo": "루빈 설계국", "nameEn": "Rubin Design Bureau", "domain": "ship", "modifiers": [{ "stat": "sub_visibility", "mode": "multiply", "value": -0.05 }] },
-    { "id": "eng_vickers", "country": "ENG", "nameKo": "비커스-암스트롱", "nameEn": "Vickers-Armstrong", "domain": "tank", "modifiers": [{ "stat": "armor_value", "mode": "multiply", "value": 0.04 }] },
-    { "id": "eng_supermarine", "country": "ENG", "nameKo": "슈퍼마린", "nameEn": "Supermarine", "domain": "aircraft", "modifiers": [{ "stat": "agility", "mode": "multiply", "value": 0.05 }] },
-    { "id": "eng_john_brown", "country": "ENG", "nameKo": "존 브라운", "nameEn": "John Brown & Company", "domain": "ship", "modifiers": [{ "stat": "armor_value", "mode": "multiply", "value": 0.05 }] },
-    { "id": "fra_renault", "country": "FRA", "nameKo": "르노", "nameEn": "Renault", "domain": "tank", "modifiers": [{ "stat": "build_cost_ic", "mode": "multiply", "value": -0.03 }] },
-    { "id": "fra_bloch", "country": "FRA", "nameKo": "블로크", "nameEn": "Bloch", "domain": "aircraft", "modifiers": [{ "stat": "air_defence", "mode": "multiply", "value": 0.05 }] },
-    { "id": "fra_acl", "country": "FRA", "nameKo": "루아르 조선소", "nameEn": "Ateliers et Chantiers de la Loire", "domain": "ship", "modifiers": [{ "stat": "surface_detection", "mode": "multiply", "value": 0.05 }] },
-    { "id": "ita_fiat", "country": "ITA", "nameKo": "피아트", "nameEn": "Fiat", "domain": "tank", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.04 }] },
-    { "id": "ita_macchi", "country": "ITA", "nameKo": "마키", "nameEn": "Macchi", "domain": "aircraft", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.05 }] },
-    { "id": "ita_ansaldo", "country": "ITA", "nameKo": "안살도", "nameEn": "Ansaldo", "domain": "ship", "modifiers": [{ "stat": "light_attack", "mode": "multiply", "value": 0.05 }] },
-    { "id": "jap_mitsubishi", "country": "JAP", "nameKo": "미쓰비시", "nameEn": "Mitsubishi", "domain": "aircraft", "modifiers": [{ "stat": "naval_attack", "mode": "multiply", "value": 0.05 }] },
-    { "id": "jap_nissan", "country": "JAP", "nameKo": "닛산", "nameEn": "Nissan", "domain": "tank", "modifiers": [{ "stat": "reliability", "mode": "add", "value": 0.04 }] },
-    { "id": "jap_kure", "country": "JAP", "nameKo": "구레 해군 공창", "nameEn": "Kure Naval Arsenal", "domain": "ship", "modifiers": [{ "stat": "torpedo_attack", "mode": "multiply", "value": 0.05 }] },
-    { "id": "usa_ford", "country": "USA", "nameKo": "포드 자동차", "nameEn": "Ford Motor Company", "domain": "tank", "modifiers": [{ "stat": "build_cost_ic", "mode": "multiply", "value": -0.04 }] },
-    { "id": "usa_buick", "country": "USA", "nameKo": "뷰익", "nameEn": "Buick", "domain": "tank", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.04 }] },
-    { "id": "usa_grumman", "country": "USA", "nameKo": "그루먼", "nameEn": "Grumman", "domain": "aircraft", "modifiers": [{ "stat": "air_defence", "mode": "multiply", "value": 0.05 }, { "stat": "reliability", "mode": "add", "value": 0.02 }] },
-    { "id": "usa_lockheed", "country": "USA", "nameKo": "록히드", "nameEn": "Lockheed", "domain": "aircraft", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.05 }] },
-    { "id": "usa_newport_news", "country": "USA", "nameKo": "뉴포트 뉴스 조선", "nameEn": "Newport News Shipbuilding", "domain": "ship", "modifiers": [{ "stat": "armor_value", "mode": "multiply", "value": 0.04 }, { "stat": "reliability", "mode": "add", "value": 0.02 }] },
-    { "id": "usa_electric_boat", "country": "USA", "nameKo": "일렉트릭 보트", "nameEn": "Electric Boat", "domain": "ship", "modifiers": [{ "stat": "sub_visibility", "mode": "multiply", "value": -0.05 }] },
-    { "id": "ger_man", "country": "GER", "nameKo": "MAN", "nameEn": "MAN", "domain": "tank", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.05 }] },
-    { "id": "ger_porsche", "country": "GER", "nameKo": "포르셰", "nameEn": "Porsche", "domain": "tank", "modifiers": [{ "stat": "armor_value", "mode": "multiply", "value": 0.05 }, { "stat": "reliability", "mode": "add", "value": -0.02 }] },
-    { "id": "ger_focke_wulf", "country": "GER", "nameKo": "포케불프", "nameEn": "Focke-Wulf", "domain": "aircraft", "modifiers": [{ "stat": "agility", "mode": "multiply", "value": 0.05 }] },
-    { "id": "ger_junkers", "country": "GER", "nameKo": "융커스", "nameEn": "Junkers", "domain": "aircraft", "modifiers": [{ "stat": "soft_attack", "mode": "multiply", "value": 0.06 }, { "stat": "strategic_attack", "mode": "multiply", "value": 0.04 }] },
-    { "id": "ger_germaniawerft", "country": "GER", "nameKo": "게르마니아베르프트", "nameEn": "Germaniawerft", "domain": "ship", "modifiers": [{ "stat": "sub_visibility", "mode": "multiply", "value": -0.05 }] },
-    { "id": "ger_deutsche_werke", "country": "GER", "nameKo": "도이체 베르케", "nameEn": "Deutsche Werke", "domain": "ship", "modifiers": [{ "stat": "heavy_attack", "mode": "multiply", "value": 0.05 }] },
-    { "id": "sov_kharkiv", "country": "SOV", "nameKo": "하르코프 기관차 공장", "nameEn": "Kharkiv Locomotive Factory", "domain": "tank", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.04 }] },
-    { "id": "sov_kirov", "country": "SOV", "nameKo": "키로프 공장", "nameEn": "Kirov Plant", "domain": "tank", "modifiers": [{ "stat": "armor_value", "mode": "multiply", "value": 0.05 }] },
-    { "id": "sov_yakovlev", "country": "SOV", "nameKo": "야코블레프", "nameEn": "Yakovlev", "domain": "aircraft", "modifiers": [{ "stat": "agility", "mode": "multiply", "value": 0.05 }] },
-    { "id": "sov_mikoyan", "country": "SOV", "nameKo": "미코얀-구레비치", "nameEn": "Mikoyan-Gurevich", "domain": "aircraft", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.05 }] },
-    { "id": "sov_black_sea_shipyard", "country": "SOV", "nameKo": "흑해 조선소", "nameEn": "Black Sea Shipyard", "domain": "ship", "modifiers": [{ "stat": "build_cost_ic", "mode": "multiply", "value": -0.03 }] },
-    { "id": "eng_leyland", "country": "ENG", "nameKo": "레일랜드", "nameEn": "Leyland", "domain": "tank", "modifiers": [{ "stat": "build_cost_ic", "mode": "multiply", "value": -0.03 }] },
-    { "id": "eng_de_havilland", "country": "ENG", "nameKo": "드 하빌랜드", "nameEn": "de Havilland", "domain": "aircraft", "modifiers": [{ "stat": "range", "mode": "multiply", "value": 0.08 }] },
-    { "id": "eng_avro", "country": "ENG", "nameKo": "아브로", "nameEn": "Avro", "domain": "aircraft", "modifiers": [{ "stat": "strategic_attack", "mode": "multiply", "value": 0.06 }] },
-    { "id": "eng_cammell_laird", "country": "ENG", "nameKo": "카멜 레어드", "nameEn": "Cammell Laird", "domain": "ship", "modifiers": [{ "stat": "anti_air_attack", "mode": "multiply", "value": 0.05 }] },
-    { "id": "fra_amx", "country": "FRA", "nameKo": "AMX", "nameEn": "AMX", "domain": "tank", "modifiers": [{ "stat": "armor_value", "mode": "multiply", "value": 0.04 }] },
-    { "id": "fra_hotchkiss", "country": "FRA", "nameKo": "오치키스", "nameEn": "Hotchkiss", "domain": "tank", "modifiers": [{ "stat": "reliability", "mode": "add", "value": 0.04 }] },
-    { "id": "fra_dewoitine", "country": "FRA", "nameKo": "드부아틴", "nameEn": "Dewoitine", "domain": "aircraft", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.04 }] },
-    { "id": "fra_breguet", "country": "FRA", "nameKo": "브레게", "nameEn": "Breguet", "domain": "aircraft", "modifiers": [{ "stat": "range", "mode": "multiply", "value": 0.08 }] },
-    { "id": "fra_brest", "country": "FRA", "nameKo": "브레스트 조선소", "nameEn": "Brest Naval Yard", "domain": "ship", "modifiers": [{ "stat": "heavy_attack", "mode": "multiply", "value": 0.04 }] },
-    { "id": "ita_lancia", "country": "ITA", "nameKo": "란치아", "nameEn": "Lancia", "domain": "tank", "modifiers": [{ "stat": "reliability", "mode": "add", "value": 0.04 }] },
-    { "id": "ita_reggiane", "country": "ITA", "nameKo": "레자네", "nameEn": "Reggiane", "domain": "aircraft", "modifiers": [{ "stat": "agility", "mode": "multiply", "value": 0.05 }] },
-    { "id": "ita_savoia_marchetti", "country": "ITA", "nameKo": "사보이아-마르케티", "nameEn": "Savoia-Marchetti", "domain": "aircraft", "modifiers": [{ "stat": "range", "mode": "multiply", "value": 0.08 }] },
-    { "id": "ita_crda", "country": "ITA", "nameKo": "CRDA", "nameEn": "CRDA", "domain": "ship", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.04 }] },
-    { "id": "jap_osaka", "country": "JAP", "nameKo": "오사카 육군 조병창", "nameEn": "Osaka Army Arsenal", "domain": "tank", "modifiers": [{ "stat": "build_cost_ic", "mode": "multiply", "value": -0.03 }] },
-    { "id": "jap_nakajima", "country": "JAP", "nameKo": "나카지마", "nameEn": "Nakajima", "domain": "aircraft", "modifiers": [{ "stat": "agility", "mode": "multiply", "value": 0.05 }] },
-    { "id": "jap_yokosuka", "country": "JAP", "nameKo": "요코스카 항공기술창", "nameEn": "Yokosuka Naval Air Technical Arsenal", "domain": "aircraft", "modifiers": [{ "stat": "air_defence", "mode": "multiply", "value": 0.05 }] },
-    { "id": "jap_maizuru", "country": "JAP", "nameKo": "마이즈루 해군 공창", "nameEn": "Maizuru Naval Arsenal", "domain": "ship", "modifiers": [{ "stat": "maximum_speed", "mode": "multiply", "value": 0.04 }] }
+    {
+      "id": "none",
+      "nameKo": "설계사 없음",
+      "nameEn": "No Designer",
+      "domain": null,
+      "modifiers": []
+    },
+    {
+      "id": "industrial_concern",
+      "nameKo": "산업 업체",
+      "nameEn": "Industrial Concern",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "AFG_railway_company_idea",
+      "nameKo": "아프간 철도 회사",
+      "nameEn": "Afghan Railway Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\afghanistan.txt"
+    },
+    {
+      "id": "AFG_electrical_company_idea",
+      "nameKo": "카불 전자공학 회사",
+      "nameEn": "Kabul Electronics Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\afghanistan.txt"
+    },
+    {
+      "id": "AFG_textile_company_idea",
+      "nameKo": "카이베르 직물",
+      "nameEn": "Khyber Textiles",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\afghanistan.txt"
+    },
+    {
+      "id": "tank_manufacturer",
+      "nameKo": "전차 설계사",
+      "nameEn": "Tank Designer",
+      "domain": "tank",
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "ARG_fabricaciones_militares_epartamento_de_tanques_del_ejercito_manufacturer",
+      "nameKo": "$ARG_fabricaciones_militares_epartamento_de_tanques_del_ejercito_organization$",
+      "nameEn": "$ARG_fabricaciones_militares_epartamento_de_tanques_del_ejercito_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\argentina.txt"
+    },
+    {
+      "id": "aircraft_manufacturer",
+      "nameKo": "항공기 설계사",
+      "nameEn": "Aircraft Designer",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "ARG_fma_manufacturer",
+      "nameKo": "$ARG_fma_organization$",
+      "nameEn": "$ARG_fma_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\argentina.txt"
+    },
+    {
+      "id": "naval_manufacturer",
+      "nameKo": "함선 설계사",
+      "nameEn": "Ship Designer",
+      "domain": "ship",
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "ARG_arsenales_de_marina_manufacturer",
+      "nameKo": "$ARG_arsenales_de_marina_organization$",
+      "nameEn": "$ARG_arsenales_de_marina_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\argentina.txt"
+    },
+    {
+      "id": "ARG_astarsa_manufacturer",
+      "nameKo": "$ARG_astarsa_organization$",
+      "nameEn": "$ARG_astarsa_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\argentina.txt"
+    },
+    {
+      "id": "materiel_manufacturer",
+      "nameKo": "군수품 설계사",
+      "nameEn": "Materiel Designer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "AUS_alpen_elektrowerke_designer",
+      "nameKo": "알파인 전력 회사",
+      "nameEn": "Alpen-Elektrowerke",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\austria.txt"
+    },
+    {
+      "id": "BEL_colonial_maritime_company",
+      "nameKo": "벨기에령 콩고 해운",
+      "nameEn": "Compagnie Belge Maritime du Congo",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\belgium.txt"
+    },
+    {
+      "id": "BRA_fiat_company",
+      "nameKo": "브라질 피아트",
+      "nameEn": "Brazilian Fiat",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\brazil.txt"
+    },
+    {
+      "id": "BRA_bernadini_manufacturer",
+      "nameKo": "$BRA_bernadini_organization$",
+      "nameEn": "$BRA_bernadini_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\brazil.txt"
+    },
+    {
+      "id": "BRA_embraer_manufacturer",
+      "nameKo": "$BRA_embraer_organization$",
+      "nameEn": "$BRA_embraer_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\brazil.txt"
+    },
+    {
+      "id": "BRA_amrj_manufacturer",
+      "nameKo": "$BRA_amrj_organization$",
+      "nameEn": "$BRA_amrj_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\brazil.txt"
+    },
+    {
+      "id": "SOV_ARG_BRA_rubin_design_bureau_manufacturer",
+      "nameKo": "루빈",
+      "nameEn": "Rubin",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\brazil.txt"
+    },
+    {
+      "id": "BRA_ford_motor_company",
+      "nameKo": "$USA_ford_motor_company_organization$",
+      "nameEn": "$USA_ford_motor_company_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\brazil.txt"
+    },
+    {
+      "id": "BRA_fnm_manufacturer",
+      "nameKo": "$BRA_fnm_organization$",
+      "nameEn": "$BRA_fnm_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\brazil.txt"
+    },
+    {
+      "id": "BRA_rossi_manufacturer",
+      "nameKo": "$BRA_rossi_organization$",
+      "nameEn": "$BRA_rossi_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\brazil.txt"
+    },
+    {
+      "id": "BRA_ddam_manufacturer",
+      "nameKo": "$BRA_ddam_organization$",
+      "nameEn": "$BRA_ddam_organization$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\brazil.txt"
+    },
+    {
+      "id": "john_brown_company",
+      "nameKo": "존 브라운 & 컴퍼니",
+      "nameEn": "John Brown & Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\britain.txt"
+    },
+    {
+      "id": "ENG_crewe_works_manufacturer",
+      "nameKo": "ENG_crewe_works_manufacturer",
+      "nameEn": "ENG_crewe_works_manufacturer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\britain.txt"
+    },
+    {
+      "id": "BUL_german_tank_designer",
+      "nameKo": "BUL_german_tank_designer",
+      "nameEn": "BUL_german_tank_designer",
+      "domain": "tank",
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_british_tank_designer",
+      "nameKo": "BUL_british_tank_designer",
+      "nameEn": "BUL_british_tank_designer",
+      "domain": "tank",
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_soviet_tank_designer",
+      "nameKo": "BUL_soviet_tank_designer",
+      "nameEn": "BUL_soviet_tank_designer",
+      "domain": "tank",
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_italian_tank_designer",
+      "nameKo": "BUL_italian_tank_designer",
+      "nameEn": "BUL_italian_tank_designer",
+      "domain": "tank",
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_british_naval_designer",
+      "nameKo": "BUL_british_naval_designer",
+      "nameEn": "BUL_british_naval_designer",
+      "domain": "ship",
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_soviet_naval_designer",
+      "nameKo": "BUL_soviet_naval_designer",
+      "nameEn": "BUL_soviet_naval_designer",
+      "domain": "ship",
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_italian_naval_designer",
+      "nameKo": "BUL_italian_naval_designer",
+      "nameEn": "BUL_italian_naval_designer",
+      "domain": "ship",
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_german_aircraft_designer",
+      "nameKo": "BUL_german_aircraft_designer",
+      "nameEn": "BUL_german_aircraft_designer",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_british_aircraft_designer",
+      "nameKo": "BUL_british_aircraft_designer",
+      "nameEn": "BUL_british_aircraft_designer",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_soviet_aircraft_designer",
+      "nameKo": "BUL_soviet_aircraft_designer",
+      "nameEn": "BUL_soviet_aircraft_designer",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_german_materiel_designer",
+      "nameKo": "BUL_german_materiel_designer",
+      "nameEn": "BUL_german_materiel_designer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_british_materiel_designer",
+      "nameKo": "BUL_british_materiel_designer",
+      "nameEn": "BUL_british_materiel_designer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_soviet_materiel_designer",
+      "nameKo": "BUL_soviet_materiel_designer",
+      "nameEn": "BUL_soviet_materiel_designer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_italian_materiel_designer",
+      "nameKo": "BUL_italian_materiel_designer",
+      "nameEn": "BUL_italian_materiel_designer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_german_industrial_concern",
+      "nameKo": "BUL_german_industrial_concern",
+      "nameEn": "BUL_german_industrial_concern",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_british_industrial_concern",
+      "nameKo": "BUL_british_industrial_concern",
+      "nameEn": "BUL_british_industrial_concern",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "BUL_soviet_industrial_concern",
+      "nameKo": "BUL_soviet_industrial_concern",
+      "nameEn": "BUL_soviet_industrial_concern",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\bulgaria.txt"
+    },
+    {
+      "id": "inglis_company",
+      "nameKo": "존 잉글리스 앤드 컴퍼니",
+      "nameEn": "John Inglis and Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\canada.txt"
+    },
+    {
+      "id": "german_chinese_tank_designer",
+      "nameKo": "중국-독일 기술사절단",
+      "nameEn": "Sino-German Technical Mission",
+      "domain": "tank",
+      "modifiers": [],
+      "source": "common\\ideas\\china_shared.txt"
+    },
+    {
+      "id": "CHI_shanghai_arsenal_designer",
+      "nameKo": "$CHI_shanghai_arsenal$",
+      "nameEn": "$CHI_shanghai_arsenal$",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\china_shared.txt"
+    },
+    {
+      "id": "CHI_shanghai_power_company",
+      "nameKo": "상해전력공사",
+      "nameEn": "Shanghai Power Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\china_shared.txt"
+    },
+    {
+      "id": "PRC_first_tractor_company",
+      "nameKo": "제1트랙터 제조창",
+      "nameEn": "First Tractor Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\comchina.txt"
+    },
+    {
+      "id": "PRC_peoples_aviation_company_of_china",
+      "nameKo": "중국인민항공공사",
+      "nameEn": "People's Aviation Company of China",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\comchina.txt"
+    },
+    {
+      "id": "PRC_dalian_shipbuilding_company",
+      "nameKo": "대련조선공사",
+      "nameEn": "Dalian Shipbuilding Company",
+      "domain": "ship",
+      "modifiers": [],
+      "source": "common\\ideas\\comchina.txt"
+    },
+    {
+      "id": "COG_colonial_maritime_company",
+      "nameKo": "벨기에령 콩고 해운",
+      "nameEn": "Compagnie Belge Maritime du Congo",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\congo.txt"
+    },
+    {
+      "id": "COG_sabena_civilian_designer",
+      "nameKo": "벨기에 항공 운영 유한회사",
+      "nameEn": "Societé Anonyme Belge d'Exploitation de la Navigation Aérienne",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\congo.txt"
+    },
+    {
+      "id": "CZE_vitkovice_mining_and_metallurgical_company",
+      "nameKo": "비트코비체 광산 및 금속 회사",
+      "nameEn": "Vítkovice Mining and Metallurgical Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\czechoslovakia.txt"
+    },
+    {
+      "id": "CZE_vitkovice_mining_and_metallurgical_company_2",
+      "nameKo": "CZE_vitkovice_mining_and_metallurgical_company_2",
+      "nameEn": "CZE_vitkovice_mining_and_metallurgical_company_2",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\czechoslovakia.txt"
+    },
+    {
+      "id": "CZE_vitkovice_mining_and_metallurgical_company_3",
+      "nameKo": "CZE_vitkovice_mining_and_metallurgical_company_3",
+      "nameEn": "CZE_vitkovice_mining_and_metallurgical_company_3",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\czechoslovakia.txt"
+    },
+    {
+      "id": "CZE_vitkovice_mining_and_metallurgical_company_4",
+      "nameKo": "CZE_vitkovice_mining_and_metallurgical_company_4",
+      "nameEn": "CZE_vitkovice_mining_and_metallurgical_company_4",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\czechoslovakia.txt"
+    },
+    {
+      "id": "CZE_integrate_czech_manufacturers_GER_idea_aat",
+      "nameKo": "보헤미아 제조사 통합",
+      "nameEn": "Bohemia Manufacturer Integration",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\czechoslovakia.txt"
+    },
+    {
+      "id": "CZE_integrate_czech_manufacturers_GER_idea_no_aat",
+      "nameKo": "CZE_integrate_czech_manufacturers_GER_idea_no_aat",
+      "nameEn": "CZE_integrate_czech_manufacturers_GER_idea_no_aat",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\czechoslovakia.txt"
+    },
+    {
+      "id": "CZE_skoda_works_german_manufacturer",
+      "nameKo": "CZE_skoda_works_german_manufacturer",
+      "nameEn": "CZE_skoda_works_german_manufacturer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\czechoslovakia.txt"
+    },
+    {
+      "id": "CZE_bohmische_mahrische_maschinenfabrik_ag_german_manufacturer",
+      "nameKo": "CZE_bohmische_mahrische_maschinenfabrik_ag_german_manufacturer",
+      "nameEn": "CZE_bohmische_mahrische_maschinenfabrik_ag_german_manufacturer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\czechoslovakia.txt"
+    },
+    {
+      "id": "ETH_john_brown_company",
+      "nameKo": "존 브라운 앤드 컴퍼니",
+      "nameEn": "John Brown & Co",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\ethiopia.txt"
+    },
+    {
+      "id": "FRA_alsthom_manufacturer",
+      "nameKo": "FRA_alsthom_manufacturer",
+      "nameEn": "FRA_alsthom_manufacturer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\france.txt"
+    },
+    {
+      "id": "GER_henschel_kassel_manufacturer",
+      "nameKo": "GER_henschel_kassel_manufacturer",
+      "nameEn": "GER_henschel_kassel_manufacturer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\GER.txt"
+    },
+    {
+      "id": "GRE_ford_motor_company",
+      "nameKo": "포드 자동차 회사",
+      "nameEn": "Ford Motor Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\greece.txt"
+    },
+    {
+      "id": "IRQ_anglo_iraqi_oil_company",
+      "nameKo": "영국-이라크 석유 회사의 수익",
+      "nameEn": "Anglo-Iraqi Oil Company Benefits",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\iraq.txt"
+    },
+    {
+      "id": "IRQ_state_company_for_cement_idea",
+      "nameKo": "[ROOT.GetAdjective] 시멘트 종합 회사",
+      "nameEn": "The General Company for [ROOT.GetAdjective] Cement",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\iraq.txt"
+    },
+    {
+      "id": "IRQ_state_company_of_cotton_industries_idea",
+      "nameKo": "면직물 산업 국영 회사",
+      "nameEn": "State Company of Cotton Industries",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\iraq.txt"
+    },
+    {
+      "id": "IRQ_state_railways_company",
+      "nameKo": "[ROOT.GetAdjective] 국영 철도",
+      "nameEn": "[ROOT.GetAdjective] State Railways",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\iraq.txt"
+    },
+    {
+      "id": "IRQ_state_company_for_iron_and_steel",
+      "nameKo": "국영 철강 회사",
+      "nameEn": "State Company For Iron and Steel",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\iraq.txt"
+    },
+    {
+      "id": "IRQ_iraq_petrolium_company",
+      "nameKo": "이라크 정유 회사",
+      "nameEn": "Iraq Petroleum Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\iraq.txt"
+    },
+    {
+      "id": "IRQ_nairn_transport_company",
+      "nameKo": "네언 운송 회사",
+      "nameEn": "Nairn Transport Company",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\iraq.txt"
+    },
+    {
+      "id": "ITA_ansaldo_manufacturer",
+      "nameKo": "ITA_ansaldo_manufacturer",
+      "nameEn": "ITA_ansaldo_manufacturer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\italy.txt"
+    },
+    {
+      "id": "ITA_ansaldo_manufacturer_improved",
+      "nameKo": "ITA_ansaldo_manufacturer_improved",
+      "nameEn": "ITA_ansaldo_manufacturer_improved",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\italy.txt"
+    },
+    {
+      "id": "kawanishi_aircraft_company",
+      "nameKo": "가와니시 항공기",
+      "nameEn": "Kawanishi Aircraft Company",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\japan.txt"
+    },
+    {
+      "id": "oriental_development_company",
+      "nameKo": "동양척식주식회사",
+      "nameEn": "Oriental Development Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\japan.txt"
+    },
+    {
+      "id": "oriental_development_company_upgraded",
+      "nameKo": "oriental_development_company_upgraded",
+      "nameEn": "oriental_development_company_upgraded",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\japan.txt"
+    },
+    {
+      "id": "MAN_south_manchuria_railway_company",
+      "nameKo": "남만주철도주식회사",
+      "nameEn": "South Manchuria Railway Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\manchukou.txt"
+    },
+    {
+      "id": "integrated_designers_spirit",
+      "nameKo": "통합된 설계사들",
+      "nameEn": "Integrated Designers",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\navy_spirits.txt"
+    },
+    {
+      "id": "PER_iranian_oil_company_idea",
+      "nameKo": "PER_iranian_oil_company_idea",
+      "nameEn": "PER_iranian_oil_company_idea",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\persia.txt"
+    },
+    {
+      "id": "PER_tehran_armor_manufacturer",
+      "nameKo": "테헤란 기갑",
+      "nameEn": "Tehran Armor",
+      "domain": "tank",
+      "modifiers": [],
+      "source": "common\\ideas\\persia.txt"
+    },
+    {
+      "id": "PHI_south_seas_development_company_idea",
+      "nameKo": "PHI_south_seas_development_company_idea",
+      "nameEn": "PHI_south_seas_development_company_idea",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\philippines.txt"
+    },
+    {
+      "id": "PHI_san_miguel_company_idea",
+      "nameKo": "PHI_san_miguel_company_idea",
+      "nameEn": "PHI_san_miguel_company_idea",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\philippines.txt"
+    },
+    {
+      "id": "PHI_san_miguel_company_improved_idea",
+      "nameKo": "PHI_san_miguel_company_improved_idea",
+      "nameEn": "PHI_san_miguel_company_improved_idea",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\philippines.txt"
+    },
+    {
+      "id": "PHI_manila_railroad_company_idea",
+      "nameKo": "PHI_manila_railroad_company_idea",
+      "nameEn": "PHI_manila_railroad_company_idea",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\philippines.txt"
+    },
+    {
+      "id": "PHI_philippine_long_distance_telephone_company_idea",
+      "nameKo": "PHI_philippine_long_distance_telephone_company_idea",
+      "nameEn": "PHI_philippine_long_distance_telephone_company_idea",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\philippines.txt"
+    },
+    {
+      "id": "PHI_marsman_and_company_idea",
+      "nameKo": "PHI_marsman_and_company_idea",
+      "nameEn": "PHI_marsman_and_company_idea",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\philippines.txt"
+    },
+    {
+      "id": "PHI_marsman_and_company_improved_idea",
+      "nameKo": "PHI_marsman_and_company_improved_idea",
+      "nameEn": "PHI_marsman_and_company_improved_idea",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\philippines.txt"
+    },
+    {
+      "id": "ROM_coastal_defense_navy_designer",
+      "nameKo": "갈라치 조선소",
+      "nameEn": "Galati Shipyard",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\romania.txt"
+    },
+    {
+      "id": "ROM_black_sea_dominance_designer",
+      "nameKo": "브러일라 조선소",
+      "nameEn": "Braila Shipyards",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\romania.txt"
+    },
+    {
+      "id": "SOV_kolomna_manufacturer",
+      "nameKo": "SOV_kolomna_manufacturer",
+      "nameEn": "SOV_kolomna_manufacturer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\SOV.txt"
+    },
+    {
+      "id": "electric_boat_company",
+      "nameKo": "일렉트릭 보트 회사",
+      "nameEn": "Electric Boat Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\usa.txt"
+    },
+    {
+      "id": "douglas_aircraft_company",
+      "nameKo": "더글러스 항공기 회사",
+      "nameEn": "Douglas Aircraft Company",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\usa.txt"
+    },
+    {
+      "id": "ford_motor_company",
+      "nameKo": "포드 자동차 회사",
+      "nameEn": "Ford Motor Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\usa.txt"
+    },
+    {
+      "id": "USA_baldwin_locomotive_works_manufacturer",
+      "nameKo": "USA_baldwin_locomotive_works_manufacturer",
+      "nameEn": "USA_baldwin_locomotive_works_manufacturer",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\usa.txt"
+    },
+    {
+      "id": "generic_tank_manufacturer",
+      "nameKo": "기갑 방위산업체",
+      "nameEn": "Armor Company",
+      "domain": "tank",
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "generic_naval_manufacturer",
+      "nameKo": "해군 방위산업체",
+      "nameEn": "Naval Company",
+      "domain": "ship",
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "generic_light_aircraft_manufacturer",
+      "nameKo": "경항공 방위산업체",
+      "nameEn": "Light Air Company",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "generic_medium_aircraft_manufacturer",
+      "nameKo": "중형항공 방위산업체",
+      "nameEn": "Medium Air Company",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "generic_heavy_aircraft_manufacturer",
+      "nameKo": "중항공 방위산업체",
+      "nameEn": "Heavy Air Company",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "generic_naval_aircraft_manufacturer",
+      "nameKo": "해군 항공 방위산업체",
+      "nameEn": "Naval Air Company",
+      "domain": "aircraft",
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "generic_industrial_concern",
+      "nameKo": "산업 회사",
+      "nameEn": "Industrial Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "generic_electronics_concern",
+      "nameKo": "전자공학 회사",
+      "nameEn": "Electronics Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "generic_motorized_equipment_manufacturer",
+      "nameKo": "차량화 방위산업체",
+      "nameEn": "Motorization Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "generic_infantry_equipment_manufacturer",
+      "nameKo": "소화기 방위산업체",
+      "nameEn": "Small Arms Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "generic_artillery_manufacturer",
+      "nameKo": "포병 방위산업체",
+      "nameEn": "Artillery Company",
+      "domain": null,
+      "modifiers": [],
+      "source": "common\\ideas\\zzz_generic.txt"
+    },
+    {
+      "id": "usa_chrysler",
+      "country": "USA",
+      "nameKo": "크라이슬러",
+      "nameEn": "Chrysler",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "reliability",
+          "mode": "add",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "usa_ford",
+      "country": "USA",
+      "nameKo": "포드 자동차",
+      "nameEn": "Ford Motor Company",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.04
+        }
+      ]
+    },
+    {
+      "id": "usa_buick",
+      "country": "USA",
+      "nameKo": "뷰익",
+      "nameEn": "Buick",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "usa_north_american",
+      "country": "USA",
+      "nameKo": "노스 아메리칸",
+      "nameEn": "North American Aviation",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "usa_grumman",
+      "country": "USA",
+      "nameKo": "그루먼",
+      "nameEn": "Grumman",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "air_defence",
+          "mode": "multiply",
+          "value": 0.05
+        },
+        {
+          "stat": "reliability",
+          "mode": "add",
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "id": "usa_lockheed",
+      "country": "USA",
+      "nameKo": "록히드",
+      "nameEn": "Lockheed",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "usa_norfolk",
+      "country": "USA",
+      "nameKo": "노퍽 해군 조선소",
+      "nameEn": "Norfolk Naval Yard",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "reliability",
+          "mode": "add",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "usa_newport_news",
+      "country": "USA",
+      "nameKo": "뉴포트 뉴스 조선",
+      "nameEn": "Newport News Shipbuilding",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "armor_value",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "usa_electric_boat",
+      "country": "USA",
+      "nameKo": "일렉트릭 보트",
+      "nameEn": "Electric Boat",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ]
+    },
+    {
+      "id": "ger_henschel",
+      "country": "GER",
+      "nameKo": "헨셸",
+      "nameEn": "Henschel",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "breakthrough",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "ger_man",
+      "country": "GER",
+      "nameKo": "MAN",
+      "nameEn": "MAN",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "ger_porsche",
+      "country": "GER",
+      "nameKo": "포르셰",
+      "nameEn": "Porsche",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "armor_value",
+          "mode": "multiply",
+          "value": 0.05
+        },
+        {
+          "stat": "reliability",
+          "mode": "add",
+          "value": -0.02
+        }
+      ]
+    },
+    {
+      "id": "ger_messerschmitt",
+      "country": "GER",
+      "nameKo": "메서슈미트",
+      "nameEn": "Messerschmitt",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "air_attack",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "ger_focke_wulf",
+      "country": "GER",
+      "nameKo": "포케불프",
+      "nameEn": "Focke-Wulf",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "ger_junkers",
+      "country": "GER",
+      "nameKo": "융커스",
+      "nameEn": "Junkers",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "soft_attack",
+          "mode": "multiply",
+          "value": 0.06
+        },
+        {
+          "stat": "strategic_attack",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "ger_blohm_voss",
+      "country": "GER",
+      "nameKo": "블롬 운트 포스",
+      "nameEn": "Blohm & Voss",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "ger_germaniawerft",
+      "country": "GER",
+      "nameKo": "게르마니아베르프트",
+      "nameEn": "Germaniawerft",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ]
+    },
+    {
+      "id": "ger_deutsche_werke",
+      "country": "GER",
+      "nameKo": "도이체 베르케",
+      "nameEn": "Deutsche Werke",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "heavy_attack",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "sov_morozov",
+      "country": "SOV",
+      "nameKo": "모로조프 설계국",
+      "nameEn": "Morozov Design Bureau",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.04
+        }
+      ]
+    },
+    {
+      "id": "sov_kharkiv",
+      "country": "SOV",
+      "nameKo": "하르코프 기관차 공장",
+      "nameEn": "Kharkiv Locomotive Factory",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "sov_kirov",
+      "country": "SOV",
+      "nameKo": "키로프 공장",
+      "nameEn": "Kirov Plant",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "armor_value",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "sov_ilyushin",
+      "country": "SOV",
+      "nameKo": "일류신",
+      "nameEn": "Ilyushin",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "soft_attack",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "sov_yakovlev",
+      "country": "SOV",
+      "nameKo": "야코블레프",
+      "nameEn": "Yakovlev",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "sov_mikoyan",
+      "country": "SOV",
+      "nameKo": "미코얀-구레비치",
+      "nameEn": "Mikoyan-Gurevich",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "sov_rubin",
+      "country": "SOV",
+      "nameKo": "루빈 설계국",
+      "nameEn": "Rubin Design Bureau",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ]
+    },
+    {
+      "id": "sov_black_sea_shipyard",
+      "country": "SOV",
+      "nameKo": "흑해 조선소",
+      "nameEn": "Black Sea Shipyard",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ]
+    },
+    {
+      "id": "eng_vickers",
+      "country": "ENG",
+      "nameKo": "비커스-암스트롱",
+      "nameEn": "Vickers-Armstrong",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "armor_value",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "eng_leyland",
+      "country": "ENG",
+      "nameKo": "레일랜드",
+      "nameEn": "Leyland",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ]
+    },
+    {
+      "id": "eng_supermarine",
+      "country": "ENG",
+      "nameKo": "슈퍼마린",
+      "nameEn": "Supermarine",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "eng_de_havilland",
+      "country": "ENG",
+      "nameKo": "드 하빌랜드",
+      "nameEn": "de Havilland",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": 0.08
+        }
+      ]
+    },
+    {
+      "id": "eng_avro",
+      "country": "ENG",
+      "nameKo": "아브로",
+      "nameEn": "Avro",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "strategic_attack",
+          "mode": "multiply",
+          "value": 0.06
+        }
+      ]
+    },
+    {
+      "id": "eng_john_brown",
+      "country": "ENG",
+      "nameKo": "존 브라운",
+      "nameEn": "John Brown & Company",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "armor_value",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "eng_cammell_laird",
+      "country": "ENG",
+      "nameKo": "카멜 레어드",
+      "nameEn": "Cammell Laird",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "anti_air_attack",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "fra_renault",
+      "country": "FRA",
+      "nameKo": "르노",
+      "nameEn": "Renault",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ]
+    },
+    {
+      "id": "fra_amx",
+      "country": "FRA",
+      "nameKo": "AMX",
+      "nameEn": "AMX",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "armor_value",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "fra_hotchkiss",
+      "country": "FRA",
+      "nameKo": "오치키스",
+      "nameEn": "Hotchkiss",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "reliability",
+          "mode": "add",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "fra_bloch",
+      "country": "FRA",
+      "nameKo": "블로크",
+      "nameEn": "Bloch",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "air_defence",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "fra_dewoitine",
+      "country": "FRA",
+      "nameKo": "드부아틴",
+      "nameEn": "Dewoitine",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "fra_breguet",
+      "country": "FRA",
+      "nameKo": "브레게",
+      "nameEn": "Breguet",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": 0.08
+        }
+      ]
+    },
+    {
+      "id": "fra_acl",
+      "country": "FRA",
+      "nameKo": "루아르 조선소",
+      "nameEn": "Ateliers et Chantiers de la Loire",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "surface_detection",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "fra_brest",
+      "country": "FRA",
+      "nameKo": "브레스트 조선소",
+      "nameEn": "Brest Naval Yard",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "heavy_attack",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "ita_fiat",
+      "country": "ITA",
+      "nameKo": "피아트",
+      "nameEn": "Fiat",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "ita_lancia",
+      "country": "ITA",
+      "nameKo": "란치아",
+      "nameEn": "Lancia",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "reliability",
+          "mode": "add",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "ita_macchi",
+      "country": "ITA",
+      "nameKo": "마키",
+      "nameEn": "Macchi",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "ita_reggiane",
+      "country": "ITA",
+      "nameKo": "레자네",
+      "nameEn": "Reggiane",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "ita_savoia_marchetti",
+      "country": "ITA",
+      "nameKo": "사보이아-마르케티",
+      "nameEn": "Savoia-Marchetti",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "range",
+          "mode": "multiply",
+          "value": 0.08
+        }
+      ]
+    },
+    {
+      "id": "ita_ansaldo",
+      "country": "ITA",
+      "nameKo": "안살도",
+      "nameEn": "Ansaldo",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "light_attack",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "ita_crda",
+      "country": "ITA",
+      "nameKo": "CRDA",
+      "nameEn": "CRDA",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "jap_nissan",
+      "country": "JAP",
+      "nameKo": "닛산",
+      "nameEn": "Nissan",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "reliability",
+          "mode": "add",
+          "value": 0.04
+        }
+      ]
+    },
+    {
+      "id": "jap_osaka",
+      "country": "JAP",
+      "nameKo": "오사카 육군 조병창",
+      "nameEn": "Osaka Army Arsenal",
+      "domain": "tank",
+      "modifiers": [
+        {
+          "stat": "build_cost_ic",
+          "mode": "multiply",
+          "value": -0.03
+        }
+      ]
+    },
+    {
+      "id": "jap_mitsubishi",
+      "country": "JAP",
+      "nameKo": "미쓰비시",
+      "nameEn": "Mitsubishi",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "naval_attack",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "jap_nakajima",
+      "country": "JAP",
+      "nameKo": "나카지마",
+      "nameEn": "Nakajima",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "agility",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "jap_yokosuka",
+      "country": "JAP",
+      "nameKo": "요코스카 항공기술창",
+      "nameEn": "Yokosuka Naval Air Technical Arsenal",
+      "domain": "aircraft",
+      "modifiers": [
+        {
+          "stat": "air_defence",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "jap_kure",
+      "country": "JAP",
+      "nameKo": "구레 해군 공창",
+      "nameEn": "Kure Naval Arsenal",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "torpedo_attack",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "jap_maizuru",
+      "country": "JAP",
+      "nameKo": "마이즈루 해군 공창",
+      "nameEn": "Maizuru Naval Arsenal",
+      "domain": "ship",
+      "modifiers": [
+        {
+          "stat": "maximum_speed",
+          "mode": "multiply",
+          "value": 0.04
+        }
+      ]
+    }
   ],
   "doctrines": [
-    { "id": "none", "nameKo": "교리 없음", "nameEn": "No Doctrine", "modifiers": [] },
-    { "id": "mobile_warfare", "domain": "tank", "nameKo": "기동전", "nameEn": "Mobile Warfare", "modifiers": [{ "stat": "breakthrough", "mode": "multiply", "value": 0.1 }] },
-    { "id": "superior_firepower", "domain": "tank", "nameKo": "화력 우세", "nameEn": "Superior Firepower", "modifiers": [{ "stat": "soft_attack", "mode": "multiply", "value": 0.08 }] },
-    { "id": "battlefield_support", "domain": "aircraft", "nameKo": "전장지원", "nameEn": "Battlefield Support", "modifiers": [{ "stat": "soft_attack", "mode": "multiply", "value": 0.08 }] },
-    { "id": "operational_integrity", "domain": "aircraft", "nameKo": "작전상의 무결성", "nameEn": "Operational Integrity", "modifiers": [{ "stat": "air_attack", "mode": "multiply", "value": 0.05 }] },
-    { "id": "fleet_in_being", "domain": "ship", "nameKo": "현존함대", "nameEn": "Fleet in Being", "modifiers": [{ "stat": "heavy_attack", "mode": "multiply", "value": 0.05 }] },
-    { "id": "trade_interdiction", "domain": "ship", "nameKo": "무역 차단", "nameEn": "Trade Interdiction", "modifiers": [{ "stat": "sub_visibility", "mode": "multiply", "value": -0.05 }] }
+    {
+      "id": "none",
+      "nameKo": "교리 없음",
+      "nameEn": "No Doctrine",
+      "modifiers": []
+    },
+    {
+      "id": "mobile_warfare",
+      "domain": "tank",
+      "nameKo": "기동전",
+      "nameEn": "Mobile Warfare",
+      "modifiers": [
+        {
+          "stat": "breakthrough",
+          "mode": "multiply",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "superior_firepower",
+      "domain": "tank",
+      "nameKo": "화력 우세",
+      "nameEn": "Superior Firepower",
+      "modifiers": [
+        {
+          "stat": "soft_attack",
+          "mode": "multiply",
+          "value": 0.08
+        }
+      ]
+    },
+    {
+      "id": "battlefield_support",
+      "domain": "aircraft",
+      "nameKo": "전장지원",
+      "nameEn": "Battlefield Support",
+      "modifiers": [
+        {
+          "stat": "soft_attack",
+          "mode": "multiply",
+          "value": 0.08
+        }
+      ]
+    },
+    {
+      "id": "operational_integrity",
+      "domain": "aircraft",
+      "nameKo": "작전상의 무결성",
+      "nameEn": "Operational Integrity",
+      "modifiers": [
+        {
+          "stat": "air_attack",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "fleet_in_being",
+      "domain": "ship",
+      "nameKo": "현존함대",
+      "nameEn": "Fleet in Being",
+      "modifiers": [
+        {
+          "stat": "heavy_attack",
+          "mode": "multiply",
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "trade_interdiction",
+      "domain": "ship",
+      "nameKo": "무역 차단",
+      "nameEn": "Trade Interdiction",
+      "modifiers": [
+        {
+          "stat": "sub_visibility",
+          "mode": "multiply",
+          "value": -0.05
+        }
+      ]
+    }
   ]
 }

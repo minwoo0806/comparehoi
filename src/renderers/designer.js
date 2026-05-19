@@ -1,4 +1,4 @@
-import { availableModules, formatNumber, STAT_LABELS } from "../calculators/common.js";
+import { availableModules, equipmentRole, formatNumber, roleLabel, STAT_LABELS } from "../calculators/common.js";
 import { calculateTank } from "../calculators/tank.js";
 import { calculateAircraft } from "../calculators/aircraft.js";
 import { calculateShip } from "../calculators/ship.js";
@@ -30,13 +30,27 @@ export function renderDesigner(container, state, config, onCompare) {
                     ? "Full DLC 모드: 차체/프레임/선체에 실제 설계 모듈을 조합합니다."
                     : "Vanilla 모드: DLC 설계 모듈 없이 기본 장비와 변형 개량 수치만 비교합니다."}
             </div>
+            <div class="variant-grid">
+                ${renderContextSelect("design-country", "국가", state.countryId, state.data.modifiers.countries)}
+                ${renderContextSelect("design-designer", "설계사", state.designerId, filteredDesigners(state))}
+                ${renderContextSelect("design-doctrine", "교리", state.doctrineId, filteredDoctrines(state))}
+            </div>
+            <div class="effect-panel">
+                <strong>선택 보너스 효과</strong>
+                ${renderEffectSummary([
+                    selectedById(state.data.modifiers.countries, state.countryId),
+                    selectedById(state.data.modifiers.designers, state.designerId),
+                    selectedById(state.data.modifiers.doctrines, state.doctrineId)
+                ])}
+            </div>
             <div>
                 <label for="base-item">${config.itemLabel} 선택</label>
                 <select id="base-item">
-                    ${items.map((item) => `<option value="${escapeHtml(item.id)}" ${item.id === selectedBase.id ? "selected" : ""}>${escapeHtml(item.nameKo || item.id)} / ${escapeHtml(item.nameEn || item.id)} (${item.year || "-"})</option>`).join("")}
+                    ${renderBaseOptions(state.domain, items, selectedBase.id)}
                 </select>
             </div>
             ${moduleMode ? `<div class="module-slots">${config.moduleSlots.map((slot) => renderModuleSlot(state, selectedBase, slot)).join("")}</div>` : renderVariantControls(state)}
+            ${moduleMode ? `<div class="effect-panel"><strong>선택 모듈 효과</strong>${renderEffectSummary(selectedModules)}</div>` : ""}
             <div>
                 <label for="design-name">설계 이름</label>
                 <input id="design-name" value="${escapeHtml(state.designName || `${selectedBase.nameKo || selectedBase.id} 커스텀`)}">
@@ -53,6 +67,22 @@ export function renderDesigner(container, state, config, onCompare) {
     container.querySelector("#base-item").addEventListener("change", (event) => {
         state.selectedBaseId = event.target.value;
         state.selectedModules = {};
+        renderDesigner(container, state, config, onCompare);
+    });
+
+    container.querySelector("#design-country").addEventListener("change", (event) => {
+        state.countryId = event.target.value;
+        state.designerId = "none";
+        renderDesigner(container, state, config, onCompare);
+    });
+
+    container.querySelector("#design-designer").addEventListener("change", (event) => {
+        state.designerId = event.target.value;
+        renderDesigner(container, state, config, onCompare);
+    });
+
+    container.querySelector("#design-doctrine").addEventListener("change", (event) => {
+        state.doctrineId = event.target.value;
         renderDesigner(container, state, config, onCompare);
     });
 
@@ -131,23 +161,121 @@ function renderVariantControls(state) {
 function selectedModuleObjects(state, config, selectedBase) {
     return config.moduleSlots.map((slot) => {
         const moduleId = state.selectedModules[slot];
+        if (!moduleId) return null;
         const options = availableModules(state.data.modules, state.domain, slot, selectedBase);
-        return options.find((module) => module.id === moduleId) || options[0] || null;
+        return options.find((module) => module.id === moduleId) || null;
     });
 }
 
 function renderModuleSlot(state, selectedBase, slot) {
     const options = availableModules(state.data.modules, state.domain, slot, selectedBase);
     if (!options.length) return "";
-    const selected = state.selectedModules[slot] || options[0].id;
+    const selected = state.selectedModules[slot] || "";
     return `
         <div>
             <label>${escapeHtml(slot)}</label>
             <select data-module-slot="${escapeHtml(slot)}">
-                ${options.map((module) => `<option value="${escapeHtml(module.id)}" ${module.id === selected ? "selected" : ""}>${escapeHtml(module.nameKo || module.id)} / ${escapeHtml(module.nameEn || module.id)}</option>`).join("")}
+                <option value="" ${selected === "" ? "selected" : ""}>선택 안 함 / None · 효과 없음</option>
+                ${options.map((module) => `<option value="${escapeHtml(module.id)}" ${module.id === selected ? "selected" : ""}>${escapeHtml(module.nameKo || module.id)} / ${escapeHtml(module.nameEn || module.id)} · ${escapeHtml(formatEffects(module))}</option>`).join("")}
             </select>
         </div>
     `;
+}
+
+function renderBaseOptions(domain, items, selectedId) {
+    const grouped = new Map();
+    for (const item of items) {
+        const role = equipmentRole(domain, item);
+        if (!grouped.has(role)) grouped.set(role, []);
+        grouped.get(role).push(item);
+    }
+
+    const roleOrder = domain === "tank"
+        ? ["tank", "tank_destroyer", "self_propelled_artillery", "self_propelled_anti_air", "armored_car", "support"]
+        : domain === "aircraft"
+            ? ["small_airframe", "carrier_airframe", "medium_airframe", "large_airframe", "other"]
+            : ["destroyer", "light_cruiser", "heavy_cruiser", "battleship", "carrier", "submarine", "support"];
+
+    return roleOrder
+        .filter((role) => grouped.has(role))
+        .map((role) => `
+            <optgroup label="${escapeHtml(roleLabel(domain, role))}">
+                ${grouped.get(role)
+                    .sort((a, b) => (a.year || 9999) - (b.year || 9999) || String(a.nameKo || a.id).localeCompare(String(b.nameKo || b.id)))
+                    .map((item) => `<option value="${escapeHtml(item.id)}" ${item.id === selectedId ? "selected" : ""}>${escapeHtml(item.nameKo || item.id)} / ${escapeHtml(item.nameEn || item.id)} (${item.year || "-"})</option>`)
+                    .join("")}
+            </optgroup>
+        `).join("");
+}
+
+function renderContextSelect(id, label, selectedId, options) {
+    return `
+        <div>
+            <label for="${id}">${label}</label>
+            <select id="${id}">
+                ${options.map((option) => `<option value="${escapeHtml(option.id)}" ${option.id === selectedId ? "selected" : ""}>${escapeHtml(option.nameKo || option.id)} / ${escapeHtml(option.nameEn || option.id)}${option.id !== "none" ? ` · ${escapeHtml(formatEffects(option))}` : ""}</option>`).join("")}
+            </select>
+        </div>
+    `;
+}
+
+function filteredDesigners(state) {
+    return (state.data.modifiers.designers || []).filter((item) => {
+        const countryMatches = item.id === "none" || (state.countryId !== "none" && item.country === state.countryId);
+        const domainMatches = item.id === "none" || !item.domain || item.domain === state.domain;
+        return countryMatches && domainMatches;
+    });
+}
+
+function filteredDoctrines(state) {
+    return (state.data.modifiers.doctrines || []).filter((item) => !item.domain || item.domain === state.domain || item.id === "none");
+}
+
+function selectedById(items, id) {
+    return (items || []).find((item) => item.id === id);
+}
+
+function renderEffectSummary(items) {
+    const effects = items.filter(Boolean).flatMap((item) => effectParts(item).map((effect) => ({ ...effect, source: item.nameKo || item.id })));
+    if (!effects.length) return `<div class="muted">적용되는 추가 효과가 없습니다.</div>`;
+    return `
+        <div class="effect-list">
+            ${effects.map((effect) => `
+                <span class="${effect.value >= 0 ? "effect-up" : "effect-down"}">
+                    ${escapeHtml(effect.source)}: ${escapeHtml(effect.label)} ${effect.text}
+                </span>
+            `).join("")}
+        </div>
+    `;
+}
+
+function formatEffects(item) {
+    const parts = effectParts(item);
+    return parts.length ? parts.map((part) => `${part.label} ${part.text}`).join(", ") : "효과 없음";
+}
+
+function effectParts(item) {
+    const stats = Object.entries(item?.stats || {}).map(([stat, value]) => ({
+        label: STAT_LABELS[stat] || stat,
+        value,
+        text: signedNumber(value)
+    }));
+    const modifiers = (item?.modifiers || []).map((modifier) => ({
+        label: STAT_LABELS[modifier.stat] || modifier.stat,
+        value: Number(modifier.value) || 0,
+        text: modifier.mode === "multiply" ? signedPercent(modifier.value) : signedNumber(modifier.value)
+    }));
+    return [...stats, ...modifiers].filter((part) => Number(part.value) !== 0);
+}
+
+function signedNumber(value) {
+    const number = Number(value) || 0;
+    return `${number > 0 ? "+" : ""}${formatNumber(number)}`;
+}
+
+function signedPercent(value) {
+    const number = Number(value) || 0;
+    return `${number > 0 ? "+" : ""}${formatNumber(number * 100)}%`;
 }
 
 function renderStatCard(key, value) {

@@ -1,82 +1,65 @@
 {
   "tank": [
     {
-      "id": "wiki_medium_breakthrough_tank",
-      "nameKo": "위키 기반 중형 돌파 전차",
-      "nameEn": "Wiki Medium Breakthrough Tank",
-      "baseId": "wiki_medium_tank_chassis_1939",
+      "id": "tank_generated_balanced_preset",
+      "nameKo": "자동 추천 수륙양용전차",
+      "nameEn": "Generated Balanced Amphibious Tank",
+      "baseId": "amphibious_tank_chassis",
       "modulesBySlot": {
-        "main_armament": "wiki_tank_medium_cannon",
-        "turret": "wiki_three_man_turret",
-        "suspension": "wiki_christie_suspension",
-        "engine_type": "wiki_gasoline_engine",
-        "armor_type": "wiki_welded_armor",
-        "special_1": "wiki_radio"
-      }
-    },
-    {
-      "id": "wiki_tank_destroyer",
-      "nameKo": "대전차 구축전차",
-      "nameEn": "Tank Destroyer",
-      "baseId": "wiki_medium_tank_chassis_1939",
-      "modulesBySlot": {
-        "main_armament": "wiki_tank_high_velocity_cannon",
-        "turret": "wiki_three_man_turret",
-        "suspension": "wiki_christie_suspension",
-        "engine_type": "wiki_gasoline_engine",
-        "armor_type": "wiki_welded_armor"
+        "engine_type": "tank_gasoline_engine",
+        "armor_type": "tank_riveted_armor",
+        "suspension": "tank_torsion_bar_suspension",
+        "turret": "tank_light_one_man_tank_turret",
+        "main_armament": "tank_heavy_machine_gun",
+        "special_1": "tank_rocket_launcher",
+        "special_2": "tank_rocket_launcher",
+        "special_3": "tank_rocket_launcher",
+        "special_4": "tank_rocket_launcher"
       }
     }
   ],
   "aircraft": [
     {
-      "id": "wiki_air_superiority_fighter",
-      "nameKo": "제공권 전투기",
-      "nameEn": "Air Superiority Fighter",
-      "baseId": "wiki_fighter_1940",
+      "id": "aircraft_generated_balanced_preset",
+      "nameKo": "자동 추천 근접항공지원기 I",
+      "nameEn": "Generated Balanced Close Air Support I",
+      "baseId": "CAS_equipment_1",
       "modulesBySlot": {
-        "fixed_main_weapon_slot": "wiki_air_cannon_1",
-        "fixed_auxiliary_weapon_slot_1": "wiki_air_hmg_4x",
-        "engine_type_slot": "wiki_air_engine_3",
-        "special_type_slot_1": "wiki_drop_tanks"
-      }
-    },
-    {
-      "id": "wiki_naval_strike_aircraft",
-      "nameKo": "해상타격기",
-      "nameEn": "Naval Strike Aircraft",
-      "baseId": "wiki_naval_bomber_1940",
-      "modulesBySlot": {
-        "fixed_main_weapon_slot": "wiki_air_hmg_4x",
-        "engine_type_slot": "wiki_air_engine_3",
-        "special_type_slot_1": "wiki_torpedo_mounting"
+        "engine_type_slot": "engine_1_1x",
+        "fixed_main_weapon_slot": "light_mg_2x",
+        "fixed_auxiliary_weapon_slot_1": "light_mg_2x",
+        "fixed_auxiliary_weapon_slot_2": "light_mg_2x",
+        "fixed_auxiliary_weapon_slot_3": "light_mg_2x",
+        "fixed_auxiliary_weapon_slot_4": "light_mg_2x",
+        "fixed_auxiliary_weapon_slot_5": "light_mg_2x",
+        "special_type_slot_1": "airdropped_mines",
+        "special_type_slot_2": "airdropped_mines",
+        "special_type_slot_3": "airdropped_mines",
+        "special_type_slot_4": "airdropped_mines",
+        "special_type_slot_5": "airdropped_mines"
       }
     }
   ],
   "ship": [
     {
-      "id": "wiki_screen_destroyer",
-      "nameKo": "호위 구축함",
-      "nameEn": "Screen Destroyer",
-      "baseId": "wiki_destroyer_1936",
+      "id": "ship_generated_balanced_preset",
+      "nameKo": "자동 추천 전함 II",
+      "nameEn": "Generated Balanced Battleship II",
+      "baseId": "battleship_2",
       "modulesBySlot": {
-        "fixed_ship_battery_slot": "wiki_ship_light_battery_2",
-        "fixed_ship_anti_air_slot": "wiki_ship_anti_air_2",
-        "fixed_ship_engine_slot": "wiki_ship_engine_2",
-        "mid_1_custom_slot": "wiki_ship_torpedo_2"
-      }
-    },
-    {
-      "id": "wiki_surface_battleship",
-      "nameKo": "주력 전함",
-      "nameEn": "Surface Battleship",
-      "baseId": "wiki_battleship_1940",
-      "modulesBySlot": {
-        "fixed_ship_battery_slot": "wiki_ship_heavy_battery_2",
-        "fixed_ship_anti_air_slot": "wiki_ship_anti_air_2",
-        "fixed_ship_engine_slot": "wiki_ship_engine_2",
-        "fixed_ship_fire_control_system_slot": "wiki_ship_fire_control_1",
-        "fixed_ship_radar_slot": "wiki_ship_radar_1"
+        "fixed_ship_battery_slot": "ship_light_battery_1",
+        "front_1_custom_slot": "ship_light_battery_1",
+        "front_2_custom_slot": "ship_light_battery_1",
+        "mid_1_custom_slot": "ship_light_battery_1",
+        "mid_2_custom_slot": "ship_light_battery_1",
+        "mid_3_custom_slot": "ship_light_battery_1",
+        "rear_1_custom_slot": "ship_light_battery_1",
+        "rear_2_custom_slot": "ship_light_battery_1",
+        "fixed_ship_fire_control_system_slot": "ship_fire_control_system_0",
+        "fixed_ship_radar_slot": "ship_radar_1",
+        "fixed_ship_engine_slot": "light_ship_engine_1",
+        "fixed_ship_torpedo_slot": "ship_torpedo_1",
+        "fixed_ship_armor_slot": "ship_armor_bb_1"
       }
     }
   ]

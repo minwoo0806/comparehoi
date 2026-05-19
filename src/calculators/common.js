@@ -5,6 +5,11 @@ export const STAT_LABELS = {
     resources: "자원",
     fuel_consumption: "연료",
     supply_consumption: "보급",
+    manpower: "인력",
+    max_strength: "내구도",
+    carrier_size: "격납고",
+    thrust: "추력",
+    hardness: "기갑 비율",
     maximum_speed: "속도",
     max_speed: "속도",
     armor_value: "장갑",
@@ -18,13 +23,16 @@ export const STAT_LABELS = {
     agility: "기동성",
     range: "항속거리",
     naval_attack: "해상 공격",
+    naval_targeting: "해상 조준",
     strategic_attack: "전략 폭격",
+    air_superiority: "공중 우세",
     light_attack: "경포 공격",
     heavy_attack: "중포 공격",
     torpedo_attack: "어뢰 공격",
     anti_air_attack: "대공",
     surface_detection: "수상 탐지",
     sub_detection: "잠수함 탐지",
+    sub_attack: "대잠 공격",
     surface_visibility: "수상 피탐지",
     sub_visibility: "잠수함 피탐지"
 };
@@ -40,18 +48,78 @@ export const DOMAIN_CONFIG = {
     aircraft: {
         label: "항공기 / Aircraft",
         itemLabel: "프레임",
-        moduleSlots: ["fixed_main_weapon_slot", "fixed_auxiliary_weapon_slot_1", "fixed_auxiliary_weapon_slot_2", "engine_type_slot", "special_type_slot_1", "special_type_slot_2", "special_type_slot_3"],
-        primaryStats: ["air_attack", "air_defence", "agility", "maximum_speed", "range", "soft_attack", "naval_attack", "strategic_attack", "reliability", "build_cost_ic"],
-        sortStats: ["year", "build_cost_ic", "air_attack", "air_defence", "agility", "maximum_speed", "range", "reliability"]
+        moduleSlots: ["fixed_main_weapon_slot", "fixed_auxiliary_weapon_slot_1", "fixed_auxiliary_weapon_slot_2", "fixed_auxiliary_weapon_slot_3", "fixed_auxiliary_weapon_slot_4", "fixed_auxiliary_weapon_slot_5", "engine_type_slot", "special_type_slot_1", "special_type_slot_2", "special_type_slot_3", "special_type_slot_4", "special_type_slot_5"],
+        primaryStats: ["air_attack", "air_defence", "agility", "maximum_speed", "range", "soft_attack", "naval_attack", "naval_targeting", "strategic_attack", "fuel_consumption", "reliability", "build_cost_ic"],
+        sortStats: ["year", "build_cost_ic", "air_attack", "air_defence", "agility", "maximum_speed", "range", "naval_attack", "strategic_attack", "reliability"]
     },
     ship: {
         label: "함선 / Ship",
         itemLabel: "선체",
-        moduleSlots: ["fixed_ship_battery_slot", "fixed_ship_anti_air_slot", "fixed_ship_fire_control_system_slot", "fixed_ship_radar_slot", "fixed_ship_engine_slot", "fixed_ship_armor_slot", "mid_1_custom_slot", "mid_2_custom_slot", "rear_1_custom_slot"],
-        primaryStats: ["light_attack", "heavy_attack", "torpedo_attack", "anti_air_attack", "armor_value", "maximum_speed", "surface_detection", "sub_detection", "reliability", "build_cost_ic"],
-        sortStats: ["year", "build_cost_ic", "light_attack", "heavy_attack", "torpedo_attack", "anti_air_attack", "maximum_speed", "reliability"]
+        moduleSlots: ["fixed_ship_battery_slot", "fixed_ship_anti_air_slot", "fixed_ship_fire_control_system_slot", "fixed_ship_radar_slot", "fixed_ship_torpedo_slot", "fixed_ship_engine_slot", "fixed_ship_armor_slot", "front_1_custom_slot", "front_2_custom_slot", "mid_1_custom_slot", "mid_2_custom_slot", "mid_3_custom_slot", "rear_1_custom_slot", "rear_2_custom_slot"],
+        primaryStats: ["max_strength", "light_attack", "heavy_attack", "torpedo_attack", "sub_attack", "anti_air_attack", "armor_value", "maximum_speed", "surface_detection", "sub_detection", "surface_visibility", "sub_visibility", "carrier_size", "reliability", "build_cost_ic"],
+        sortStats: ["year", "build_cost_ic", "max_strength", "light_attack", "heavy_attack", "torpedo_attack", "sub_attack", "anti_air_attack", "maximum_speed", "surface_detection", "sub_detection", "reliability"]
     }
 };
+
+export const ROLE_LABELS = {
+    tank: {
+        tank: "전차",
+        tank_destroyer: "구축전차",
+        self_propelled_artillery: "자주포",
+        self_propelled_anti_air: "자주대공포",
+        armored_car: "장갑차/기갑차량",
+        support: "지원/기타"
+    },
+    aircraft: {
+        small_airframe: "소형 항공기",
+        medium_airframe: "중형 항공기",
+        large_airframe: "대형 항공기",
+        carrier_airframe: "함재기",
+        other: "기타 항공기"
+    },
+    ship: {
+        destroyer: "구축함",
+        light_cruiser: "경순양함",
+        heavy_cruiser: "중순양함",
+        battleship: "전함/순양전함",
+        carrier: "항공모함",
+        submarine: "잠수함",
+        support: "지원함/기타"
+    }
+};
+
+export function equipmentRole(domain, item) {
+    const text = `${item?.id || ""} ${item?.type || ""} ${item?.category || ""} ${item?.nameEn || ""} ${item?.nameKo || ""}`.toLowerCase();
+    if (domain === "tank") {
+        if (/(^|_)aa(_|$)|anti-air|anti air|자주대공/.test(text)) return "self_propelled_anti_air";
+        if (/artillery|howitzer|자주포/.test(text)) return "self_propelled_artillery";
+        if (/destroyer|anti_tank|anti-tank|구축전차|대전차/.test(text)) return "tank_destroyer";
+        if (/armored_car|armored support|장갑차|기갑지원/.test(text)) return "armored_car";
+        if (/tank|chassis|armor|전차/.test(text)) return "tank";
+        return "support";
+    }
+    if (domain === "aircraft") {
+        if (text.includes("carrier")) return "carrier_airframe";
+        if (text.includes("large")) return "large_airframe";
+        if (text.includes("medium")) return "medium_airframe";
+        if (text.includes("small") || text.includes("fighter") || text.includes("cas") || text.includes("naval_bomber")) return "small_airframe";
+        return "other";
+    }
+    if (domain === "ship") {
+        if (text.includes("submarine")) return "submarine";
+        if (text.includes("carrier")) return "carrier";
+        if (text.includes("heavy_cruiser")) return "heavy_cruiser";
+        if (text.includes("battleship") || text.includes("battlecruiser") || text.includes("battle_cruiser") || text.includes("ship_hull_heavy")) return "battleship";
+        if (text.includes("cruiser")) return "light_cruiser";
+        if (text.includes("destroyer")) return "destroyer";
+        return "support";
+    }
+    return "other";
+}
+
+export function roleLabel(domain, role) {
+    return ROLE_LABELS[domain]?.[role] || role || "기타";
+}
 
 export function calculateEquipment(baseItem, selectedModules, context = {}) {
     const stats = deepClone(baseItem.stats || {});
@@ -64,6 +132,7 @@ export function calculateEquipment(baseItem, selectedModules, context = {}) {
         mergeResources(resources, module.resources || {});
         reliabilityAdd += Number(module.reliabilityAdd || 0);
         costAdd += Number(module.costAdd || module.stats?.build_cost_ic || 0);
+        applyModifierList(stats, module.modifiers);
     }
 
     if (costAdd && stats.build_cost_ic === undefined) stats.build_cost_ic = 0;

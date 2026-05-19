@@ -1,5 +1,5 @@
 import { loadDataset } from "./data-loader.js";
-import { DOMAIN_CONFIG, getStatValue, matchSearch, STAT_LABELS } from "./calculators/common.js";
+import { DOMAIN_CONFIG, equipmentRole, getStatValue, matchSearch, roleLabel, STAT_LABELS } from "./calculators/common.js";
 import { renderCatalogTable, renderCompareTable } from "./renderers/table.js";
 import { renderDesigner } from "./renderers/designer.js";
 
@@ -156,14 +156,20 @@ function renderControls() {
     const years = [...new Set(domainItems.map((item) => item.year).filter(Boolean))].sort((a, b) => a - b);
     els.yearFilter.innerHTML = `<option value="all">전체 연도</option>${years.map((year) => `<option value="${year}" ${String(year) === state.yearFilter ? "selected" : ""}>${year}</option>`).join("")}`;
     const types = [...new Set(domainItems.map((item) => item.type).filter(Boolean))].sort();
-    els.typeFilter.innerHTML = `<option value="all">전체 분류</option>${types.map((type) => `<option value="${type}" ${type === state.typeFilter ? "selected" : ""}>${type}</option>`).join("")}`;
+    const roles = [...new Set(domainItems.map((item) => equipmentRole(state.domain, item)).filter(Boolean))];
+    const typeOptions = [
+        `<option value="all">전체 분류</option>`,
+        ...roles.map((role) => `<option value="role:${role}" ${`role:${role}` === state.typeFilter ? "selected" : ""}>${roleLabel(state.domain, role)}</option>`),
+        ...types.map((type) => `<option value="type:${type}" ${`type:${type}` === state.typeFilter ? "selected" : ""}>${type}</option>`)
+    ];
+    els.typeFilter.innerHTML = typeOptions.join("");
 
     const countries = state.data.modifiers.countries || [];
     els.country.innerHTML = countries.map((item) => `<option value="${item.id}" ${item.id === state.countryId ? "selected" : ""}>${item.nameKo || item.id} / ${item.nameEn || item.id}</option>`).join("");
 
     const designers = (state.data.modifiers.designers || []).filter((item) => {
-        const countryMatches = !item.country || item.country === state.countryId || item.id === "none";
-        const domainMatches = !item.domain || item.domain === state.domain || item.id === "none";
+        const countryMatches = item.id === "none" || (state.countryId !== "none" && item.country === state.countryId);
+        const domainMatches = item.id === "none" || !item.domain || item.domain === state.domain;
         return countryMatches && domainMatches;
     });
     if (!designers.some((item) => item.id === state.designerId)) state.designerId = "none";
@@ -179,7 +185,7 @@ function renderCatalog() {
     const items = (state.data.equipment[state.domain] || [])
         .filter((item) => matchSearch(item, state.search))
         .filter((item) => state.yearFilter === "all" || String(item.year) === state.yearFilter)
-        .filter((item) => state.typeFilter === "all" || item.type === state.typeFilter)
+        .filter((item) => state.typeFilter === "all" || state.typeFilter === `type:${item.type}` || state.typeFilter === `role:${equipmentRole(state.domain, item)}`)
         .sort((a, b) => {
             const aValue = getStatValue(a, state.sortField);
             const bValue = getStatValue(b, state.sortField);

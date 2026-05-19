@@ -1,4 +1,4 @@
-import { formatNumber, getStatValue, STAT_LABELS } from "../calculators/common.js";
+import { equipmentRole, formatNumber, getStatValue, roleLabel, STAT_LABELS } from "../calculators/common.js";
 
 export function renderCatalogTable(container, items, statKeys, onAddCompare, options = {}) {
     if (!items.length) {
@@ -9,12 +9,12 @@ export function renderCatalogTable(container, items, statKeys, onAddCompare, opt
     const headers = ["이름", "영문", "종류", "연도", ...statKeys.map((key) => STAT_LABELS[key] || key), "출처", "비교"];
     let currentGroup = "";
     const rows = items.map((item) => {
-        const group = options.domain === "tank" ? `${item.year || "연도 미상"} · ${typeLabel(item.type)}` : "";
+        const group = options.domain ? `${item.year || "연도 미상"} · ${roleLabel(options.domain, equipmentRole(options.domain, item))}` : "";
         const groupRow = group && group !== currentGroup
             ? `<tr class="group-row"><td colspan="${headers.length}">${escapeHtml(group)}</td></tr>`
             : "";
         if (group) currentGroup = group;
-        const statCells = statKeys.map((key) => `<td>${formatNumber(getStatValue(item, key))}</td>`).join("");
+        const statCells = statKeys.map((key) => `<td>${formatCatalogNumber(getStatValue(item, key))}</td>`).join("");
         const source = item.sourceUrl ? `<a href="${escapeHtml(item.sourceUrl)}" target="_blank" rel="noreferrer">Wiki</a>` : escapeHtml(item.source || "-");
         const image = item.image ? `<img class="equipment-icon" src="${escapeHtml(item.image)}" alt="">` : "";
         return `${groupRow}
@@ -45,30 +45,20 @@ export function renderCatalogTable(container, items, statKeys, onAddCompare, opt
     });
 }
 
-function typeLabel(type) {
-    const labels = {
-        light_tank: "경전차 차체",
-        medium_tank: "중형전차 차체",
-        heavy_tank: "중전차 차체",
-        super_heavy_tank: "초중전차 차체",
-        modern_tank: "현대전차 차체"
-    };
-    return labels[type] || type || "차체 미상";
-}
-
 export function renderCompareTable(container, items, statKeys) {
     if (!items.length) {
         container.innerHTML = `<div class="empty">비교 목록이 비어 있습니다. 도감 또는 설계 계산기에서 설계를 추가하세요.</div>`;
         return;
     }
 
+    const baseline = items[0];
     const headers = ["설계", "종류", "연도", ...statKeys.map((key) => STAT_LABELS[key] || key)];
     const rows = items.map((item) => `
         <tr>
             <td><strong>${escapeHtml(item.nameKo || item.name || item.id)}</strong><br><span class="muted">${escapeHtml(item.nameEn || item.baseId || "")}</span></td>
             <td>${escapeHtml(item.type || "-")}</td>
             <td>${item.year || "-"}</td>
-            ${statKeys.map((key) => `<td>${formatNumber(getStatValue(item, key))}</td>`).join("")}
+            ${statKeys.map((key) => `<td>${renderCompareValue(item, baseline, key)}</td>`).join("")}
         </tr>
     `).join("");
 
@@ -78,6 +68,23 @@ export function renderCompareTable(container, items, statKeys) {
             <tbody>${rows}</tbody>
         </table>
     `;
+}
+
+function formatCatalogNumber(value) {
+    return Number(value) === 0 ? "-" : formatNumber(value);
+}
+
+function renderCompareValue(item, baseline, key) {
+    const value = getStatValue(item, key);
+    const baseValue = getStatValue(baseline, key);
+    const diff = value - baseValue;
+    if (item === baseline || !Number.isFinite(diff) || diff === 0) {
+        return `<div class="compare-value"><span>${formatNumber(value)}</span><span class="delta-same">기준</span></div>`;
+    }
+    const className = diff > 0 ? "delta-up" : "delta-down";
+    const arrow = diff > 0 ? "▲" : "▼";
+    const sign = diff > 0 ? "+" : "";
+    return `<div class="compare-value"><span>${formatNumber(value)}</span><span class="${className}">${arrow} ${sign}${formatNumber(diff)}</span></div>`;
 }
 
 export function escapeHtml(value) {

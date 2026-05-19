@@ -1,11 +1,18 @@
 {
-  "generatedAt": "2026-05-17T00:30:00+09:00",
-  "source": "hoi4-wiki-seed",
+  "generatedAt": "2026-05-18T12:21:23.823Z",
+  "source": "hoi4-game-files-full-dlc",
+  "gamePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hearts of Iron IV",
   "designerMode": "module",
-  "sourceUrls": [
-    "https://hoi4.paradoxwikis.com/Aircraft",
-    "https://hoi4.paradoxwikis.com/Tanks",
-    "https://hoi4.paradoxwikis.com/Ships"
-  ],
-  "warning": "Full DLC 데이터셋은 위키 공개 표와 설계 시스템 설명을 바탕으로 만든 시드 데이터입니다. 실제 게임 파일 파서 결과가 있으면 그 데이터가 더 정확합니다."
+  "counts": {
+    "tanks": 80,
+    "aircraft": 71,
+    "ships": 89,
+    "tankModules": 69,
+    "aircraftModules": 103,
+    "shipModules": 110
+  },
+  "notes": [
+    "설치 폴더와 폴더형 DLC의 common/localisation 파일 기준입니다.",
+    "게임 내부 전용 수식과 hidden modifier는 완전 재현이 어려워 추출 가능한 숫자 스탯을 우선 정규화합니다."
+  ]
 }
